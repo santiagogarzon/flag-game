@@ -1,0 +1,56 @@
+import * as React from "react";
+import Svg, { G, Path } from "react-native-svg";
+type FlagProps = {
+  onPress: (id: string) => void,
+  colors: {
+    [key: string]: string,
+  },
+};
+const Flag = (props: FlagProps) => {
+  return (
+    <Svg
+      width={350}
+      height={250}
+      viewBox="0 0 350 250"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <G id="flag / asia / azerbaijan / a">
+        <G id="azerbaijan a">
+          <Path
+            id="sky"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M25 100H325V50H25V100Z"
+            fill={props.colors["sky"]}
+            onPress={() => props.onPress("sky")}
+          />
+          <Path
+            id="red"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M25 150V100H325V150H25ZM175 143.75C180.522 143.75 185.487 141.363 188.918 137.564C184.876 143.558 178.023 147.5 170.25 147.5C157.823 147.5 147.75 137.426 147.75 125C147.75 112.574 157.823 102.5 170.25 102.5C178.023 102.5 184.876 106.442 188.918 112.436C185.487 108.637 180.522 106.25 175 106.25C164.645 106.25 156.25 114.645 156.25 125C156.25 135.355 164.645 143.75 175 143.75ZM197.646 130.773L204.095 133.833L201.026 127.388L207.75 124.991L201.022 122.604L204.083 116.155L197.638 119.224L195.241 112.5L192.854 119.228L186.405 116.167L189.474 122.612L182.75 125.009L189.477 127.396L186.417 133.845L192.862 130.776L195.259 137.5L197.646 130.773Z"
+            fill={props.colors["red"]}
+            onPress={() => props.onPress("red")}
+          />
+          <Path
+            id="green"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M25 200H325V150H25V200Z"
+            fill={props.colors["green"]}
+            onPress={() => props.onPress("green")}
+          />
+          <Path
+            id="#FFFFFF"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M170.25 102.5C178.023 102.5 184.876 106.442 188.918 112.436C185.487 108.637 180.522 106.25 175 106.25C164.645 106.25 156.25 114.645 156.25 125C156.25 135.355 164.645 143.75 175 143.75C180.522 143.75 185.487 141.363 188.918 137.564C184.876 143.558 178.023 147.5 170.25 147.5C157.823 147.5 147.75 137.426 147.75 125C147.75 112.574 157.823 102.5 170.25 102.5ZM197.646 130.773L204.095 133.833L201.026 127.388L207.75 124.991L201.022 122.604L204.083 116.155L197.638 119.224L195.241 112.5L192.854 119.228L186.405 116.167L189.474 122.612L182.75 125.009L189.477 127.396L186.417 133.845L192.862 130.776L195.259 137.5L197.646 130.773Z"
+            fill="#FFFFFE"
+          />
+        </G>
+      </G>
+    </Svg>
+  );
+};
+export default Flag;

@@ -1,0 +1,10 @@
+<svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flag / africa / sudan / a">
+<g id="sudan a">
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M325 100H91.6667L25 50H325V100Z" fill="#C02537"/>
+<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M91.667 150H324.667V100H91.667L125 125L91.667 150Z" fill="#FFFFFE"/>
+<path id="black" fill-rule="evenodd" clip-rule="evenodd" d="M25 200H325V150H91.6667L25 200Z" fill="#0A0B09"/>
+<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M25 50L125 125L25 200V50Z" fill="#186937"/>
+</g>
+</g>
+</svg>

@@ -1,0 +1,11 @@
+<svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flag / africa / seychelles / a">
+<g id="seychelles a">
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25.0801 199.94H25.1801L325 100V50H225L25.0801 199.94Z" fill="#C32B2C"/>
+<path id="yellow" fill-rule="evenodd" clip-rule="evenodd" d="M225 50H125L25 200L225 50Z" fill="#F8D45A"/>
+<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M325 150V100L25 200L325 150Z" fill="#FFFFFE"/>
+<path id="blue" fill-rule="evenodd" clip-rule="evenodd" d="M25 50H125L25 200V50Z" fill="#253B6E"/>
+<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M25 200H325V150L25 200Z" fill="#14713C"/>
+</g>
+</g>
+</svg>

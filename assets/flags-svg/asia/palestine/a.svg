@@ -1,0 +1,10 @@
+<svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="flag / asia / palestine / a">
+<g id="palestine a">
+<path id="black" fill-rule="evenodd" clip-rule="evenodd" d="M325 100H91.6667L25 50H325V100Z" fill="black"/>
+<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M91.6667 150H325V200H25L91.6667 150Z" fill="#007A3D"/>
+<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M91.7158 150L125.049 125L91.7158 100H324.666V150H91.7158Z" fill="white"/>
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25 50V200L125 125L25 50Z" fill="#CE1126"/>
+</g>
+</g>
+</svg>

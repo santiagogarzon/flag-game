@@ -1,0 +1,1786 @@
+{
+    "Asia": [
+        {
+            "country": "Afghanistan",
+            "unblock": 0,
+            "colors": [
+                "#000000",
+                "#AC252A",
+                "#169045"
+            ]
+        },
+        {
+            "country": "Armenia",
+            "unblock": 0,
+            "colors": [
+                "#C6242B",
+                "#25377E",
+                "#E6A22E"
+            ]
+        },
+        {
+            "country": "Azerbaijan",
+            "unblock": 0,
+            "colors": [
+                "#1B8EB1",
+                "#CD2438",
+                "#00A460",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Bahrain",
+            "unblock": 0,
+            "colors": [
+                "#FFFFFF",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Bangladesh",
+            "unblock": 2,
+            "colors": [
+                "#136148",
+                "#DA2F41"
+            ]
+        },
+        {
+            "country": "Bhutan",
+            "unblock": 6,
+            "colors": [
+                "#E5AC36",
+                "#D03C2E",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Brunei",
+            "unblock": 8,
+            "colors": [
+                "#F3DE27",
+                "#FFFFFF",
+                "#000000",
+                "#BD242C"
+            ]
+        },
+        {
+            "country": "Cambodia",
+            "unblock": 13,
+            "colors": [
+                "#25367D",
+                "#CC242D",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "China",
+            "unblock": 18,
+            "colors": [
+                "#CB2E2B",
+                "#FBDB1E"
+            ]
+        },
+        {
+            "country": "Cyprus",
+            "unblock": 24,
+            "colors": [
+                "#FFFFFF",
+                "#EFA53C",
+                "#2E4023"
+            ]
+        },
+        {
+            "country": "East Timor",
+            "unblock": 28,
+            "colors": [
+                "#C62A2B",
+                "#F7C231",
+                "#000000",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Georgia",
+            "unblock": 30,
+            "colors": [
+                "#FFFFFF",
+                "#D9252A"
+            ]
+        },
+        {
+            "country": "India",
+            "unblock": 38,
+            "colors": [
+                "#EC9141",
+                "#FFFFFF",
+                "#1E8040"
+            ]
+        },
+        {
+            "country": "Indonesia",
+            "unblock": 39,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Iran",
+            "unblock": 48,
+            "colors": [
+                "#249646",
+                "#FFFFFF",
+                "#C6242B"
+            ]
+        },
+        {
+            "country": "Iraq",
+            "unblock": 49,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF",
+                "#000000",
+                "#14713C"
+            ]
+        },
+        {
+            "country": "Israel",
+            "unblock": 50,
+            "colors": [
+                "#FFFFFF",
+                "#2A4086"
+            ]
+        },
+        {
+            "country": "Japan",
+            "unblock": 57,
+            "colors": [
+                "#FFFFFF",
+                "#A92532"
+            ]
+        },
+        {
+            "country": "Jordan",
+            "unblock": 58,
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#14713C",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Kazakhstan",
+            "unblock": 59,
+            "colors": [
+                "#23A6B9",
+                "#F6C029"
+            ]
+        },
+        {
+            "country": "Kuwait",
+            "unblock": 67,
+            "colors": [
+                "#14713C",
+                "#FFFFFF",
+                "#BC242C",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Kyrgyzstan",
+            "unblock": 68,
+            "colors": [
+                "#D32432",
+                "#FBEC29"
+            ]
+        },
+        {
+            "country": "Laos",
+            "unblock": 84,
+            "colors": [
+                "#BC242C",
+                "#20294F",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Lebanon",
+            "unblock": 86,
+            "colors": [
+                "#D8262C",
+                "#FFFFFF",
+                "#039C4D"
+            ]
+        },
+        {
+            "country": "Malaysia",
+            "unblock": 89,
+            "colors": [
+                "#B8242A",
+                "#FFFFFF",
+                "#1C1C46",
+                "#F8C823"
+            ]
+        },
+        {
+            "country": "Maldives",
+            "unblock": 96,
+            "colors": [
+                "#C02537",
+                "#13753D",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Mongolia",
+            "unblock": 97,
+            "colors": [
+                "#B22B32",
+                "#1A4881",
+                "#F3CB24"
+            ]
+        },
+        {
+            "country": "Myanmar",
+            "unblock": 108,
+            "colors": [
+                "#F7C723",
+                "#37A847",
+                "#D62C3A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Nepal",
+            "unblock": 109,
+            "colors": [
+                "#C9233D",
+                "#263875",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "North Korea",
+            "unblock": 110,
+            "colors": [
+                "#194789",
+                "#D8262F",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Oman",
+            "unblock": 117,
+            "colors": [
+                "#C8242B",
+                "#FFFFFF",
+                "#16783E"
+            ]
+        },
+        {
+            "country": "Pakistan",
+            "unblock": 118,
+            "colors": [
+                "#FFFFFF",
+                "#143822"
+            ]
+        },
+        {
+            "country": "Palestine",
+            "unblock": 126,
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#007A3D",
+                "#CE1126"
+            ]
+        },
+        {
+            "country": "Philippines",
+            "unblock": 129,
+            "colors": [
+                "#233A82",
+                "#BC242C",
+                "#FFFFFF",
+                "#F6CD2B"
+            ]
+        },
+        {
+            "country": "Qatar",
+            "unblock": 135,
+            "colors": [
+                "#FFFFFF",
+                "#791F37"
+            ]
+        },
+        {
+            "country": "Saudi Arabia",
+            "unblock": 139,
+            "colors": [
+                "#186234",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Singapore",
+            "unblock": 147,
+            "colors": [
+                "#D92D3A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "South Korea",
+            "unblock": 149,
+            "colors": [
+                "#FFFFFF",
+                "#B32534",
+                "#27335F",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Sri Lanka",
+            "unblock": 157,
+            "colors": [
+                "#F2B02A",
+                "#79222A",
+                "#134C3A",
+                "#E0562A"
+            ]
+        },
+        {
+            "country": "Syria",
+            "unblock": 159,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF",
+                "#000000",
+                "#14713C"
+            ]
+        },
+        {
+            "country": "Tajikistan",
+            "unblock": 168,
+            "colors": [
+                "#B8242A",
+                "#FFFFFF",
+                "#1C5C31",
+                "#F0BE27"
+            ]
+        },
+        {
+            "country": "Thailand",
+            "unblock": 169,
+            "colors": [
+                "#D8262C",
+                "#FFFFFF",
+                "#1B1736"
+            ]
+        },
+        {
+            "country": "Turkey",
+            "unblock": 177,
+            "colors": [
+                "#CF232A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Turkmenistan",
+            "unblock": 178,
+            "colors": [
+                "#24A461",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "United Arab Emirates",
+            "unblock": 187,
+            "colors": [
+                "#0B9446",
+                "#FFFFFF",
+                "#000000",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Uzbekistan",
+            "unblock": 189,
+            "colors": [
+                "#1D8FA4",
+                "#FFFFFF",
+                "#2AA948",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Vietnam",
+            "unblock": 192,
+            "colors": [
+                "#C72A2B",
+                "#F4E92A"
+            ]
+        },
+        {
+            "country": "Yemen",
+            "unblock": 193,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF",
+                "#000000"
+            ]
+        }
+    ],
+    "Europe": [
+        {
+            "country": "Albania",
+            "unblock": 0,
+            "colors": [
+                "#D0262A",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Andorra",
+            "unblock": 0,
+            "colors": [
+                "#26337C",
+                "#FBDD1D",
+                "#BE243C"
+            ]
+        },
+        {
+            "country": "Austria",
+            "unblock": 2,
+            "colors": [
+                "#D92D3A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Belarus",
+            "unblock": 4,
+            "colors": [
+                "#B7323E",
+                "#469E53",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Belgium",
+            "unblock": 5,
+            "colors": [
+                "#000000",
+                "#F6DE4A",
+                "#D92D3A"
+            ]
+        },
+        {
+            "country": "Bosnia and Herzegovina",
+            "unblock": 11,
+            "colors": [
+                "#283172",
+                "#F7C723",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Bulgaria",
+            "unblock": 12,
+            "colors": [
+                "#FFFFFF",
+                "#0B8D66",
+                "#C22C2B"
+            ]
+        },
+        {
+            "country": "Croatia",
+            "unblock": 23,
+            "colors": [
+                "#D9252A",
+                "#FFFFFF",
+                "#292D72"
+            ]
+        },
+        {
+            "country": "Czech Republic",
+            "unblock": 25,
+            "colors": [
+                "#FFFFFF",
+                "#213F6A",
+                "#C4242B"
+            ]
+        },
+        {
+            "country": "Denmark",
+            "unblock": 32,
+            "colors": [
+                "#B32534",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Estonia",
+            "unblock": 35,
+            "colors": [
+                "#4E85B9",
+                "#000000",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Finland",
+            "unblock": 42,
+            "colors": [
+                "#FFFFFF",
+                "#273566"
+            ]
+        },
+        {
+            "country": "France",
+            "unblock": 43,
+            "colors": [
+                "#283172",
+                "#FFFFFF",
+                "#D92D3A"
+            ]
+        },
+        {
+            "country": "Germany",
+            "unblock": 46,
+            "colors": [
+                "#000000",
+                "#C9242A",
+                "#F8CA23"
+            ]
+        },
+        {
+            "country": "Greece",
+            "unblock": 52,
+            "colors": [
+                "#215596",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Hungary",
+            "unblock": 55,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF",
+                "#117E4E"
+            ]
+        },
+        {
+            "country": "Iceland",
+            "unblock": 63,
+            "colors": [
+                "#253879",
+                "#FFFFFF",
+                "#C42C2C"
+            ]
+        },
+        {
+            "country": "Ireland",
+            "unblock": 64,
+            "colors": [
+                "#0A9146",
+                "#FFFFFF",
+                "#E5702A"
+            ]
+        },
+        {
+            "country": "Italy",
+            "unblock": 83,
+            "colors": [
+                "#0C8944",
+                "#FFFFFF",
+                "#BC2C38"
+            ]
+        },
+        {
+            "country": "Latvia",
+            "unblock": 85,
+            "colors": [
+                "#8C2F37",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Liechtenstein",
+            "unblock": 91,
+            "colors": [
+                "#283163",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Lithuania",
+            "unblock": 92,
+            "colors": [
+                "#F2B22B",
+                "#136140",
+                "#AF2B30"
+            ]
+        },
+        {
+            "country": "Luxembourg",
+            "unblock": 103,
+            "colors": [
+                "#D92D3A",
+                "#FFFFFF",
+                "#2695C6"
+            ]
+        },
+        {
+            "country": "Malta",
+            "unblock": 105,
+            "colors": [
+                "#FFFFFF",
+                "#BD2530"
+            ]
+        },
+        {
+            "country": "Moldova",
+            "unblock": 107,
+            "colors": [
+                "#244388",
+                "#F9CE22",
+                "#BA2533"
+            ]
+        },
+        {
+            "country": "Monaco",
+            "unblock": 112,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Montenegro",
+            "unblock": 113,
+            "colors": [
+                "#B1252A",
+                "#C9A840"
+            ]
+        },
+        {
+            "country": "Netherlands",
+            "unblock": 122,
+            "colors": [
+                "#9C252C",
+                "#FFFFFF",
+                "#273E75"
+            ]
+        },
+        {
+            "country": "North Macedonia",
+            "unblock": 125,
+            "colors": [
+                "#D20000",
+                "#F8E71C"
+            ]
+        },
+        {
+            "country": "Norway",
+            "unblock": 132,
+            "colors": [
+                "#D93033",
+                "#20294F",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Poland",
+            "unblock": 134,
+            "colors": [
+                "#FFFFFF",
+                "#C9233D"
+            ]
+        },
+        {
+            "country": "Portugal",
+            "unblock": 142,
+            "colors": [
+                "#1D5C31",
+                "#D9252A"
+            ]
+        },
+        {
+            "country": "Romania",
+            "unblock": 143,
+            "colors": [
+                "#283163",
+                "#F6CD2B",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Russia",
+            "unblock": 150,
+            "colors": [
+                "#FFFFFF",
+                "#223982",
+                "#C22E2B"
+            ]
+        },
+        {
+            "country": "San Marino",
+            "unblock": 153,
+            "colors": [
+                "#FFFFFE",
+                "#62AED3"
+            ]
+        },
+        {
+            "country": "Serbia",
+            "unblock": 155,
+            "colors": [
+                "#B5363C",
+                "#223A62",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Slovakia",
+            "unblock": 162,
+            "colors": [
+                "#FFFFFF",
+                "#1C4689",
+                "#D8262D"
+            ]
+        },
+        {
+            "country": "Slovenia",
+            "unblock": 163,
+            "colors": [
+                "#FFFFFF",
+                "#1C5490",
+                "#D8272D"
+            ]
+        },
+        {
+            "country": "Spain",
+            "unblock": 171,
+            "colors": [
+                "#B3252B",
+                "#F6BF25"
+            ]
+        },
+        {
+            "country": "Sweden",
+            "unblock": 173,
+            "colors": [
+                "#1A4A7E",
+                "#F7C723"
+            ]
+        },
+        {
+            "country": "Switzerland",
+            "unblock": 180,
+            "colors": [
+                "#D9252A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Ukraine",
+            "unblock": 186,
+            "colors": [
+                "#285495",
+                "#F9D120"
+            ]
+        },
+        {
+            "country": "United Kingdom",
+            "unblock": 190,
+            "colors": [
+                "#282E60",
+                "#BD2530",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Vatican City",
+            "unblock": 192,
+            "colors": [
+                "#FCDE1D",
+                "#FFFFFF"
+            ]
+        }
+    ],
+    "Africa": [
+        {
+            "country": "Algeria",
+            "unblock": 0,
+            "colors": [
+                "#145830",
+                "#FFFFFF",
+                "#C02537"
+            ]
+        },
+        {
+            "country": "Angola",
+            "unblock": 0,
+            "colors": [
+                "#BC242C",
+                "#000000",
+                "#F4D22A"
+            ]
+        },
+        {
+            "country": "Benin",
+            "unblock": 0,
+            "colors": [
+                "#117E4E",
+                "#F6CD2B",
+                "#D32432"
+            ]
+        },
+        {
+            "country": "Botswana",
+            "unblock": 0,
+            "colors": [
+                "#71A0C9",
+                "#FFFFFF",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Burkina Faso",
+            "unblock": 8,
+            "colors": [
+                "#D93033",
+                "#0B9446",
+                "#F6CD2B"
+            ]
+        },
+        {
+            "country": "Burundi",
+            "unblock": 9,
+            "colors": [
+                "#2AA948",
+                "#BC242C",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Cameroon",
+            "unblock": 10,
+            "colors": [
+                "#137156",
+                "#BC242C",
+                "#F6CD2B"
+            ]
+        },
+        {
+            "country": "Cape Verde",
+            "unblock": 15,
+            "colors": [
+                "#263875",
+                "#FFFFFF",
+                "#BC242C",
+                "#F8C823"
+            ]
+        },
+        {
+            "country": "Central African Republic",
+            "unblock": 16,
+            "colors": [
+                "#283366",
+                "#FFFFFF",
+                "#2B8E44",
+                "#C02537",
+                "#F8C823"
+            ]
+        },
+        {
+            "country": "Chad",
+            "unblock": 17,
+            "colors": [
+                "#1E274B",
+                "#F7C723",
+                "#B32534"
+            ]
+        },
+        {
+            "country": "Comoros",
+            "unblock": 19,
+            "colors": [
+                "#3C8640",
+                "#F7C232",
+                "#FFFFFF",
+                "#BC242C",
+                "#426AA5"
+            ]
+        },
+        {
+            "country": "Democratic Republic of the Congo",
+            "unblock": 26,
+            "colors": [
+                "#456CA6",
+                "#F2D22B",
+                "#BB242B"
+            ]
+        },
+        {
+            "country": "Djibouti",
+            "unblock": 27,
+            "colors": [
+                "#FFFFFF",
+                "#6CA9D0",
+                "#19A448",
+                "#C4242B"
+            ]
+        },
+        {
+            "country": "Egypt",
+            "unblock": 29,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Equatorial Guinea",
+            "unblock": 33,
+            "colors": [
+                "#3167A3",
+                "#3D9244",
+                "#FFFFFF",
+                "#CF292A"
+            ]
+        },
+        {
+            "country": "Eritrea",
+            "unblock": 34,
+            "colors": [
+                "#19A448",
+                "#D52239",
+                "#4D7BB1",
+                "#CF292A"
+            ]
+        },
+        {
+            "country": "Eswatini",
+            "unblock": 36,
+            "colors": [
+                "#415796",
+                "#FAD51F",
+                "#9E2529"
+            ]
+        },
+        {
+            "country": "Ethiopia",
+            "unblock": 37,
+            "colors": [
+                "#168041",
+                "#F8DA21",
+                "#C6242B",
+                "#274489"
+            ]
+        },
+        {
+            "country": "Gabon",
+            "unblock": 44,
+            "colors": [
+                "#05945A",
+                "#F6CD2B",
+                "#426AA5"
+            ]
+        },
+        {
+            "country": "Gambia",
+            "unblock": 45,
+            "colors": [
+                "#BC242C",
+                "#FFFFFF",
+                "#292D6A",
+                "#3A6F38"
+            ]
+        },
+        {
+            "country": "Ghana",
+            "unblock": 47,
+            "colors": [
+                "#BC242C",
+                "#F6CD2B",
+                "#14623C",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Guinea",
+            "unblock": 53,
+            "colors": [
+                "#CE1126",
+                "#FCD116",
+                "#009460"
+            ]
+        },
+        {
+            "country": "Guinea-Bissau",
+            "unblock": 54,
+            "colors": [
+                "#BC242C",
+                "#F6CD2B",
+                "#0B9446",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Ivory Coast",
+            "unblock": 56,
+            "colors": [
+                "#E6772B",
+                "#FFFFFF",
+                "#05945A"
+            ]
+        },
+        {
+            "country": "Kenya",
+            "unblock": 66,
+            "colors": [
+                "#000000",
+                "#A8262A",
+                "#1C5C31",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Lesotho",
+            "unblock": 69,
+            "colors": [
+                "#273279",
+                "#FFFFFF",
+                "#0D8B44",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Liberia",
+            "unblock": 87,
+            "colors": [
+                "#AD2534",
+                "#20294F",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Libya",
+            "unblock": 88,
+            "colors": [
+                "#D2232A",
+                "#249446",
+                "#000000",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Madagascar",
+            "unblock": 93,
+            "colors": [
+                "#FFFFFF",
+                "#DC3F38",
+                "#13753D"
+            ]
+        },
+        {
+            "country": "Malawi",
+            "unblock": 94,
+            "colors": [
+                "#000000",
+                "#BC242C",
+                "#339545"
+            ]
+        },
+        {
+            "country": "Mali",
+            "unblock": 104,
+            "colors": [
+                "#25A848",
+                "#F6CD2B",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Mauritania",
+            "unblock": 105,
+            "colors": [
+                "#00A95C",
+                "#FFD700",
+                "#D01C1F"
+            ]
+        },
+        {
+            "country": "Mauritius",
+            "unblock": 106,
+            "colors": [
+                "#D62C3A",
+                "#262754",
+                "#F9D120",
+                "#039B4D"
+            ]
+        },
+        {
+            "country": "Morocco",
+            "unblock": 114,
+            "colors": [
+                "#AF2B30",
+                "#145830"
+            ]
+        },
+        {
+            "country": "Mozambique",
+            "unblock": 115,
+            "colors": [
+                "#C02537",
+                "#007168",
+                "#FFFFFF",
+                "#000000",
+                "#FCE100"
+            ]
+        },
+        {
+            "country": "Namibia",
+            "unblock": 121,
+            "colors": [
+                "#273566",
+                "#C02537",
+                "#0D8B44",
+                "#FFFFFF",
+                "#F8CA23"
+            ]
+        },
+        {
+            "country": "Niger",
+            "unblock": 123,
+            "colors": [
+                "#CE502C",
+                "#FFFFFF",
+                "#18A648"
+            ]
+        },
+        {
+            "country": "Nigeria",
+            "unblock": 131,
+            "colors": [
+                "#117E4E",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Republic of the Congo",
+            "unblock": 137,
+            "colors": [
+                "#0D8B44",
+                "#F7DC51",
+                "#C9292B"
+            ]
+        },
+        {
+            "country": "Rwanda",
+            "unblock": 144,
+            "colors": [
+                "#2695C6",
+                "#F4CE23",
+                "#22573A"
+            ]
+        },
+        {
+            "country": "Sao Tome and Principe",
+            "unblock": 145,
+            "colors": [
+                "#19A448",
+                "#F8CA23",
+                "#C02537",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Senegal",
+            "unblock": 154,
+            "colors": [
+                "#107C40",
+                "#F8EC4C",
+                "#CF232A"
+            ]
+        },
+        {
+            "country": "Seychelles",
+            "unblock": 156,
+            "colors": [
+                "#253B6E",
+                "#F8D45A",
+                "#C32B2C",
+                "#FFFFFF",
+                "#14713C"
+            ]
+        },
+        {
+            "country": "Sierra Leone",
+            "unblock": 161,
+            "colors": [
+                "#2AA948",
+                "#FFFFFF",
+                "#2B67A3"
+            ]
+        },
+        {
+            "country": "Somalia",
+            "unblock": 165,
+            "colors": [
+                "#4D7BB1",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "South Africa",
+            "unblock": 165,
+            "colors": [
+                "#000000",
+                "#007A4D",
+                "#DE3831",
+                "#002395",
+                "#FFFFFF",
+                "#FFB612"
+            ]
+        },
+        {
+            "country": "South Sudan",
+            "unblock": 166,
+            "colors": [
+                "#000000",
+                "#FFFFFF",
+                "#C6242B",
+                "#168041",
+                "#274489",
+                "#F8DA21"
+            ]
+        },
+        {
+            "country": "Sudan",
+            "unblock": 172,
+            "colors": [
+                "#C02537",
+                "#FFFFFF",
+                "#000000",
+                "#186937"
+            ]
+        },
+        {
+            "country": "Tanzania",
+            "unblock": 174,
+            "colors": [
+                "#2AA948",
+                "#F6CD2B",
+                "#000000",
+                "#2498C8"
+            ]
+        },
+        {
+            "country": "Togo",
+            "unblock": 175,
+            "colors": [
+                "#136148",
+                "#F8CA23",
+                "#C02537",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Tunisia",
+            "unblock": 182,
+            "colors": [
+                "#D2232A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Uganda",
+            "unblock": 185,
+            "colors": [
+                "#000000",
+                "#F8D91F",
+                "#C5242B"
+            ]
+        },
+        {
+            "country": "Zambia",
+            "unblock": 193,
+            "colors": [
+                "#228241",
+                "#CA282B",
+                "#000000",
+                "#E0762C"
+            ]
+        },
+        {
+            "country": "Zimbabwe",
+            "unblock": 194,
+            "colors": [
+                "#328A42",
+                "#F9CE22",
+                "#CA282B",
+                "#000000",
+                "#FFFFFF"
+            ]
+        }
+    ],
+    "North & Central America": [
+        {
+            "country": "Antigua and Barbuda",
+            "unblock": 0,
+            "colors": [
+                "#BC242C",
+                "#000000",
+                "#2B67A3",
+                "#FFFFFF",
+                "#F6CD2B"
+            ]
+        },
+        {
+            "country": "Bahamas",
+            "unblock": 0,
+            "colors": [
+                "#23A2B8",
+                "#000000",
+                "#F6DE4A"
+            ]
+        },
+        {
+            "country": "Barbados",
+            "unblock": 3,
+            "colors": [
+                "#282F62",
+                "#F7C337",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Belize",
+            "unblock": 6,
+            "colors": [
+                "#253B6E",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Canada",
+            "unblock": 14,
+            "colors": [
+                "#D9252A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Costa Rica",
+            "unblock": 22,
+            "colors": [
+                "#283163",
+                "#FFFFFF",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Cuba",
+            "unblock": 31,
+            "colors": [
+                "#28326F",
+                "#BD2530",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Dominica",
+            "unblock": 41,
+            "colors": [
+                "#14623C",
+                "#F6CD2B",
+                "#000000",
+                "#FFFFFF",
+                "#C12533"
+            ]
+        },
+        {
+            "country": "Dominican Republic",
+            "unblock": 51,
+            "colors": [
+                "#1E294B",
+                "#BC242C",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "El Salvador",
+            "unblock": 62,
+            "colors": [
+                "#274489",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Grenada",
+            "unblock": 82,
+            "colors": [
+                "#BC242C",
+                "#F6CD2B",
+                "#137156"
+            ]
+        },
+        {
+            "country": "Guatemala",
+            "unblock": 90,
+            "colors": [
+                "#4A8CBD",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Haiti",
+            "unblock": 101,
+            "colors": [
+                "#273279",
+                "#C02537"
+            ]
+        },
+        {
+            "country": "Honduras",
+            "unblock": 102,
+            "colors": [
+                "#3167A3",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Jamaica",
+            "unblock": 111,
+            "colors": [
+                "#109145",
+                "#F8CD23",
+                "#000000"
+            ]
+        },
+        {
+            "country": "Mexico",
+            "unblock": 120,
+            "colors": [
+                "#125F43",
+                "#FFFFFF",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Nicaragua",
+            "unblock": 130,
+            "colors": [
+                "#08305D",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Panama",
+            "unblock": 140,
+            "colors": [
+                "#FFFFFF",
+                "#1A4A7E",
+                "#C02537"
+            ]
+        },
+        {
+            "country": "Saint Kitts and Nevis",
+            "unblock": 151,
+            "colors": [
+                "#0B9446",
+                "#BC242C",
+                "#000000",
+                "#F6CD2B",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Saint Lucia",
+            "unblock": 160,
+            "colors": [
+                "#72C3E2",
+                "#F6CD2B",
+                "#000000",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Saint Vincent and the Grenadines",
+            "unblock": 170,
+            "colors": [
+                "#2B67A3",
+                "#F6CD2B",
+                "#05945A"
+            ]
+        },
+        {
+            "country": "Trinidad and Tobago",
+            "unblock": 181,
+            "colors": [
+                "#BC242C",
+                "#000000",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "United States",
+            "unblock": 191,
+            "colors": [
+                "#37355C",
+                "#A02735",
+                "#FFFFFF"
+            ]
+        }
+    ],
+    "South America": [
+        {
+            "country": "Argentina",
+            "unblock": 0,
+            "colors": [
+                "#74ACDF",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Bolivia",
+            "unblock": 7,
+            "colors": [
+                "#C22E2B",
+                "#F6E21C",
+                "#15703B"
+            ]
+        },
+        {
+            "country": "Brazil",
+            "unblock": 21,
+            "colors": [
+                "#009B3A",
+                "#FEDF00",
+                "#002776",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Chile",
+            "unblock": 50,
+            "colors": [
+                "#223982",
+                "#C22E2B",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Colombia",
+            "unblock": 61,
+            "colors": [
+                "#F6CD2B",
+                "#263875",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Ecuador",
+            "unblock": 81,
+            "colors": [
+                "#F9D81E",
+                "#1A4887",
+                "#D6282E"
+            ]
+        },
+        {
+            "country": "Guyana",
+            "unblock": 100,
+            "colors": [
+                "#0B9446",
+                "#FFFFFF",
+                "#F6CD2B",
+                "#000000",
+                "#BC242C"
+            ]
+        },
+        {
+            "country": "Paraguay",
+            "unblock": 128,
+            "colors": [
+                "#C22E2B",
+                "#FFFFFF",
+                "#233A82"
+            ]
+        },
+        {
+            "country": "Peru",
+            "unblock": 141,
+            "colors": [
+                "#C6242B",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Suriname",
+            "unblock": 167,
+            "colors": [
+                "#37773E",
+                "#FFFFFF",
+                "#A12531",
+                "#E4C22A"
+            ]
+        },
+        {
+            "country": "Uruguay",
+            "unblock": 179,
+            "colors": [
+                "#233A82",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Venezuela",
+            "unblock": 192,
+            "colors": [
+                "#F8C823",
+                "#282E60",
+                "#BD2530"
+            ]
+        }
+    ],
+    "Oceania": [
+        {
+            "country": "Australia",
+            "unblock": 0,
+            "colors": [
+                "#282965",
+                "#D9252A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Fiji",
+            "unblock": 10,
+            "colors": [
+                "#6AB8D6",
+                "#20294F",
+                "#BC242C",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Kiribati",
+            "unblock": 20,
+            "colors": [
+                "#BC242C",
+                "#253B6E",
+                "#FFFFFF",
+                "#F6CD2B"
+            ]
+        },
+        {
+            "country": "Marshall Islands",
+            "unblock": 40,
+            "colors": [
+                "#022145",
+                "#EC912D",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Micronesia",
+            "unblock": 60,
+            "colors": [
+                "#73AACD",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Nauru",
+            "unblock": 70,
+            "colors": [
+                "#283163",
+                "#F7C232",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "New Zealand",
+            "unblock": 99,
+            "colors": [
+                "#282E60",
+                "#BC242C",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Palau",
+            "unblock": 119,
+            "colors": [
+                "#50A4C4",
+                "#FBDB1E"
+            ]
+        },
+        {
+            "country": "Papua New Guinea",
+            "unblock": 133,
+            "colors": [
+                "#000000",
+                "#BC242C",
+                "#F6CD2B",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Samoa",
+            "unblock": 152,
+            "colors": [
+                "#BC242C",
+                "#283163",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Solomon Islands",
+            "unblock": 164,
+            "colors": [
+                "#274D90",
+                "#225132",
+                "#F6CD2B",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Tonga",
+            "unblock": 176,
+            "colors": [
+                "#AE252A",
+                "#FFFFFF"
+            ]
+        },
+        {
+            "country": "Tuvalu",
+            "unblock": 183,
+            "colors": [
+                "#5B8EA1",
+                "#20294F",
+                "#BC242C",
+                "#FFFFFF",
+                "#F8CA23"
+            ]
+        },
+        {
+            "country": "Vanuatu",
+            "unblock": 191,
+            "colors": [
+                "#000000",
+                "#D21034",
+                "#009543",
+                "#FDCE12"
+            ]
+        }
+    ]
+}

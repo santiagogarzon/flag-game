@@ -1,0 +1,48 @@
+import * as React from "react";
+import Svg, { G, Path } from "react-native-svg";
+type FlagProps = {
+  onPress: (id: string) => void,
+  colors: {
+    [key: string]: string,
+  },
+};
+const Flag = (props: FlagProps) => {
+  return (
+    <Svg
+      width={350}
+      height={250}
+      viewBox="0 0 350 250"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <G id="flag / africa / niger / a">
+        <G id="niger a">
+          <Path
+            id="green"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M50 233H300V161H50V233Z"
+            fill={props.colors["green"]}
+            onPress={() => props.onPress("green")}
+          />
+          <Path
+            id="#FFFFFF"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M300 161H50V90H300V161ZM206 125.499C206 108.655 192.345 95 175.5 95C158.655 95 145 108.655 145 125.499C145 142.344 158.655 155.999 175.5 155.999C192.345 155.999 206 142.344 206 125.499Z"
+            fill="#FFFFFE"
+          />
+          <Path
+            id="orange"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M300 90H50V18H300V90ZM206 125.499C206 108.655 192.345 95 175.5 95C158.655 95 145 108.655 145 125.499C145 142.344 158.655 155.999 175.5 155.999C192.345 155.999 206 142.344 206 125.499Z"
+            fill={props.colors["orange"]}
+            onPress={() => props.onPress("orange")}
+          />
+        </G>
+      </G>
+    </Svg>
+  );
+};
+export default Flag;
