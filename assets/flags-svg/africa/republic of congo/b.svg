@@ -2,15 +2,15 @@
 <g id="flag / africa / republic of congo / b">
 <g id="republic of congo b">
 <g id="green">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M25 225L225 25H25V225Z" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25 225L225 25H25V225Z" fill="#0D8B44" fill-opacity="1"/>
 <path d="M225 25L225.707 25.7071L227.414 24H225V25ZM25 225H24V227.414L25.7071 225.707L25 225ZM25 25V24H24V25H25ZM224.293 24.2929L24.2929 224.293L25.7071 225.707L225.707 25.7071L224.293 24.2929ZM25 26H225V24H25V26ZM26 225V25H24V225H26Z" fill="white"/>
 </g>
 <g id="yellow">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M325 25H225L25 225H125L325 25Z" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M325 25H225L25 225H125L325 25Z" fill="#F7DC51" fill-opacity="1"/>
 <path d="M225 25V24H224.586L224.293 24.2929L225 25ZM325 25L325.707 25.7071L327.414 24H325V25ZM25 225L24.2929 224.293L22.5858 226H25V225ZM125 225V226H125.414L125.707 225.707L125 225ZM225 26H325V24H225V26ZM25.7071 225.707L225.707 25.7071L224.293 24.2929L24.2929 224.293L25.7071 225.707ZM125 224H25V226H125V224ZM125.707 225.707L325.707 25.7071L324.293 24.2929L124.293 224.293L125.707 225.707Z" fill="white"/>
 </g>
 <g id="red">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M325 25V225H125L325 25Z" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M325 25V225H125L325 25Z" fill="#C9292B" fill-opacity="1"/>
 <path d="M325 25V225H125L325 25" stroke="white" stroke-width="2"/>
 </g>
 </g>
