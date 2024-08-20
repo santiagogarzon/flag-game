@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / africa / sierra leone / b">
 <g id="sierra leone b">
-<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 91.667H325V25H25V91.667Z" fill="#2AA948" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="Fill 2" fill-rule="evenodd" clip-rule="evenodd" d="M25 158.333H325V91.667H25V158.333Z" fill="#FFFFFE" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V158.333H25V225Z" fill="#2B67A3" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 91.667H325V25H25V91.667Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 2" fill-rule="evenodd" clip-rule="evenodd" d="M25 158.333H325V91.667H25V158.333Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V158.333H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
 </g>
 </g>
 </svg>

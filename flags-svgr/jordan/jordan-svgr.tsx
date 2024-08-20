@@ -1,55 +1,45 @@
 import * as React from "react";
 import Svg, { G, Path } from "react-native-svg";
-type FlagProps = {
-  onPress: (id: string) => void,
-  colors: {
-    [key: string]: string,
-  },
-};
-const Flag = (props: FlagProps) => {
-  return (
-    <Svg
-      width={350}
-      height={250}
-      viewBox="0 0 350 250"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <G id="flag / asia / jordan / a">
-        <G id="jordan a">
-          <Path
-            id="#000000"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M325 100H125L25 50H325V100Z"
-            fill="#0A0B09"
-          />
-          <Path
-            id="#FFFFFF"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M175 125L125 150H325.353V100H125L175 125ZM74.9605 128.187L81.3525 127.591L75.8515 124.271L79.3715 118.885L73.3545 121.13L71.3525 115.01L69.3495 121.13L63.3325 118.885L66.8535 124.271L61.3525 127.591L67.7445 128.187L66.9015 134.572L71.3525 129.931L75.8025 134.572L74.9605 128.187Z"
-            fill="#FFFFFE"
-          />
-          <Path
-            id="green"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M25 200H325V150H125L25 200Z"
-            fill={props.colors["green"]}
-            onPress={() => props.onPress("green")}
-          />
-          <Path
-            id="red"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M25 200L175 125L25 50V200ZM74.961 128.187L81.353 127.591L75.852 124.271L79.372 118.885L73.355 121.13L71.353 115.01L69.35 121.13L63.333 118.885L66.854 124.271L61.353 127.591L67.745 128.187L66.902 134.572L71.353 129.931L75.803 134.572L74.961 128.187Z"
-            fill={props.colors["red"]}
-            onPress={() => props.onPress("red")}
-          />
-        </G>
+const SvgComponent = () => (
+  <Svg
+    width={350}
+    height={250}
+    viewBox="0 0 350 250"
+    fill="none"
+    xmlns="http://www.w3.org/2000/svg"
+  >
+    <G id="flag / asia / jordan / a">
+      <G id="jordan a">
+        <Path
+          id="black"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M325 100H125L25 50H325V100Z"
+          fill="#0A0B09"
+        />
+        <Path
+          id="white"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M175 125L125 150H325.353V100H125L175 125ZM74.9605 128.187L81.3525 127.591L75.8515 124.271L79.3715 118.885L73.3545 121.13L71.3525 115.01L69.3495 121.13L63.3325 118.885L66.8535 124.271L61.3525 127.591L67.7445 128.187L66.9015 134.572L71.3525 129.931L75.8025 134.572L74.9605 128.187Z"
+          fill="#FFFFFE"
+        />
+        <Path
+          id="green"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M25 200H325V150H125L25 200Z"
+          fill="#14713C"
+        />
+        <Path
+          id="red"
+          fillRule="evenodd"
+          clipRule="evenodd"
+          d="M25 200L175 125L25 50V200ZM74.961 128.187L81.353 127.591L75.852 124.271L79.372 118.885L73.355 121.13L71.353 115.01L69.35 121.13L63.333 118.885L66.854 124.271L61.353 127.591L67.745 128.187L66.902 134.572L71.353 129.931L75.803 134.572L74.961 128.187Z"
+          fill="#BC242C"
+        />
       </G>
-    </Svg>
-  );
-};
-export default Flag;
+    </G>
+  </Svg>
+);
+export default SvgComponent;

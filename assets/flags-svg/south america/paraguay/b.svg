@@ -1,10 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / south america / paraguay / b">
 <g id="paraguay b">
-<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 215H325V155H25V215Z" fill="#C22E2B" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 155H325V95H25V155Z" fill="#FFFFFF" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M25 95H325V35H25V95Z" fill="#233A82
-" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 215H325V155H25V215Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 155H325V95H25V155Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M25 95H325V35H25V95Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
 <g id="coa">
 <path id="Stroke 6" fill-rule="evenodd" clip-rule="evenodd" d="M198.017 125C198.018 137.712 187.714 148.018 175.002 148.019C162.29 148.02 151.985 137.716 151.983 125.005C151.983 125.003 151.983 125.002 151.983 125C151.982 112.288 162.286 101.982 174.998 101.981C187.709 101.98 198.015 112.284 198.017 124.995C198.017 124.997 198.017 124.998 198.017 125Z" stroke="#0A0B09" stroke-width="0.93" stroke-linecap="round"/>
 <path id="Fill 7" fill-rule="evenodd" clip-rule="evenodd" d="M178.042 114.252C178.042 114.252 186.797 118.024 185.268 125.819C183.739 133.614 178.865 133.562 176.953 134.424C175.042 135.285 173.723 136.518 172.969 136.346C172.215 136.173 171.218 135.591 171.218 135.591C171.218 135.591 171.138 136.872 172.673 137.105C174.209 137.338 176.227 135.084 177.196 134.833C178.165 134.583 184.117 133.937 185.565 126.005C187.255 117.539 178.096 114.501 178.042 114.252Z" fill="#626262"/>

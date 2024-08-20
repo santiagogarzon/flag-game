@@ -1,5 +1,13 @@
 {
-  "Fill 1": "#26337C",
-  "Fill 3": "#BE243C",
-  "Fill 4": "#FBDD1D"
+  "blue": "#26337C",
+  "red": "#BE243C",
+  "yellow": "#FBDD1D",
+  "Fill 9": "#FBDD1D",
+  "Fill 45": "#FBDD1D",
+  "Fill 147": "#FBDD1D",
+  "Fill 149": "#FBDD1D",
+  "Fill 150": "#FBDD1D",
+  "Fill 174": "#FBDD1D",
+  "Fill 186": "#FBDD1D",
+  "Fill 188": "#FBDD1D"
 }

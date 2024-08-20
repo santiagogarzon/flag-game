@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / south america / bolivia / b">
 <g id="bolivia b">
-<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V158H25V225Z" fill="#15703B" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 158H325V92H25V158Z" fill="#F6E21C" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M25 92H325V25H25V92Z" fill="#C22E2B" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V158H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 158H325V92H25V158Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M25 92H325V25H25V92Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
 </g>
 </g>
 </svg>
