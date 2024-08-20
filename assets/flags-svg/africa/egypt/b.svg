@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / africa / egypt / b">
 <g id="egypt b">
-<path id="black" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V158H25V225Z" fill="#000000" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M25 158H325V92H25V158Z" fill="#FFFFFF" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25 92H325V25H25V92Z" fill="#BC242C" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="black" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V158H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M25 158H325V92H25V158Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25 92H325V25H25V92Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
 <g id="coa">
 <path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M175 156.27C181.647 156.27 188.008 155.744 191.738 154.692C193.316 154.406 193.316 153.593 193.316 152.54C194.895 152.014 194.081 150.15 195.181 150.15C194.081 150.438 193.842 148.285 192.503 148.573C192.503 146.707 190.638 146.469 189.06 146.994C185.903 148.046 180.308 148.285 175 148.285C169.692 148.046 164.144 148.046 160.94 146.994C159.362 146.469 157.498 146.707 157.498 148.573C156.158 148.285 155.919 150.438 154.82 150.15C155.919 150.15 155.106 152.014 156.685 152.54C156.685 153.593 156.685 154.406 158.311 154.692C161.992 155.744 168.353 156.27 175 156.27Z" fill="#FFFFFE"/>
 <path id="Stroke 5" fill-rule="evenodd" clip-rule="evenodd" d="M175 156.27C181.647 156.27 188.008 155.744 191.738 154.692C193.316 154.406 193.316 153.593 193.316 152.54C194.895 152.014 194.081 150.15 195.181 150.15C194.081 150.438 193.842 148.285 192.503 148.573C192.503 146.707 190.638 146.469 189.06 146.994C185.903 148.046 180.308 148.285 175 148.285C169.692 148.046 164.144 148.046 160.94 146.994C159.362 146.469 157.498 146.707 157.498 148.573C156.158 148.285 155.919 150.438 154.82 150.15C155.919 150.15 155.106 152.014 156.685 152.54C156.685 153.593 156.685 154.406 158.311 154.692C161.992 155.744 168.353 156.27 175 156.27Z" stroke="#8F8F8F" stroke-width="0.793" stroke-linecap="round" stroke-linejoin="round"/>

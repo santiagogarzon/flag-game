@@ -2,19 +2,19 @@
 <g id="flag / africa / equatorial guinea / b">
 <g id="equatorial guinea b">
 <g id="red">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M75.25 158H325V225H25L75.25 158Z" fill="#CF292A" fill-opacity="1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M75.25 158H325V225H25L75.25 158Z" fill="white" fill-opacity="0.5"/>
 <path d="M325 158H326V157H325V158ZM75.25 158V157H74.75L74.45 157.4L75.25 158ZM325 225V226H326V225H325ZM25 225L24.2 224.4L23 226H25V225ZM325 157H75.25V159H325V157ZM326 225V158H324V225H326ZM25 226H325V224H25V226ZM25.8 225.6L76.05 158.6L74.45 157.4L24.2 224.4L25.8 225.6Z" fill="white"/>
 </g>
 <g id="white">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M75.25 158L100 125L75.25 92H325.25V158H75.25Z" fill="#FFFFFF" fill-opacity="1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M75.25 158L100 125L75.25 92H325.25V158H75.25Z" fill="white" fill-opacity="0.5"/>
 <path d="M75.25 158L74.45 157.4L73.25 159H75.25V158ZM100 125L100.8 125.6L101.25 125L100.8 124.4L100 125ZM75.25 92V91H73.25L74.45 92.6L75.25 92ZM325.25 92H326.25V91H325.25V92ZM325.25 158V159H326.25V158H325.25ZM76.05 158.6L100.8 125.6L99.2 124.4L74.45 157.4L76.05 158.6ZM100.8 124.4L76.05 91.4L74.45 92.6L99.2 125.6L100.8 124.4ZM325.25 91H75.25V93H325.25V91ZM326.25 158V92H324.25V158H326.25ZM75.25 159H325.25V157H75.25V159Z" fill="white"/>
 </g>
 <g id="green">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M325 92H75.25L25 25H325V92Z" fill="#3D9244" fill-opacity="1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M325 92H75.25L25 25H325V92Z" fill="white" fill-opacity="0.5"/>
 <path d="M75.25 92L74.45 92.6L74.75 93H75.25V92ZM325 92V93H326V92H325ZM25 25V24H23L24.2 25.6L25 25ZM325 25H326V24H325V25ZM75.25 93H325V91H75.25V93ZM76.05 91.4L25.8 24.4L24.2 25.6L74.45 92.6L76.05 91.4ZM325 24H25V26H325V24ZM326 92V25H324V92H326Z" fill="white"/>
 </g>
 <g id="blue">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M25 25V225L100 125L25 25Z" fill="#3167A3" fill-opacity="1"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25 25V225L100 125L25 25Z" fill="white" fill-opacity="0.5"/>
 <path d="M25 25V225L100 125L25 25" stroke="white" stroke-width="2"/>
 </g>
 <g id="coa">

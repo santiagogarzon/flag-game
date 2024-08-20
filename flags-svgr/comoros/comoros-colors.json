@@ -1,6 +1,8 @@
 {
   "yellow": "#F7C232",
+  "white": "#FFFFFE",
   "red": "#BC242C",
   "blue": "#426AA5",
-  "green": "#3C8640"
+  "green": "#3C8640",
+  "white_2": "#FFFFFE"
 }

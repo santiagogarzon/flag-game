@@ -17,7 +17,7 @@ const flagInfo = flatMap(flagInfoJson).map((flag) => ({
 }));
 
 export default function Flags() {
-  const countryName = "san-marino";
+  const countryName = "guyana";
   const country = find(flagInfo, (flag) => countryName === flag.country);
 
   const [FlagLinesComponent, setFlagLinesComponent] = useState();
@@ -88,11 +88,11 @@ export default function Flags() {
         }}
       >
         <View style={{ position: "absolute" }}>
-          <FlagLinesComponent />
+          <FlagLinesComponent onPress={onPressPath} colors={currentColors} />
         </View>
-        <View style={{ position: "absolute" }}>
+        {/* <View style={{ position: "absolute" }}>
           <FlagComponent onPress={onPressPath} colors={currentColors} />
-        </View>
+        </View> */}
       </View>
       <Text
         style={{

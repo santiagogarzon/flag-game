@@ -260,6 +260,12 @@
             case 'czech-republic':
               return import('./czech-republic/czech-republic-svgr');
             
+            case 'democratic-republic-of-the-congo-lines':
+              return import('./democratic-republic-of-the-congo/democratic-republic-of-the-congo-lines-svgr');
+            
+            case 'democratic-republic-of-the-congo':
+              return import('./democratic-republic-of-the-congo/democratic-republic-of-the-congo-svgr');
+            
             case 'denmark-lines':
               return import('./denmark/denmark-lines-svgr');
             
@@ -452,6 +458,9 @@
             case 'india':
               return import('./india/india-svgr');
             
+            case 'indonesia-lines':
+              return import('./indonesia/indonesia-lines-svgr');
+            
             case 'indonesia':
               return import('./indonesia/indonesia-svgr');
             
@@ -526,6 +535,12 @@
             
             case 'kuwait':
               return import('./kuwait/kuwait-svgr');
+            
+            case 'kyrgyzstan-lines':
+              return import('./kyrgyzstan/kyrgyzstan-lines-svgr');
+            
+            case 'kyrgyzstan':
+              return import('./kyrgyzstan/kyrgyzstan-svgr');
             
             case 'laos-lines':
               return import('./laos/laos-lines-svgr');
@@ -767,6 +782,9 @@
             case 'pakistan':
               return import('./pakistan/pakistan-svgr');
             
+            case 'palau-lines':
+              return import('./palau/palau-lines-svgr');
+            
             case 'palau':
               return import('./palau/palau-svgr');
             
@@ -823,6 +841,12 @@
             
             case 'qatar':
               return import('./qatar/qatar-svgr');
+            
+            case 'republic-of-the-congo-lines':
+              return import('./republic-of-the-congo/republic-of-the-congo-lines-svgr');
+            
+            case 'republic-of-the-congo':
+              return import('./republic-of-the-congo/republic-of-the-congo-svgr');
             
             case 'romania-lines':
               return import('./romania/romania-lines-svgr');

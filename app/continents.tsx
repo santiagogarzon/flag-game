@@ -13,6 +13,7 @@ import Chile from "@/assets/flags/america/chile";
 import ChileColor from "@/assets/flags/america/chile-color";
 import useColorPicker from "@/hooks/useColorPicker";
 import SouthAmerica from "@/assets/images/south-america";
+
 export default function Flags() {
   const [tab, setTab] = useState("Logo");
   const colorScheme = useColorScheme();

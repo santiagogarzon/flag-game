@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / africa / mali / b">
 <g id="mali b">
-<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H125V25H25V225Z" fill="#25A848" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="yellow" fill-rule="evenodd" clip-rule="evenodd" d="M125 225H225V25H125V225Z" fill="#F6CD2B" fill-opacity="1" stroke="white" stroke-width="2"/>
-<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M225 225H325V25H225V225Z" fill="#BC242C" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H125V25H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="yellow" fill-rule="evenodd" clip-rule="evenodd" d="M125 225H225V25H125V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M225 225H325V25H225V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
 </g>
 </g>
 </svg>

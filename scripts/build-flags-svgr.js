@@ -14,6 +14,12 @@ const {
   kebabCase,
   map,
   replace,
+  groupBy,
+  isString,
+  isNumber,
+  uniq,
+  uniqBy,
+  forEach,
 } = require("lodash");
 const t = require("@babel/types");
 const flagInfoJson = require("../assets/flags-info.json");
@@ -56,31 +62,67 @@ const readSvgFile = (filePath) => {
 // Función para parsear el SVG a JSON
 const parseSvg = (svgContent) => {
   return new Promise((resolve, reject) => {
-    xml2js.parseString(svgContent, (err, result) => {
-      if (err) reject(err);
-      resolve(result);
-    });
+    xml2js.parseString(
+      svgContent,
+      { explicitChildren: true, preserveChildrenOrder: true },
+      (err, result) => {
+        if (err) reject(err);
+        resolve(result);
+      }
+    );
   });
 };
 
+const transformColor = (stringColor) =>
+  ({
+    white: "#FFFFFF",
+    black: "#000000",
+  }[stringColor] || "asdasdasdas");
+
+function getFillColorsWithIDs(parsedSvg) {
+  function traverseElement(element, parentId) {
+    let fills = [];
+    let currentId = element.$?.id || parentId;
+    let fillColor = element.$?.fill;
+
+    if (fillColor) {
+      fills.push({ id: currentId, fill: fillColor });
+    }
+
+    // Recorrer los hijos (si existen)
+    if (element.$$) {
+      for (let child of element.$$) {
+        fills = fills.concat(traverseElement(child, currentId));
+      }
+    }
+
+    return fills;
+  }
+
+  return traverseElement(parsedSvg.svg, null);
+}
+
 const extractPathColors = (svgJson, country) => {
-  const paths = findPaths(svgJson.svg)[0] || [];
-  const colors = {};
-  const includePaths = paths.filter(
-    (path) => path.$ && path.$.includePath === "true"
-  );
-  const selectedPaths = includePaths.length ? includePaths : paths;
-  const selectedPathsWithValidColors = filter(selectedPaths, (path) =>
-    includes(country.colors, toUpper(path.$.fill))
+  const svgFillColors = getFillColorsWithIDs(svgJson);
+  const filteredColors = uniqBy(
+    filter(
+      svgFillColors,
+      ({ id, fill }) =>
+        includes(country.colors, toUpper(fill)) ||
+        includes(country.colors, toUpper(transformColor(fill)))
+    ),
+    ({ id }) => id
   );
 
-  selectedPathsWithValidColors.forEach((path) => {
-    const id = path.$.id;
-    const color = path.$.fill;
-    if (color) {
-      colors[id] = color;
-    }
+  const colors = {};
+
+  filteredColors.forEach((color) => {
+    colors[color.id] = color.fill;
   });
+
+  if (filteredColors.length !== country.colors.length) {
+    console.error(toUpper(country.country), "generated colors not match");
+  }
 
   return colors;
 };
@@ -119,10 +161,10 @@ const createSvgrColoredComponent = async (svgContent, colors) => {
       expandProps: false,
       plugins: ["@svgr/plugin-jsx", "@svgr/plugin-prettier"],
       native: true,
-      replaceAttrValues: { white: "#FFFFFF", black: "#000000" },
+      // replaceAttrValues: { white: "#FFFFFF", black: "#000000" },
       typescript: true,
       template: (variables, { tpl }) => {
-        const checkAndAddProps = (element) => {
+        const checkAndAddProps = (element, parentElementId) => {
           const { openingElement } = element;
           const { attributes } = openingElement;
 
@@ -131,33 +173,58 @@ const createSvgrColoredComponent = async (svgContent, colors) => {
             (attribute) => attribute.name.name === "id"
           );
 
+          const fillOpacityAttribute = find(
+            attributes,
+            (attribute) => attribute.name.name === "fillOpacity"
+          );
+
           // checkear el fill-opacity.
 
           const elementId = elementIdAttribute?.value?.value;
-          const currentColor = colors[elementId];
+          const currentElementId =
+            isString(elementId) && !isNumber(elementId)
+              ? elementId
+              : parentElementId;
+          const currentColor = colors[currentElementId];
+          const fillOpacity = fillOpacityAttribute?.value?.expression?.value;
 
-          if (currentColor && elementId) {
+          if (currentColor && currentElementId && fillOpacity === 0.5) {
             const fillIndex = findIndex(
               element.openingElement.attributes,
               (attribute) => attribute.name.name === "fill"
             );
 
             element.openingElement.attributes[fillIndex] =
-              createFillAttribute(elementId);
+              createFillAttribute(currentElementId);
+
+            const fillOpacityIndex = findIndex(
+              element.openingElement.attributes,
+              (attribute) => attribute.name.name === "fillOpacity"
+            );
+
+            element.openingElement.attributes[
+              fillOpacityIndex
+            ].value.expression.value = 1;
+
             element.openingElement.attributes.push(
-              createOnPressAttribute(elementId)
+              createOnPressAttribute(currentElementId)
+            );
+          } else if (currentColor && currentElementId) {
+            element.openingElement.attributes.push(
+              createOnPressAttribute(currentElementId)
             );
           }
 
           if (size(element.children) > 0) {
-            element.children = element.children.map(checkAndAddProps);
+            element.children = element.children.map((child) =>
+              checkAndAddProps(child, currentElementId)
+            );
           }
 
           return element;
         };
 
         const customTsx = checkAndAddProps(variables.jsx);
-        // const asd = removeXmls(customTsx);
 
         return tpl`
           ${variables.imports}
@@ -185,19 +252,18 @@ const createSvgrColoredComponent = async (svgContent, colors) => {
   );
 };
 
-const convertSvgToSvgrFlag = async (filePath) => {
+const getCountryNameByFile = (filePathA) =>
+  kebabCase(toLower(path.basename(path.dirname(filePathA))));
+
+const convertSvgToSvgrFlag = async ([filePathA, filePathB]) => {
   try {
-    const type = path.basename(filePath, path.extname(filePath));
-    const countryName = kebabCase(
-      toLower(path.basename(path.dirname(filePath)))
-    );
+    const countryName = getCountryNameByFile(filePathA);
     const countryFolder = destionationFolder + "/" + countryName + "/";
 
     const country = find(
       flagInfo,
       (flag) => kebabCase(toLower(flag.country)) === countryName
     );
-    const svgContent = await readSvgFile(filePath);
 
     if (!country) {
       console.error(countryName + " not found in JSON");
@@ -205,41 +271,47 @@ const convertSvgToSvgrFlag = async (filePath) => {
     }
 
     if (!fs.existsSync(countryFolder)) {
-      await fs.promises.mkdir(countryFolder);
+      try {
+        await fs.promises.mkdir(countryFolder);
+      } catch (e) {}
     }
 
-    if (type === "a" && country) {
-      const svgJson = await parseSvg(svgContent);
-      const colors = extractPathColors(svgJson, country);
-      const svgrComponent = await createSvgrColoredComponent(
-        svgContent,
-        colors
-      );
+    // create colors
+    const svgContentA = await readSvgFile(filePathA);
+    const svgJson = await parseSvg(svgContentA);
+    const colors = extractPathColors(svgJson, country);
 
-      fs.writeFileSync(
-        countryFolder + `${kebabCase(countryName)}-svgr.tsx`,
-        svgrComponent
-      );
+    // check if colors size differs with provided JSON
 
-      fs.writeFileSync(
-        countryFolder + `${kebabCase(countryName)}-colors.json`,
-        JSON.stringify(colors, null, 2)
-      );
-    }
+    // process A
+    const svgrComponentA = await transform(svgContentA, {
+      icon: false,
+      expandProps: false,
+      plugins: ["@svgr/plugin-jsx", "@svgr/plugin-prettier"],
+      native: true,
+      typescript: true,
+    });
 
-    if (type === "b") {
-      const svgrComponent = await transform(svgContent, {
-        icon: false,
-        expandProps: false,
-        plugins: ["@svgr/plugin-jsx", "@svgr/plugin-prettier"],
-        native: true,
-        typescript: true,
-      });
-      fs.writeFileSync(
-        countryFolder + `${kebabCase(countryName)}-lines-svgr.tsx`,
-        svgrComponent
-      );
-    }
+    fs.writeFileSync(
+      countryFolder + `${kebabCase(countryName)}-svgr.tsx`,
+      svgrComponentA
+    );
+
+    fs.writeFileSync(
+      countryFolder + `${kebabCase(countryName)}-colors.json`,
+      JSON.stringify(colors, null, 2)
+    );
+
+    // process B
+    const svgContentB = await readSvgFile(filePathB);
+    const svgrComponentB = await createSvgrColoredComponent(
+      svgContentB,
+      colors
+    );
+    fs.writeFileSync(
+      countryFolder + `${kebabCase(countryName)}-lines-svgr.tsx`,
+      svgrComponentB
+    );
   } catch (error) {
     console.error("Error:", error);
   }
@@ -264,7 +336,15 @@ const getFiles = (dir, extension, fileList = []) => {
 
 const generate = async () => {
   const svgFiles = getFiles(originFolder, ".svg");
-  await Promise.all(svgFiles.map(convertSvgToSvgrFlag));
+  const groupedFiles = groupBy(svgFiles, (filePath) =>
+    getCountryNameByFile(filePath)
+  );
+
+  // convertSvgToSvgrFlag([
+  //   "/Users/asaracho/projects/flag-game/assets/flags-svg/oceania/kiribati/a.svg",
+  //   "/Users/asaracho/projects/flag-game/assets/flags-svg/oceania/kiribati/b.svg",
+  // ]);
+  await Promise.all(map(groupedFiles, convertSvgToSvgrFlag));
 
   // generate exported components
   // read files into destination folder

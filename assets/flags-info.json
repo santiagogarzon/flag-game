@@ -32,7 +32,7 @@
             "country": "Bahrain",
             "unblock": 0,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BC242C"
             ]
         },
@@ -112,7 +112,7 @@
             "unblock": 38,
             "colors": [
                 "#EC9141",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#1E8040"
             ]
         },
@@ -138,8 +138,8 @@
             "unblock": 49,
             "colors": [
                 "#BC242C",
-                "#FFFFFF",
-                "#000000",
+                "#FFFFFE",
+                "#0A0B09",
                 "#14713C"
             ]
         },
@@ -163,8 +163,8 @@
             "country": "Jordan",
             "unblock": 58,
             "colors": [
-                "#000000",
-                "#FFFFFF",
+                "#FFFFFE",
+                "#0A0B09",
                 "#14713C",
                 "#BC242C"
             ]
@@ -257,7 +257,7 @@
             "colors": [
                 "#C9233D",
                 "#263875",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -864,7 +864,7 @@
             "colors": [
                 "#2AA948",
                 "#BC242C",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -912,7 +912,7 @@
             "colors": [
                 "#3C8640",
                 "#F7C232",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BC242C",
                 "#426AA5"
             ]
@@ -1093,7 +1093,7 @@
             "country": "Malawi",
             "unblock": 94,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#BC242C",
                 "#339545"
             ]
@@ -1217,7 +1217,7 @@
                 "#253B6E",
                 "#F8D45A",
                 "#C32B2C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#14713C"
             ]
         },
@@ -1545,8 +1545,8 @@
             "country": "Argentina",
             "unblock": 0,
             "colors": [
-                "#74ACDF",
-                "#FFFFFF"
+                "#71A2CB",
+                "#FFFFFE"
             ]
         },
         {
@@ -1574,7 +1574,7 @@
             "colors": [
                 "#223982",
                 "#C22E2B",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1600,9 +1600,9 @@
             "unblock": 100,
             "colors": [
                 "#0B9446",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#F6CD2B",
-                "#000000",
+                "#0A0B09",
                 "#BC242C"
             ]
         },
@@ -1677,7 +1677,7 @@
             "colors": [
                 "#BC242C",
                 "#253B6E",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#F6CD2B"
             ]
         },
