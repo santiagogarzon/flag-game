@@ -2,10 +2,10 @@
 <g id="flag / europe / ukraine / b">
 <g id="ukraine b">
 <g id="blue">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M325 25V125H25V25H325Z" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M325 25V125H25V25H325Z" fill="#285495" fill-opacity="1"/>
 <path d="M325 125V126H326V125H325ZM325 25H326V24H325V25ZM25 125H24V126H25V125ZM25 25V24H24V25H25ZM326 125V25H324V125H326ZM325 124H25V126H325V124ZM24 25V125H26V25H24ZM325 24H25V26H325V24Z" fill="white"/>
 </g>
-<path id="yellow" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V125H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="yellow" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V125H25V225Z" fill="#F9D120" fill-opacity="1" stroke="white" stroke-width="2"/>
 </g>
 </g>
 </svg>

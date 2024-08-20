@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / europe / andorra / b">
 <g id="andorra b">
-<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 229.94H121V20H25V229.94Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M229 229.94H325V20H229V229.94Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M121 229.94H229V20H121V229.94Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 229.94H121V20H25V229.94Z" fill="#26337C" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M229 229.94H325V20H229V229.94Z" fill="#BE243C" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M121 229.94H229V20H121V229.94Z" fill="#FBDD1D" fill-opacity="1" stroke="white" stroke-width="2"/>
 <g id="COA" style="mix-blend-mode:luminosity">
 <path id="Stroke 6" d="M180.341 88.9468C180.134 88.8308 179.936 88.7198 179.747 88.6158C179.252 88.3448 178.724 88.3998 178.468 88.7098C178.18 89.0588 178.077 89.6538 178.478 90.0238" stroke="#1B1A19" stroke-width="0.296" stroke-linecap="round"/>
 <path id="Stroke 7" d="M144.719 133.995C144.604 134.263 144.538 134.352 144.418 134.578C144.291 134.816 144.222 134.952 144.087 135.184C143.954 135.411 143.876 135.537 143.73 135.756C143.533 136.051 143.402 136.204 143.193 136.49" stroke="#BEAD79" stroke-width="0.296" stroke-linecap="round"/>

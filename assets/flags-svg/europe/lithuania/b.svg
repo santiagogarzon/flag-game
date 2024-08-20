@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / europe / lithuania / b">
 <g id="lithuania b">
-<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M25 215H325V155H25V215Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="Fill 4 Copy" fill-rule="evenodd" clip-rule="evenodd" d="M25 155H325V95H25V155Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="Fill 4 Copy 2" fill-rule="evenodd" clip-rule="evenodd" d="M25 95H325V35H25V95Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="Fill 4" fill-rule="evenodd" clip-rule="evenodd" d="M25 215H325V155H25V215Z" fill="#AF2B30" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 4 Copy" fill-rule="evenodd" clip-rule="evenodd" d="M25 155H325V95H25V155Z" fill="#136140" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="Fill 4 Copy 2" fill-rule="evenodd" clip-rule="evenodd" d="M25 95H325V35H25V95Z" fill="#F2B22B" fill-opacity="1" stroke="white" stroke-width="2"/>
 </g>
 </g>
 </svg>
