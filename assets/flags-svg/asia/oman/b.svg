@@ -2,11 +2,11 @@
 <g id="flag / asia / oman / b">
 <g id="oman b">
 <g id="red">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M25 200.06H100V150.04H325V100.02H100V50H25V200.06Z" fill="white" fill-opacity="0.5"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M25 200.06H100V150.04H325V100.02H100V50H25V200.06Z" fill="#C8242B" fill-opacity="1"/>
 <path d="M100 200.06V201.06H101V200.06H100ZM25 200.06H24V201.06H25V200.06ZM100 150.04V149.04H99V150.04H100ZM325 150.04V151.04H326V150.04H325ZM325 100.02H326V99.02H325V100.02ZM100 100.02H99V101.02H100V100.02ZM100 50H101V49H100V50ZM25 50V49H24V50H25ZM100 199.06H25V201.06H100V199.06ZM99 150.04V200.06H101V150.04H99ZM325 149.04H100V151.04H325V149.04ZM324 100.02V150.04H326V100.02H324ZM100 101.02H325V99.02H100V101.02ZM99 50V100.02H101V50H99ZM25 51H100V49H25V51ZM26 200.06V50H24V200.06H26Z" fill="white"/>
 </g>
-<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M100 100H325V50H100V100Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M100 199.94H325V150H100V199.94Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M100 100H325V50H100V100Z" fill="#FFFFFE" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M100 199.94H325V150H100V199.94Z" fill="#16783E" fill-opacity="1" stroke="white" stroke-width="2"/>
 <g id="coa" style="mix-blend-mode:luminosity">
 <path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd" d="M42.2669 75.6602H50.3269C50.7699 75.6602 51.1309 75.9982 51.1309 76.4142V80.2102C51.1309 80.6272 50.7699 80.9642 50.3269 80.9642H42.2669C41.8229 80.9642 41.4629 80.6272 41.4629 80.2102V76.4142C41.4629 75.9982 41.8229 75.6602 42.2669 75.6602Z" fill="#FFFFFE"/>
 <path id="Stroke 7" fill-rule="evenodd" clip-rule="evenodd" d="M42.2669 75.6602H50.3269C50.7699 75.6602 51.1309 75.9982 51.1309 76.4142V80.2102C51.1309 80.6272 50.7699 80.9642 50.3269 80.9642H42.2669C41.8229 80.9642 41.4629 80.6272 41.4629 80.2102V76.4142C41.4629 75.9982 41.8229 75.6602 42.2669 75.6602Z" stroke="#C8242B" stroke-width="0.142"/>

@@ -1,10 +1,10 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / asia / united arab emirates / b">
 <g id="united arab emirates b">
-<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25 199.94H100V50H25V199.94Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M100 100H325V50H100V100Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M100 150H325V100H100V150Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="black" fill-rule="evenodd" clip-rule="evenodd" d="M100 200H325V150H100V200Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25 199.94H100V50H25V199.94Z" fill="#BC242C" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="green" fill-rule="evenodd" clip-rule="evenodd" d="M100 100H325V50H100V100Z" fill="#0B9446" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="white" fill-rule="evenodd" clip-rule="evenodd" d="M100 150H325V100H100V150Z" fill="#FFFFFE" fill-opacity="1" stroke="white" stroke-width="2"/>
+<path id="black" fill-rule="evenodd" clip-rule="evenodd" d="M100 200H325V150H100V200Z" fill="#0A0B09" fill-opacity="1" stroke="white" stroke-width="2"/>
 </g>
 </g>
 </svg>
