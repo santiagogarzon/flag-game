@@ -32,30 +32,34 @@ const Flag = (props: FlagProps) => {
               onPress={() => props.onPress("red")}
             />
           </G>
-          <G id="white">
+          <G id="white" onPress={() => props.onPress("white")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M91.667 150H324.667V100H91.667L125 125L91.667 150Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill={props.colors["white"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("white")}
             />
             <Path
               d="M91.667 150L91.067 149.2L88.667 151H91.667V150ZM324.667 150V151H325.667V150H324.667ZM324.667 100H325.667V99H324.667V100ZM91.667 100V99H88.667L91.067 100.8L91.667 100ZM125 125L125.6 125.8L126.667 125L125.6 124.2L125 125ZM91.667 151H324.667V149H91.667V151ZM325.667 150V100H323.667V150H325.667ZM324.667 99H91.667V101H324.667V99ZM91.067 100.8L124.4 125.8L125.6 124.2L92.267 99.2L91.067 100.8ZM124.4 124.2L91.067 149.2L92.267 150.8L125.6 125.8L124.4 124.2Z"
               fill="white"
+              onPress={() => props.onPress("white")}
             />
           </G>
-          <G id="black">
+          <G id="black" onPress={() => props.onPress("black")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M25 200H325V150H91.6667L25 200Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill={props.colors["black"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("black")}
             />
             <Path
               d="M25 200L24.4 199.2L22 201H25V200ZM325 200V201H326V200H325ZM325 150H326V149H325V150ZM91.6667 150V149H91.3333L91.0667 149.2L91.6667 150ZM25 201H325V199H25V201ZM326 200V150H324V200H326ZM325 149H91.6667V151H325V149ZM91.0667 149.2L24.4 199.2L25.6 200.8L92.2667 150.8L91.0667 149.2Z"
               fill="white"
+              onPress={() => props.onPress("black")}
             />
           </G>
           <G id="green" onPress={() => props.onPress("green")}>

@@ -44,10 +44,11 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M279.93 25L25 194.954V225H70.069L324.999 55.047V25H279.93Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["black"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("black")}
           />
           <G id="yellow" onPress={() => props.onPress("yellow")}>
             <Path

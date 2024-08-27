@@ -43,13 +43,14 @@ const Flag = (props: FlagProps) => {
             strokeWidth={2}
             onPress={() => props.onPress("yellow")}
           />
-          <G id="white">
+          <G id="white" onPress={() => props.onPress("white")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M100 185.25L96.765 172.324L87.5 181.9L91.161 169.089L78.349 172.75L87.926 163.485L75 160.25L87.926 157.015L78.349 147.75L91.161 151.411L87.5 138.6L96.765 148.176L100 135.25L103.235 148.176L112.5 138.6L108.839 151.411L121.65 147.75L112.074 157.015L125 160.25L112.074 163.485L121.65 172.75L108.839 169.089L112.5 181.9L103.235 172.324L100 185.25Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill={props.colors["white"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("white")}
             />
             <Path
               d="M100 185.25L96.765 172.324L87.5 181.9L91.161 169.089L78.349 172.75L87.926 163.485L75 160.25L87.926 157.015L78.349 147.75L91.161 151.411L87.5 138.6L96.765 148.176L100 135.25L103.235 148.176L112.5 138.6L108.839 151.411L121.65 147.75L112.074 157.015L125 160.25L112.074 163.485L121.65 172.75L108.839 169.089L112.5 181.9L103.235 172.324L100 185.25"
@@ -57,6 +58,7 @@ const Flag = (props: FlagProps) => {
               strokeWidth={2}
               strokeLinecap="round"
               strokeLinejoin="round"
+              onPress={() => props.onPress("white")}
             />
           </G>
         </G>

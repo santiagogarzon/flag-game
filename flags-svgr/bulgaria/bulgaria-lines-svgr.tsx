@@ -44,10 +44,11 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 95H325V35H25V95Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["Fill 4 Copy 2"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("Fill 4 Copy 2")}
           />
         </G>
       </G>

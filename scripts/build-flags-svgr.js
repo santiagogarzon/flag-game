@@ -105,13 +105,16 @@ function getFillColorsWithIDs(parsedSvg) {
 const extractPathColors = (svgJson, country) => {
   const svgFillColors = getFillColorsWithIDs(svgJson);
   const filteredColors = uniqBy(
-    filter(
-      svgFillColors,
-      ({ id, fill }) =>
-        includes(country.colors, toUpper(fill)) ||
-        includes(country.colors, toUpper(transformColor(fill)))
+    uniqBy(
+      filter(
+        svgFillColors,
+        ({ id, fill }) =>
+          includes(country.colors, toUpper(fill)) ||
+          includes(country.colors, toUpper(transformColor(fill)))
+      ),
+      ({ id }) => id
     ),
-    ({ id }) => id
+    ({ fill }) => fill
   );
 
   const colors = {};

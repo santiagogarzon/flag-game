@@ -32,30 +32,34 @@ const Flag = (props: FlagProps) => {
               onPress={() => props.onPress("green")}
             />
           </G>
-          <G id="white">
+          <G id="white" onPress={() => props.onPress("white")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M102.942 155H325V147.5H115.933L102.942 155ZM115.933 102.5H325V95H102.942L115.933 102.5Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill={props.colors["white"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("white")}
             />
             <Path
               d="M325 155V156H326V155H325ZM102.942 155L102.442 154.134L99.2103 156H102.942V155ZM325 147.5H326V146.5H325V147.5ZM115.933 147.5V146.5H115.665L115.433 146.634L115.933 147.5ZM325 102.5V103.5H326V102.5H325ZM115.933 102.5L115.433 103.366L115.665 103.5H115.933V102.5ZM325 95H326V94H325V95ZM102.942 95V94H99.2103L102.442 95.866L102.942 95ZM325 154H102.942V156H325V154ZM324 147.5V155H326V147.5H324ZM115.933 148.5H325V146.5H115.933V148.5ZM115.433 146.634L102.442 154.134L103.442 155.866L116.433 148.366L115.433 146.634ZM325 101.5H115.933V103.5H325V101.5ZM324 95V102.5H326V95H324ZM102.942 96H325V94H102.942V96ZM102.442 95.866L115.433 103.366L116.433 101.634L103.442 94.134L102.442 95.866Z"
               fill="white"
+              onPress={() => props.onPress("white")}
             />
           </G>
-          <G id="black">
+          <G id="black" onPress={() => props.onPress("black")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 95H102.942L25 50H325V95Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill={props.colors["black"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("black")}
             />
             <Path
               d="M102.942 95L102.442 95.866L102.674 96H102.942V95ZM325 95V96H326V95H325ZM25 50V49H21.2679L24.5 50.866L25 50ZM325 50H326V49H325V50ZM102.942 96H325V94H102.942V96ZM24.5 50.866L102.442 95.866L103.442 94.134L25.5 49.134L24.5 50.866ZM325 49H25V51H325V49ZM326 95V50H324V95H326Z"
               fill="white"
+              onPress={() => props.onPress("black")}
             />
           </G>
           <G id="red" onPress={() => props.onPress("red")}>

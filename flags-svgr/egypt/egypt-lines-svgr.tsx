@@ -22,20 +22,22 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 225H325V158H25V225Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["black"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("black")}
           />
           <Path
             id="white"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 158H325V92H25V158Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["white"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("white")}
           />
           <Path
             id="red"
@@ -488,7 +490,6 @@ const Flag = (props: FlagProps) => {
                   clipRule="evenodd"
                   d="M184.074 114.344C183.98 114.35 183.886 114.353 183.792 114.353C181.723 114.353 176.919 113.292 175.067 111.701C173.128 113.17 168.244 114.353 166.209 114.353C166.114 114.353 166.019 114.341 165.926 114.324C165.921 114.788 165.945 115.268 165.974 115.705C166.082 117.339 166.368 118.978 166.803 120.555C168.173 125.52 170.975 129.739 174.993 132.94C179.015 129.737 181.821 125.514 183.193 120.545C183.629 118.968 183.917 117.328 184.025 115.695C184.054 115.267 184.077 114.798 184.075 114.344H184.074Z"
                   fill="white"
-                  onPress={() => props.onPress("Clip 59")}
                 />
               </Mask>
               <G mask="url(#mask0_7_60463)">

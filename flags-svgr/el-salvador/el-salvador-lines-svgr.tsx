@@ -35,10 +35,11 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 153.195H325V96.8052H25V153.195Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["white"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("white")}
           />
           <G id="coa">
             <Path

@@ -17,7 +17,7 @@ const flagInfo = flatMap(flagInfoJson).map((flag) => ({
 }));
 
 export default function Flags() {
-  const countryName = "guyana";
+  const countryName = "SAINT-KITTS-AND-NEVIS".toLowerCase();
   const country = find(flagInfo, (flag) => countryName === flag.country);
 
   const [FlagLinesComponent, setFlagLinesComponent] = useState();

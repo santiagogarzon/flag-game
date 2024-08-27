@@ -22,10 +22,11 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M175 235H285V15H175V235Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["Fill 4"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("Fill 4")}
           />
           <Path
             id="Fill 5"
@@ -2364,14 +2365,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 352")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M238.583 90.7625C238.583 90.9839 238.405 91.1629 238.188 91.1629C237.97 91.1629 237.793 90.9839 237.793 90.7625C237.793 90.541 237.97 90.3613 238.188 90.3613C238.405 90.3613 238.583 90.541 238.583 90.7625Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 352")}
                   />
                 </G>
               </Mask>
@@ -2420,14 +2419,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 356")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M233.216 89.7579C233.216 90.0109 233.014 90.2155 232.764 90.2155C232.515 90.2155 232.313 90.0109 232.313 89.7579C232.313 89.5042 232.515 89.2988 232.764 89.2988C233.014 89.2988 233.216 89.5042 233.216 89.7579Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 356")}
                   />
                 </G>
               </Mask>
@@ -2476,14 +2473,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 360")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M227.477 89.8143C227.477 90.0673 227.275 90.2726 227.025 90.2726C226.776 90.2726 226.574 90.0673 226.574 89.8143C226.574 89.5613 226.776 89.356 227.025 89.356C227.275 89.356 227.477 89.5613 227.477 89.8143Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 360")}
                   />
                 </G>
               </Mask>
@@ -2532,14 +2527,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 364")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M221.973 90.7202C221.973 90.9468 221.791 91.1309 221.568 91.1309C221.344 91.1309 221.163 90.9468 221.163 90.7202C221.163 90.4936 221.344 90.3096 221.568 90.3096C221.791 90.3096 221.973 90.4936 221.973 90.7202Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 364")}
                   />
                 </G>
               </Mask>
@@ -2952,14 +2945,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 420")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M232.877 108.999C232.877 109.221 232.699 109.402 232.481 109.402C232.261 109.402 232.084 109.221 232.084 108.999C232.084 108.777 232.261 108.597 232.481 108.597C232.699 108.597 232.877 108.777 232.877 108.999Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 420")}
                   />
                 </G>
               </Mask>
@@ -3008,14 +2999,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 424")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M227.837 109.049C227.837 109.272 227.659 109.452 227.441 109.452C227.221 109.452 227.044 109.272 227.044 109.049C227.044 108.827 227.221 108.646 227.441 108.646C227.659 108.646 227.837 108.827 227.837 109.049Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 424")}
                   />
                 </G>
               </Mask>
@@ -3491,14 +3480,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 489")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M239.085 100.738C239.085 100.97 238.899 101.159 238.671 101.159C238.442 101.159 238.257 100.97 238.257 100.738C238.257 100.506 238.442 100.317 238.671 100.317C238.899 100.317 239.085 100.506 239.085 100.738Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 489")}
                   />
                 </G>
               </Mask>
@@ -3547,14 +3534,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 493")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M233.449 99.6822C233.449 99.9484 233.237 100.164 232.975 100.164C232.713 100.164 232.501 99.9484 232.501 99.6822C232.501 99.416 232.713 99.2012 232.975 99.2012C233.237 99.2012 233.449 99.416 233.449 99.6822Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 493")}
                   />
                 </G>
               </Mask>
@@ -3603,14 +3588,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 497")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M227.423 99.7418C227.423 100.008 227.211 100.224 226.949 100.224C226.687 100.224 226.475 100.008 226.475 99.7418C226.475 99.4763 226.687 99.2607 226.949 99.2607C227.211 99.2607 227.423 99.4763 227.423 99.7418Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 497")}
                   />
                 </G>
               </Mask>
@@ -3659,14 +3642,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 501")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M221.642 100.694C221.642 100.931 221.451 101.125 221.217 101.125C220.982 101.125 220.792 100.931 220.792 100.694C220.792 100.455 220.982 100.262 221.217 100.262C221.451 100.262 221.642 100.455 221.642 100.694Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 501")}
                   />
                 </G>
               </Mask>
@@ -3890,14 +3871,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 530")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M223.002 109.845C223.002 110.044 222.842 110.205 222.647 110.205C222.45 110.205 222.291 110.044 222.291 109.845C222.291 109.646 222.45 109.484 222.647 109.484C222.842 109.484 223.002 109.646 223.002 109.845Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 530")}
                   />
                 </G>
               </Mask>
@@ -4086,14 +4065,12 @@ const Flag = (props: FlagProps) => {
                   style={{
                     mixBlendMode: "luminosity",
                   }}
-                  onPress={() => props.onPress("Clip 554")}
                 >
                   <Path
                     fillRule="evenodd"
                     clipRule="evenodd"
                     d="M237.591 109.883C237.591 110.076 237.436 110.234 237.245 110.234C237.054 110.234 236.898 110.076 236.898 109.883C236.898 109.688 237.054 109.531 237.245 109.531C237.436 109.531 237.591 109.688 237.591 109.883Z"
                     fill="white"
-                    onPress={() => props.onPress("Clip 554")}
                   />
                 </G>
               </Mask>

@@ -1,20 +1,6 @@
 {
   "green": "#228241",
   "orange": "#E0762C",
-  "red": "#CA282B",
-  "Fill 5": "#E0762C",
-  "Fill 7": "#E0762C",
-  "Fill 9": "#E0762C",
-  "Fill 11": "#E0762C",
-  "Fill 13": "#E0762C",
-  "Fill 15": "#E0762C",
-  "Fill 17": "#E0762C",
-  "Fill 19": "#E0762C",
-  "Fill 21": "#E0762C",
-  "Fill 23": "#E0762C",
-  "Fill 25": "#E0762C",
-  "Fill 27": "#E0762C",
-  "Fill 29": "#E0762C",
-  "Fill 31": "#E0762C",
-  "Fill 33": "#E0762C"
+  "black": "#0A0B09",
+  "red": "#CA282B"
 }

@@ -33,10 +33,11 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 225H325V125H25V225Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["white"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("white")}
           />
         </G>
       </G>

@@ -47,15 +47,21 @@ const Flag = (props: FlagProps) => {
               onPress={() => props.onPress("yellow")}
             />
           </G>
-          <G id="black">
+          <G id="black" onPress={() => props.onPress("black")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M25 50V200L150 125L25 50Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill={props.colors["black"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("black")}
             />
-            <Path d="M25 50V200L150 125L25 50" stroke="white" strokeWidth={2} />
+            <Path
+              d="M25 50V200L150 125L25 50"
+              stroke="white"
+              strokeWidth={2}
+              onPress={() => props.onPress("black")}
+            />
           </G>
         </G>
       </G>

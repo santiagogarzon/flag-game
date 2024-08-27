@@ -1,15 +1,5 @@
 {
   "red": "#C8242B",
-  "green": "#16783E",
-  "Stroke 299": "#C8242B",
-  "Stroke 300": "#C8242B",
-  "Fill 318": "#C8242B",
-  "Stroke 325": "#C8242B",
-  "Stroke 326": "#C8242B",
-  "Fill 344": "#C8242B",
-  "Stroke 565": "#C8242B",
-  "Stroke 567": "#C8242B",
-  "Stroke 569": "#C8242B",
-  "Stroke 571": "#C8242B",
-  "Stroke 573": "#C8242B"
+  "white": "#FFFFFE",
+  "green": "#16783E"
 }

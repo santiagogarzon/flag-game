@@ -4,7 +4,7 @@
             "country": "Afghanistan",
             "unblock": 0,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#AC252A",
                 "#169045"
             ]
@@ -25,7 +25,7 @@
                 "#1B8EB1",
                 "#CD2438",
                 "#00A460",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -50,7 +50,7 @@
             "colors": [
                 "#E5AC36",
                 "#D03C2E",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -58,8 +58,8 @@
             "unblock": 8,
             "colors": [
                 "#F3DE27",
-                "#FFFFFF",
-                "#000000",
+                "#FFFFFE",
+                "#0A0B09",
                 "#BD242C"
             ]
         },
@@ -84,7 +84,7 @@
             "country": "Cyprus",
             "unblock": 24,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#EFA53C",
                 "#2E4023"
             ]
@@ -95,15 +95,15 @@
             "colors": [
                 "#C62A2B",
                 "#F7C231",
-                "#000000",
-                "#FFFFFF"
+                "#1A1919",
+                "#FFFFFE"
             ]
         },
         {
             "country": "Georgia",
             "unblock": 30,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#D9252A"
             ]
         },
@@ -121,7 +121,7 @@
             "unblock": 39,
             "colors": [
                 "#BC242C",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -155,7 +155,7 @@
             "country": "Japan",
             "unblock": 57,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#A92532"
             ]
         },
@@ -182,9 +182,9 @@
             "unblock": 67,
             "colors": [
                 "#14713C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BC242C",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -201,7 +201,7 @@
             "colors": [
                 "#BC242C",
                 "#20294F",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -209,7 +209,7 @@
             "unblock": 86,
             "colors": [
                 "#D8262C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#039C4D"
             ]
         },
@@ -218,7 +218,7 @@
             "unblock": 89,
             "colors": [
                 "#B8242A",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#1C1C46",
                 "#F8C823"
             ]
@@ -229,7 +229,7 @@
             "colors": [
                 "#C02537",
                 "#13753D",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -266,7 +266,7 @@
             "colors": [
                 "#194789",
                 "#D8262F",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -274,7 +274,7 @@
             "unblock": 117,
             "colors": [
                 "#C8242B",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#16783E"
             ]
         },
@@ -282,7 +282,7 @@
             "country": "Pakistan",
             "unblock": 118,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#143822"
             ]
         },
@@ -302,7 +302,7 @@
             "colors": [
                 "#233A82",
                 "#BC242C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#F6CD2B"
             ]
         },
@@ -319,7 +319,7 @@
             "unblock": 139,
             "colors": [
                 "#186234",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -327,7 +327,7 @@
             "unblock": 147,
             "colors": [
                 "#D92D3A",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -337,7 +337,7 @@
                 "#FFFFFF",
                 "#B32534",
                 "#27335F",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -355,8 +355,8 @@
             "unblock": 159,
             "colors": [
                 "#BC242C",
-                "#FFFFFF",
-                "#000000",
+                "#FFFFFE",
+                "#0A0B09",
                 "#14713C"
             ]
         },
@@ -365,7 +365,7 @@
             "unblock": 168,
             "colors": [
                 "#B8242A",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#1C5C31",
                 "#F0BE27"
             ]
@@ -375,7 +375,7 @@
             "unblock": 169,
             "colors": [
                 "#D8262C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#1B1736"
             ]
         },
@@ -392,7 +392,7 @@
             "unblock": 178,
             "colors": [
                 "#24A461",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -400,8 +400,8 @@
             "unblock": 187,
             "colors": [
                 "#0B9446",
-                "#FFFFFF",
-                "#000000",
+                "#FFFFFE",
+                "#0A0B09",
                 "#BC242C"
             ]
         },
@@ -410,7 +410,7 @@
             "unblock": 189,
             "colors": [
                 "#1D8FA4",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#2AA948",
                 "#BC242C"
             ]
@@ -428,8 +428,8 @@
             "unblock": 193,
             "colors": [
                 "#BC242C",
-                "#FFFFFF",
-                "#000000"
+                "#FFFFFE",
+                "#1A1919"
             ]
         }
     ],
@@ -439,7 +439,7 @@
             "unblock": 0,
             "colors": [
                 "#D0262A",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -472,7 +472,7 @@
             "country": "Belgium",
             "unblock": 5,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#F6DE4A",
                 "#D92D3A"
             ]
@@ -483,14 +483,14 @@
             "colors": [
                 "#283172",
                 "#F7C723",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
             "country": "Bulgaria",
             "unblock": 12,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#0B8D66",
                 "#C22C2B"
             ]
@@ -500,7 +500,7 @@
             "unblock": 23,
             "colors": [
                 "#D9252A",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#292D72"
             ]
         },
@@ -508,7 +508,7 @@
             "country": "Czech Republic",
             "unblock": 25,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#213F6A",
                 "#C4242B"
             ]
@@ -518,7 +518,7 @@
             "unblock": 32,
             "colors": [
                 "#B32534",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -526,15 +526,15 @@
             "unblock": 35,
             "colors": [
                 "#4E85B9",
-                "#000000",
-                "#FFFFFF"
+                "#0A0B09",
+                "#FFFFFE"
             ]
         },
         {
             "country": "Finland",
             "unblock": 42,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#273566"
             ]
         },
@@ -551,7 +551,7 @@
             "country": "Germany",
             "unblock": 46,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#C9242A",
                 "#F8CA23"
             ]
@@ -630,7 +630,7 @@
             "unblock": 103,
             "colors": [
                 "#D92D3A",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#2695C6"
             ]
         },
@@ -638,7 +638,7 @@
             "country": "Malta",
             "unblock": 105,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BD2530"
             ]
         },
@@ -656,7 +656,7 @@
             "unblock": 112,
             "colors": [
                 "#BC242C",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -690,14 +690,14 @@
             "colors": [
                 "#D93033",
                 "#20294F",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
             "country": "Poland",
             "unblock": 134,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#C9233D"
             ]
         },
@@ -722,7 +722,7 @@
             "country": "Russia",
             "unblock": 150,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#223982",
                 "#C22E2B"
             ]
@@ -741,7 +741,7 @@
             "colors": [
                 "#B5363C",
                 "#223A62",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -757,7 +757,7 @@
             "country": "Slovenia",
             "unblock": 163,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#1C5490",
                 "#D8272D"
             ]
@@ -783,7 +783,7 @@
             "unblock": 180,
             "colors": [
                 "#D9252A",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -808,7 +808,7 @@
             "unblock": 192,
             "colors": [
                 "#FCDE1D",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         }
     ],
@@ -845,8 +845,8 @@
             "unblock": 0,
             "colors": [
                 "#71A0C9",
-                "#FFFFFF",
-                "#000000"
+                "#FFFFFE",
+                "#0A0B09"
             ]
         },
         {
@@ -881,7 +881,7 @@
             "unblock": 15,
             "colors": [
                 "#263875",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BC242C",
                 "#F8C823"
             ]
@@ -891,10 +891,10 @@
             "unblock": 16,
             "colors": [
                 "#283366",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#2B8E44",
                 "#C02537",
-                "#F8C823"
+                "#F8CA23"
             ]
         },
         {
@@ -930,7 +930,7 @@
             "country": "Djibouti",
             "unblock": 27,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#6CA9D0",
                 "#19A448",
                 "#C4242B"
@@ -941,8 +941,8 @@
             "unblock": 29,
             "colors": [
                 "#BC242C",
-                "#FFFFFF",
-                "#000000"
+                "#FFFFFE",
+                "#0A0B09"
             ]
         },
         {
@@ -951,7 +951,7 @@
             "colors": [
                 "#3167A3",
                 "#3D9244",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#CF292A"
             ]
         },
@@ -998,7 +998,7 @@
             "unblock": 45,
             "colors": [
                 "#BC242C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#292D6A",
                 "#3A6F38"
             ]
@@ -1010,7 +1010,7 @@
                 "#BC242C",
                 "#F6CD2B",
                 "#14623C",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -1029,7 +1029,7 @@
                 "#BC242C",
                 "#F6CD2B",
                 "#0B9446",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -1037,7 +1037,7 @@
             "unblock": 56,
             "colors": [
                 "#E6772B",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#05945A"
             ]
         },
@@ -1045,10 +1045,10 @@
             "country": "Kenya",
             "unblock": 66,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#A8262A",
                 "#1C5C31",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1056,9 +1056,9 @@
             "unblock": 69,
             "colors": [
                 "#273279",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#0D8B44",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -1067,7 +1067,7 @@
             "colors": [
                 "#AD2534",
                 "#20294F",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1076,15 +1076,15 @@
             "colors": [
                 "#D2232A",
                 "#249446",
-                "#000000",
-                "#FFFFFF"
+                "#0A0B09",
+                "#FFFFFE"
             ]
         },
         {
             "country": "Madagascar",
             "unblock": 93,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#DC3F38",
                 "#13753D"
             ]
@@ -1161,7 +1161,7 @@
             "unblock": 123,
             "colors": [
                 "#CE502C",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#18A648"
             ]
         },
@@ -1170,7 +1170,7 @@
             "unblock": 131,
             "colors": [
                 "#117E4E",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1198,7 +1198,7 @@
                 "#19A448",
                 "#F8CA23",
                 "#C02537",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -1226,7 +1226,7 @@
             "unblock": 161,
             "colors": [
                 "#2AA948",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#2B67A3"
             ]
         },
@@ -1235,7 +1235,7 @@
             "unblock": 165,
             "colors": [
                 "#4D7BB1",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1254,8 +1254,8 @@
             "country": "South Sudan",
             "unblock": 166,
             "colors": [
-                "#000000",
-                "#FFFFFF",
+                "#0A0B09",
+                "#FFFFFE",
                 "#C6242B",
                 "#168041",
                 "#274489",
@@ -1267,8 +1267,8 @@
             "unblock": 172,
             "colors": [
                 "#C02537",
-                "#FFFFFF",
-                "#000000",
+                "#FFFFFE",
+                "#0A0B09",
                 "#186937"
             ]
         },
@@ -1278,7 +1278,7 @@
             "colors": [
                 "#2AA948",
                 "#F6CD2B",
-                "#000000",
+                "#0A0B09",
                 "#2498C8"
             ]
         },
@@ -1289,7 +1289,7 @@
                 "#136148",
                 "#F8CA23",
                 "#C02537",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1297,14 +1297,14 @@
             "unblock": 182,
             "colors": [
                 "#D2232A",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
             "country": "Uganda",
             "unblock": 185,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#F8D91F",
                 "#C5242B"
             ]
@@ -1315,7 +1315,7 @@
             "colors": [
                 "#228241",
                 "#CA282B",
-                "#000000",
+                "#0A0B09",
                 "#E0762C"
             ]
         },
@@ -1326,7 +1326,7 @@
                 "#328A42",
                 "#F9CE22",
                 "#CA282B",
-                "#000000",
+                "#0A0B09",
                 "#FFFFFF"
             ]
         }
@@ -1337,9 +1337,9 @@
             "unblock": 0,
             "colors": [
                 "#BC242C",
-                "#000000",
+                "#0A0B09",
                 "#2B67A3",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#F6CD2B"
             ]
         },
@@ -1348,7 +1348,7 @@
             "unblock": 0,
             "colors": [
                 "#23A2B8",
-                "#000000",
+                "#0A0B09",
                 "#F6DE4A"
             ]
         },
@@ -1358,7 +1358,7 @@
             "colors": [
                 "#282F62",
                 "#F7C337",
-                "#000000"
+                "#0A0B09"
             ]
         },
         {
@@ -1374,7 +1374,7 @@
             "unblock": 14,
             "colors": [
                 "#D9252A",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1382,7 +1382,7 @@
             "unblock": 22,
             "colors": [
                 "#283163",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BC242C"
             ]
         },
@@ -1392,7 +1392,7 @@
             "colors": [
                 "#28326F",
                 "#BD2530",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1401,8 +1401,8 @@
             "colors": [
                 "#14623C",
                 "#F6CD2B",
-                "#000000",
-                "#FFFFFF",
+                "#0A0B09",
+                "#FFFFFE",
                 "#C12533"
             ]
         },
@@ -1412,7 +1412,7 @@
             "colors": [
                 "#1E294B",
                 "#BC242C",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1420,7 +1420,7 @@
             "unblock": 62,
             "colors": [
                 "#274489",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1453,7 +1453,7 @@
             "unblock": 102,
             "colors": [
                 "#3167A3",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1470,7 +1470,7 @@
             "unblock": 120,
             "colors": [
                 "#125F43",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#BC242C"
             ]
         },
@@ -1479,14 +1479,14 @@
             "unblock": 130,
             "colors": [
                 "#08305D",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
             "country": "Panama",
             "unblock": 140,
             "colors": [
-                "#FFFFFF",
+                "#FFFFFE",
                 "#1A4A7E",
                 "#C02537"
             ]
@@ -1499,7 +1499,7 @@
                 "#BC242C",
                 "#000000",
                 "#F6CD2B",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1508,7 +1508,7 @@
             "colors": [
                 "#72C3E2",
                 "#F6CD2B",
-                "#000000",
+                "#0A0B09",
                 "#FFFFFF"
             ]
         },
@@ -1526,8 +1526,8 @@
             "unblock": 181,
             "colors": [
                 "#BC242C",
-                "#000000",
-                "#FFFFFF"
+                "#0A0B09",
+                "#FFFFFE"
             ]
         },
         {
@@ -1611,7 +1611,7 @@
             "unblock": 128,
             "colors": [
                 "#C22E2B",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#233A82"
             ]
         },
@@ -1620,7 +1620,7 @@
             "unblock": 141,
             "colors": [
                 "#C6242B",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1628,7 +1628,7 @@
             "unblock": 167,
             "colors": [
                 "#37773E",
-                "#FFFFFF",
+                "#FFFFFE",
                 "#A12531",
                 "#E4C22A"
             ]
@@ -1668,7 +1668,7 @@
                 "#6AB8D6",
                 "#20294F",
                 "#BC242C",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1687,7 +1687,7 @@
             "colors": [
                 "#022145",
                 "#EC912D",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1695,7 +1695,7 @@
             "unblock": 60,
             "colors": [
                 "#73AACD",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1704,7 +1704,7 @@
             "colors": [
                 "#283163",
                 "#F7C232",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1728,10 +1728,10 @@
             "country": "Papua New Guinea",
             "unblock": 133,
             "colors": [
-                "#000000",
+                "#0A0B09",
                 "#BC242C",
                 "#F6CD2B",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1740,7 +1740,7 @@
             "colors": [
                 "#BC242C",
                 "#283163",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1750,7 +1750,7 @@
                 "#274D90",
                 "#225132",
                 "#F6CD2B",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {
@@ -1758,7 +1758,7 @@
             "unblock": 176,
             "colors": [
                 "#AE252A",
-                "#FFFFFF"
+                "#FFFFFE"
             ]
         },
         {

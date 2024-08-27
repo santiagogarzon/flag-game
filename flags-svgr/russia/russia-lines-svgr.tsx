@@ -33,10 +33,11 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 91.6667H325V25H25V91.6667Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill={props.colors["Fill 4 Copy 2"]}
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("Fill 4 Copy 2")}
           />
           <Path
             id="Fill 4 Copy"

@@ -1,4 +1,6 @@
 {
+  "black": "#0A0B09",
   "red": "#BC242C",
-  "yellow": "#F6CD2B"
+  "yellow": "#F6CD2B",
+  "white": "#FFFFFE"
 }
