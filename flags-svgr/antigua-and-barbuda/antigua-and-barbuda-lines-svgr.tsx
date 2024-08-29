@@ -22,7 +22,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 25L266.304 103.261H240.217L207.609 96.775L235.253 78.303L202.644 84.79L221.115 57.146L193.471 75.617L199.958 43.008L181.486 70.652L175 38.043L168.514 70.652L150.042 43.008L156.529 75.617L128.884 57.146L147.355 84.79L114.747 78.303L142.391 96.775L109.783 103.261H83.6958L25 25H325Z"
-              fill={props.colors["black"]}
+              fill="#0A0B09"
               fillOpacity={1}
               onPress={() => props.onPress("black")}
             />
@@ -37,7 +37,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M116.304 146.739L83.6958 103.261H266.304L233.696 146.739H116.304Z"
-              fill={props.colors["blue"]}
+              fill="#2B67A3"
               fillOpacity={1}
               onPress={() => props.onPress("blue")}
             />
@@ -52,7 +52,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M25 25V225H325V25L175 225L25 25Z"
-              fill={props.colors["red"]}
+              fill="#BC242C"
               fillOpacity={1}
               onPress={() => props.onPress("red")}
             />
@@ -68,7 +68,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M175 225L116.304 146.739H233.696L175 225Z"
-              fill={props.colors["white"]}
+              fill="#FFFFFE"
               fillOpacity={1}
               onPress={() => props.onPress("white")}
             />
@@ -84,7 +84,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M207.609 96.775L235.253 78.303L202.644 84.79L221.115 57.146L193.471 75.617L199.958 43.008L181.486 70.652L175 38.043L168.514 70.652L150.042 43.008L156.529 75.617L128.884 57.146L147.355 84.79L114.747 78.303L142.391 96.775L109.783 103.261H240.217L207.609 96.775Z"
-              fill={props.colors["yellow"]}
+              fill="#F6CD2B"
               fillOpacity={1}
               onPress={() => props.onPress("yellow")}
             />

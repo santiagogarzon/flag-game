@@ -22,8 +22,8 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 31V125H25V31H325Z"
-              fill="white"
-              fillOpacity={0.5}
+              fill="#FFFFFE"
+              fillOpacity={1}
             />
             <Path
               d="M325 125V126H326V125H325ZM325 31H326V30H325V31ZM25 125H24V126H25V125ZM25 31V30H24V31H25ZM326 125V31H324V125H326ZM325 124H25V126H325V124ZM24 31V125H26V31H24ZM325 30H25V32H325V30Z"
@@ -35,8 +35,8 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 219H325V125H25V219Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill="#C9233D"
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
           />

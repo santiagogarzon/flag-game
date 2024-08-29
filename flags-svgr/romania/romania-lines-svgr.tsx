@@ -22,7 +22,7 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 225H121V25H25V225Z"
-            fill={props.colors["Fill 1"]}
+            fill="#283163"
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
@@ -33,7 +33,7 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M229 225H325V25H229V225Z"
-            fill={props.colors["Fill 3"]}
+            fill="#F6CD2B"
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
@@ -44,8 +44,8 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M121 225H229V25H121V225Z"
-            fill="white"
-            fillOpacity={0.5}
+            fill="#BC242C"
+            fillOpacity={1}
             stroke="white"
             strokeWidth={2}
           />

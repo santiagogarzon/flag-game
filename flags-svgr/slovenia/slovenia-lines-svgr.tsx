@@ -22,7 +22,7 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 200H325V150H25V200Z"
-            fill={props.colors["Fill 1"]}
+            fill="#D8272D"
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
@@ -33,7 +33,7 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 150H325V100H25V150Z"
-            fill={props.colors["Fill 3"]}
+            fill="#1C5490"
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
@@ -44,19 +44,24 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 100H325V50H25V100Z"
-            fill={props.colors["Fill 4"]}
+            fill="#FFFFFE"
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
             onPress={() => props.onPress("Fill 4")}
           />
-          <G id="coa">
+          <G
+            id="coa"
+            style={{
+              mixBlendMode: "luminosity",
+            }}
+          >
             <Path
               id="Fill 5"
               fillRule="evenodd"
               clipRule="evenodd"
               d="M117.908 102.611L119.483 79.3662C107.202 73.5452 92.9549 73.5452 80.6729 79.3662L82.2479 102.611C82.9559 113.057 90.0559 121.973 100.079 124.999C110.101 121.973 117.201 113.057 117.908 102.611Z"
-              fill="#4A4A4A"
+              fill="#1C5490"
             />
             <Path
               id="Fill 6"

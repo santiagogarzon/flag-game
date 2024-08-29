@@ -22,7 +22,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M25 176.926L252.889 25H25V176.926Z"
-              fill={props.colors["green"]}
+              fill="#0B9446"
               fillOpacity={1}
               onPress={() => props.onPress("green")}
             />
@@ -37,7 +37,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M97.1108 225H325V73.074L97.1108 225Z"
-              fill={props.colors["red"]}
+              fill="#BC242C"
               fillOpacity={1}
               onPress={() => props.onPress("red")}
             />
@@ -52,7 +52,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M79.0833 225H97.111L325 73.074V61.0555L79.0833 225ZM270.917 25H252.889L25 176.926V188.944L270.917 25Z"
-              fill={props.colors["yellow"]}
+              fill="#F6CD2B"
               fillOpacity={1}
               onPress={() => props.onPress("yellow")}
             />
@@ -67,7 +67,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 61.0555L79.0833 225H25V188.944L270.917 25H325V61.0555ZM205.043 94.572L225.37 95.392L230.871 114.977L237.932 95.899L258.259 96.719L242.296 84.108L249.357 65.029L232.431 76.314L216.468 63.703L221.97 83.288L205.043 94.572ZM111.37 171.392L91.043 170.572L107.97 159.288L102.468 139.703L118.431 152.314L135.357 141.029L128.296 160.108L144.259 172.719L123.932 171.899L116.871 190.977L111.37 171.392Z"
-              fill={props.colors["black"]}
+              fill="black"
               fillOpacity={1}
               onPress={() => props.onPress("black")}
             />
@@ -82,7 +82,7 @@ const Flag = (props: FlagProps) => {
             fillRule="evenodd"
             clipRule="evenodd"
             d="M225.37 95.392L205.043 94.572L221.97 83.288L216.468 63.703L232.431 76.314L249.357 65.029L242.296 84.108L258.259 96.719L237.932 95.899L230.871 114.977L225.37 95.392ZM111.37 171.392L91.043 170.572L107.97 159.288L102.468 139.703L118.431 152.314L135.357 141.029L128.296 160.108L144.259 172.719L123.932 171.899L116.871 190.977L111.37 171.392Z"
-            fill={props.colors["white"]}
+            fill="#FFFFFE"
             fillOpacity={1}
             onPress={() => props.onPress("white")}
           />

@@ -27,7 +27,7 @@ const Flag = (props: FlagProps) => {
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M213.25 256H175.75V180.8H82V143.2H175.75V68H213.25V143.2H382V180.8H213.25V256Z"
-                fill={props.colors["Combined Shape Copy"]}
+                fill="#F7C723"
                 fillOpacity={1}
                 onPress={() => props.onPress("Combined Shape Copy")}
               />
@@ -45,7 +45,7 @@ const Flag = (props: FlagProps) => {
                 fillRule="evenodd"
                 clipRule="evenodd"
                 d="M82 256H175.75V180.8H82V256ZM82 143.2V68H175.75V143.2H82ZM213.25 180.8V256H382V180.8H213.25ZM382 143.2H213.25V68H382V143.2Z"
-                fill={props.colors["Combined Shape"]}
+                fill="#1A4A7E"
                 fillOpacity={1}
                 onPress={() => props.onPress("Combined Shape")}
               />

@@ -22,7 +22,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 225V125H175V25H25V125H175V225H325ZM240.918 177.951L226.223 167.275H244.387L250 150L255.613 167.275H273.776L259.081 177.951L264.694 195.225L250 184.55L235.305 195.225L240.918 177.951ZM90.918 77.951L76.223 67.274H94.387L100 50L105.613 67.274H123.776L109.081 77.951L114.695 95.226L100 84.549L85.305 95.226L90.918 77.951Z"
-              fill={props.colors["white"]}
+              fill="#FFFFFE"
               fillOpacity={1}
               onPress={() => props.onPress("white")}
             />
@@ -37,7 +37,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M90.918 77.951L76.223 67.274H94.387L100 50L105.613 67.274H123.776L109.081 77.951L114.695 95.226L100 84.549L85.305 95.226L90.918 77.951ZM175 125V225H25V125H175Z"
-              fill={props.colors["blue"]}
+              fill="#1A4A7E"
               fillOpacity={1}
               onPress={() => props.onPress("blue")}
             />
@@ -52,7 +52,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 125H175V25H325V125ZM240.918 177.951L226.223 167.275H244.387L250 150L255.613 167.275H273.776L259.081 177.951L264.694 195.225L250 184.55L235.305 195.225L240.918 177.951Z"
-              fill={props.colors["red"]}
+              fill="#C02537"
               fillOpacity={1}
               onPress={() => props.onPress("red")}
             />
