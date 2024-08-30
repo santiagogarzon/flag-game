@@ -3,7 +3,11 @@ import {
   DefaultTheme,
   NavigationContainer,
 } from "@react-navigation/native";
-import { createNativeStackNavigator } from "@react-navigation/native-stack";
+import {
+  createNativeStackNavigator,
+  TransitionSpecs,
+} from "@react-navigation/native-stack";
+
 import { Home } from "./Home/Home";
 import { GamePacks } from "./GamePacks/GamePacks";
 import { Groups } from "./Groups/Groups";
@@ -32,7 +36,9 @@ const navigatorTheme = {
 
 export const Screens = () => (
   <NavigationContainer ref={navigationRef} theme={navigatorTheme}>
-    <AppStack.Navigator screenOptions={{ header: Header }}>
+    <AppStack.Navigator
+      screenOptions={{ header: Header, animation: "slide_from_bottom" }}
+    >
       <AppStack.Screen name="Home" component={Home} />
       <AppStack.Screen name="GamePacks" component={GamePacks} />
       <AppStack.Screen name="Groups" component={Groups} />

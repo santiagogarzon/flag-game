@@ -1,19 +1,30 @@
 import { View } from "@tamagui/core";
 import { Progress } from "app/ds/atoms/Progress/Progress";
 import { Icon, Text } from "app/ds/sub-atomic";
-import { Image } from "react-native";
+import { Image, ImageSourcePropType } from "react-native";
 import { GroupTabContainer } from "./GroupTab.styled";
 import { capitalize, size } from "lodash";
-import { useGameManager } from "app/hooks/useGameManager";
+import { Group, PackId, useGameManager } from "app/hooks/useGameManager";
+import { useNavigation } from "@react-navigation/native";
 
-export const GroupTab = ({ pack = "world", group: { id, image } }) => {
+export const GroupTab = ({ pack, group }: { pack: PackId; group: Group }) => {
+  const navigation = useNavigation();
   const { getFlags } = useGameManager();
+  const { id, image } = group;
   const flags = getFlags(pack, id);
   const completed = 0;
   const total = size(flags);
 
+  const openFlagsScreen = () => {
+    navigation.navigate("FlagsList", { pack, group });
+  };
+
   return (
-    <GroupTabContainer>
+    <GroupTabContainer
+      onPress={openFlagsScreen}
+      pressStyle={{ scale: 1.05 }}
+      animation="bouncy"
+    >
       <Image
         width={150}
         height={80}
@@ -21,7 +32,7 @@ export const GroupTab = ({ pack = "world", group: { id, image } }) => {
           marginTop: -80 * 0.6,
           marginBottom: 24,
         }}
-        source={image}
+        source={image as ImageSourcePropType}
       />
       <View minHeight={64} alignItems="center" marginBottom={16}>
         <Text type="h1" textAlign="center">

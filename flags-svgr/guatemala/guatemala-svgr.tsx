@@ -8,7 +8,8 @@ import Svg, {
   Use,
   Image,
 } from "react-native-svg";
-const SvgComponent = () => (
+import type { SvgProps } from "react-native-svg";
+const SvgComponent = (props: SvgProps) => (
   <Svg
     width={350}
     height={250}
@@ -16,6 +17,7 @@ const SvgComponent = () => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
     xmlnsXlink="http://www.w3.org/1999/xlink"
+    {...props}
   >
     <G id="flag / north america / guatemala / a">
       <G id="guatemala-flag">

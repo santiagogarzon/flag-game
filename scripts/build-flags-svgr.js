@@ -289,7 +289,6 @@ const convertSvgToSvgrFlag = async ([filePathA, filePathB]) => {
     // process A
     const svgrComponentA = await transform(svgContentA, {
       icon: false,
-      expandProps: false,
       plugins: ["@svgr/plugin-jsx", "@svgr/plugin-prettier"],
       native: true,
       typescript: true,

@@ -1,13 +1,15 @@
 import * as React from "react";
 import Svg, { G, Path, Defs } from "react-native-svg";
 /* SVGR has dropped some elements not supported by react-native-svg: filter */
-const SvgComponent = () => (
+import type { SvgProps } from "react-native-svg";
+const SvgComponent = (props: SvgProps) => (
   <Svg
     width={462}
     height={350}
     viewBox="0 0 462 350"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <G id="flag / europe / sweden / a">
       <G id="sweden a" filter="url(#filter0_d_7_35146)">

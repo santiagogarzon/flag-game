@@ -3,26 +3,19 @@ import { find, keys, toLower } from "lodash";
 import { useEffect } from "react";
 import flagsInfo from "assets/flags-info.json";
 
-const maxLifes = 4;
-const lifeTimeIncrementation = 1000 * 60 * 60; // one hour
-const lifesAtom = atom<number>(3);
+const maxLives = 4;
+const liveTimeIncrementation = 1000 * 60 * 60; // one hour
+const livesAtom = atom<number>(3);
 const lastUpdate = atom<Date>(new Date());
 const unlockedFlagsAtom = atom<string[]>();
 
-// structure pack -> group -> flag
-
-export type Flag = {};
-
+export type Flag = (typeof flagsInfo.Africa)[0];
 export type Group = {
-  flags: Flag[];
-};
-
-export type Pack = {
   id: string;
   image: string;
 };
 
-const worldPack: Pack[] = [
+const worldPack: Group[] = [
   { id: "asia", image: require("assets/images/world/asia.png") },
   {
     id: "south america",
@@ -38,13 +31,15 @@ const worldPack: Pack[] = [
 ];
 
 const packs = { world: worldPack };
+export type PackId = keyof typeof packs;
 
 export const useGameManager = () => {
-  const [lifes, setLifes] = useAtom(lifesAtom);
+  const [lives, setLives] = useAtom(livesAtom);
   const completedFlags = 12;
 
-  const getGroups = (pack: keyof typeof packs) => packs[pack];
-  const getFlags = (pack: keyof typeof packs, groupId: string) => {
+  const getGroups = (pack: PackId) => packs[pack];
+
+  const getFlags = (pack: PackId, groupId: string) => {
     if (pack === "world") {
       const group = find(
         flagsInfo,
@@ -67,7 +62,7 @@ export const useGameManager = () => {
     getGroups,
     getFlags,
     completeFlag,
-    lifes,
+    lives,
     completedFlags,
   };
 };

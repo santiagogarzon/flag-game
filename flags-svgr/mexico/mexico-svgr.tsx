@@ -7,13 +7,15 @@ import Svg, {
   RadialGradient,
   Stop,
 } from "react-native-svg";
-const SvgComponent = () => (
+import type { SvgProps } from "react-native-svg";
+const SvgComponent = (props: SvgProps) => (
   <Svg
     width={350}
     height={250}
     viewBox="0 0 350 250"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
+    {...props}
   >
     <G id="flag / north america / mexico / a">
       <G id="mexico b">
