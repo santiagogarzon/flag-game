@@ -1,109 +1,45 @@
-import {
-  Dimensions,
-  ImageBackground,
-  Text,
-  View,
-  Image,
-  useColorScheme,
-  TouchableHighlight,
-} from "react-native";
-import Logo from "../assets/images/logo.svg";
-import DarkLogo from "../assets/images/dark-logo.svg";
-import TabNavAnimated from "../components/TabNavAnimated";
-import { useState } from "react";
-import WorldIcon from "../assets/images/worlds-main-icon-light.svg";
-import { router } from "expo-router";
+import { ImageBackground, useColorScheme } from "react-native";
+import { useFonts } from "expo-font";
+import { Provider } from "jotai";
+import { TamaguiProvider } from "@tamagui/core";
 
-export default function Index() {
-  const [tab, setTab] = useState("Logo");
+import { Screens } from "./screens/screens";
+import tamaguiConfig from "./ds/tamagui.config";
+import { GestureHandlerRootView } from "react-native-gesture-handler";
+
+export const App = () => {
   const colorScheme = useColorScheme();
+
+  const [loaded] = useFonts({
+    Montserrat: require("../assets/fonts/Montserrat-Regular.ttf"),
+    MontserratBold: require("../assets/fonts/Montserrat-Bold.ttf"),
+    customIcons: require("../assets/fonts/customIcons/customIcons.ttf"),
+  });
+
+  if (!loaded) {
+    return null;
+  }
+
   return (
-    <View
-      style={{
-        flex: 1,
-        alignContent: "space-between",
-      }}
-    >
-      {tab === "Logo" ? (
-        <View
-          style={{
-            alignContent: "flex-start",
-            justifyContent: "flex-start",
-            flex: 1,
-            paddingTop: "35%",
-          }}
+    <GestureHandlerRootView>
+      <Provider>
+        <TamaguiProvider
+          config={tamaguiConfig}
+          defaultTheme={colorScheme as string}
         >
-          {colorScheme === "dark" ? (
-            <DarkLogo style={{ alignContent: "center", alignSelf: "center" }} />
-          ) : (
-            <Logo style={{ alignContent: "center", alignSelf: "center" }} />
-          )}
-        </View>
-      ) : (
-        <View
-          style={{
-            alignContent: "center",
-            justifyContent: "center",
-            flex: 1,
-          }}
-        >
-          <WorldIcon style={{ alignSelf: "center" }} />
-          <Text
-            style={{
-              alignSelf: "center",
-              fontSize: 24,
-              marginTop: 40,
-              fontFamily: "MontserratBold",
-            }}
+          <ImageBackground
+            source={
+              colorScheme === "dark"
+                ? require("../assets/images/dark_blur.png")
+                : require("../assets/images/light_blur.png")
+            }
+            style={{ flex: 1 }}
+            resizeMode="cover"
           >
-            Flags of the World
-          </Text>
-          <Text
-            style={{
-              fontSize: 20,
-              fontFamily: "MontserratBold",
-              marginTop: 20,
-              alignSelf: "center",
-            }}
-          >
-            21/195
-          </Text>
-          <TouchableHighlight
-            style={{
-              alignSelf: "center",
-              height: 56,
-              width: 200,
-              backgroundColor: "white",
-              borderRadius: 60,
-              marginTop: 50,
-            }}
-            underlayColor={"#f0f0f0"}
-            onPress={() => router.navigate("/continents")}
-          >
-            <View
-              style={{
-                flex: 1,
-                alignContent: "center",
-                justifyContent: "center",
-                alignSelf: "center",
-              }}
-            >
-              <Text
-                style={{
-                  fontSize: 20,
-                  fontFamily: "MontserratBold",
-                }}
-              >
-                Go →
-              </Text>
-            </View>
-          </TouchableHighlight>
-        </View>
-      )}
-      <View style={{}}>
-        <TabNavAnimated onPress={(item: string) => setTab(item)} />
-      </View>
-      {/* </ImageBackground> */}
-    </View>
+            <Screens />
+          </ImageBackground>
+        </TamaguiProvider>
+      </Provider>
+    </GestureHandlerRootView>
   );
-}
+};

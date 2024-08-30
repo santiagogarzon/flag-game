@@ -1,45 +1,45 @@
-import Ionicons from "@expo/vector-icons/Ionicons";
-import { PropsWithChildren, useState } from "react";
-import { StyleSheet, TouchableOpacity, useColorScheme } from "react-native";
+// import Ionicons from "@expo/vector-icons/Ionicons";
+// import { PropsWithChildren, useState } from "react";
+// import { StyleSheet, TouchableOpacity, useColorScheme } from "react-native";
 
-import { ThemedView } from "@/components/ThemedView";
-import { Colors } from "@/constants/Colors";
-import { Link, router } from "expo-router";
+// import { ThemedView } from "@/components/ThemedView";
+// import { Colors } from "@/constants/Colors";
+// import { Link, router } from "expo-router";
 
-export function BackButton({
-  children,
-}: PropsWithChildren & { title: string }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const theme = useColorScheme() ?? "light";
+// export function BackButton({
+//   children,
+// }: PropsWithChildren & { title: string }) {
+//   const [isOpen, setIsOpen] = useState(false);
+//   const theme = useColorScheme() ?? "light";
 
-  return (
-    <TouchableOpacity
-      style={{
-        ...styles.heading,
-        backgroundColor: theme === "light" ? "white" : "#2E4854",
-        overflow: "visible",
-      }}
-      onPress={() => router.back()}
-      activeOpacity={0.8}
-    >
-      <Ionicons
-        name={"arrow-back"}
-        size={20}
-        color={theme === "light" ? Colors.light.icon : Colors.dark.icon}
-      />
-    </TouchableOpacity>
-  );
-}
+//   return (
+//     <TouchableOpacity
+//       style={{
+//         ...styles.heading,
+//         backgroundColor: theme === "light" ? "white" : "#2E4854",
+//         overflow: "visible",
+//       }}
+//       onPress={() => router.back()}
+//       activeOpacity={0.8}
+//     >
+//       <Ionicons
+//         name={"arrow-back"}
+//         size={20}
+//         color={theme === "light" ? Colors.light.icon : Colors.dark.icon}
+//       />
+//     </TouchableOpacity>
+//   );
+// }
 
-const styles = StyleSheet.create({
-  heading: {
-    flexDirection: "row",
-    alignItems: "center",
-    padding: 20,
-    borderRadius: 30,
-  },
-  content: {
-    marginTop: 6,
-    marginLeft: 24,
-  },
-});
+// const styles = StyleSheet.create({
+//   heading: {
+//     flexDirection: "row",
+//     alignItems: "center",
+//     padding: 20,
+//     borderRadius: 30,
+//   },
+//   content: {
+//     marginTop: 6,
+//     marginLeft: 24,
+//   },
+// });
