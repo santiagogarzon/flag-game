@@ -1,3 +1,4 @@
+import { useNavigation } from "@react-navigation/native";
 import { styled, View } from "@tamagui/core";
 import { Button } from "app/ds/atoms/Button/Button";
 import { CustomIcon, Icon, Text } from "app/ds/sub-atomic";
@@ -31,8 +32,8 @@ const Page = styled(View, {
 });
 
 export const Home = () => {
+  const { navigate } = useNavigation();
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
-
   const scrollOffset = useScrollViewOffset(scrollRef);
 
   const pages: HomePage[] = [
@@ -40,7 +41,7 @@ export const Home = () => {
       icon: "world",
       title: "Flags of the World",
       description: "21/195",
-      action: noop,
+      action: () => navigate("Groups"),
     },
     {
       icon: "gift",
@@ -92,7 +93,7 @@ export const Home = () => {
               <Icon name={icon} size={82} />
               <View
                 height={2}
-                backgroundColor={"$surface"}
+                backgroundColor="$surface"
                 width={128}
                 position="absolute"
                 transform={[{ translateX: screenWidth / 2 }]}

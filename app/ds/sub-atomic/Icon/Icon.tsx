@@ -6,15 +6,14 @@ const MIcon = createIconSet(glyphMap, "customIcons", "customIcons.ttf");
 
 export type CustomIcon = keyof typeof glyphMap;
 
-export const Icon = styled(
+const _Icon = styled(
   MIcon,
   {},
   {
     accept: {
       color: "color",
     },
-    defaultProps: {
-      color: "$onSurface",
-    },
   }
 );
+
+export const Icon = styled(_Icon, { color: "$onSurface" });

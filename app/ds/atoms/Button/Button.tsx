@@ -55,7 +55,7 @@ export type ButtonProps = {
 
 export const Button = View.styleable<ButtonProps>(
   ({ type = "primary", fab, text, icon, ...styledProps }, ref) => {
-    const textColor = type === "secondary" ? "surface" : "onSurface";
+    const textColor = type === "secondary" ? "$surface" : "$onSurface";
     return (
       <ButtonContainer type={type} fab={fab} ref={ref} {...styledProps}>
         {!fab && (

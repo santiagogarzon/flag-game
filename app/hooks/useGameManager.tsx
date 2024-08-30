@@ -1,5 +1,7 @@
 import { atom, useAtom } from "jotai";
+import { find, keys, toLower } from "lodash";
 import { useEffect } from "react";
+import flagsInfo from "assets/flags-info.json";
 
 const maxLifes = 4;
 const lifeTimeIncrementation = 1000 * 60 * 60; // one hour
@@ -16,23 +18,47 @@ export type Group = {
 };
 
 export type Pack = {
-  groups: Group[];
+  id: string;
+  image: string;
 };
+
+const worldPack: Pack[] = [
+  { id: "asia", image: require("assets/images/world/asia.png") },
+  {
+    id: "south america",
+    image: require("assets/images/world/south america.png"),
+  },
+  { id: "africa", image: require("assets/images/world/africa.png") },
+  { id: "europe", image: require("assets/images/world/europe.png") },
+  {
+    id: "north & central america",
+    image: require("assets/images/world/north & central america.png"),
+  },
+  { id: "oceania", image: require("assets/images/world/oceania.png") },
+];
+
+const packs = { world: worldPack };
 
 export const useGameManager = () => {
   const [lifes, setLifes] = useAtom(lifesAtom);
   const completedFlags = 12;
-  const packs: Pack[] = [];
-  const getGroups = (pack: string) => [];
-  const getFlags = (pack: string, group: string) => [];
+
+  const getGroups = (pack: keyof typeof packs) => packs[pack];
+  const getFlags = (pack: keyof typeof packs, groupId: string) => {
+    if (pack === "world") {
+      const group = find(
+        flagsInfo,
+        (_, key) => toLower(key) === toLower(groupId)
+      );
+
+      return group;
+    }
+    return [];
+  };
 
   const completeFlag = (flagId: string) => {};
-  const asd = () => {};
 
-  const updateLifes = () => {
-    // get last live updates
-    // add lives
-  };
+  const updateLifes = () => {};
 
   updateLifes();
 
