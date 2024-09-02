@@ -1,44 +1,81 @@
-import { Text, View, TouchableOpacity } from "react-native";
-import { lazy, useEffect, useRef, useState } from "react";
-import { find, flatMap, map, mapValues, toLower } from "lodash";
+import { useEffect, useState } from "react";
+import {
+  capitalize,
+  chunk,
+  findIndex,
+  isEqual,
+  isString,
+  kebabCase,
+  map,
+  noop,
+  size,
+  toLower,
+} from "lodash";
 
 import React from "react";
-import { importSvgr } from "../../../flags-svgr/import-svg";
-import flagInfoJson from "assets/flags-info.json";
-import { useRoute } from "@react-navigation/native";
+import { useNavigation, useRoute } from "@react-navigation/native";
+import { importSvgr } from "app/flags-svgr/import-svg";
+import flagsColors from "app/flags-svgr/flags-colors.json";
+import {
+  Flag,
+  getFlagId,
+  Group,
+  PackId,
+  useGameManager,
+} from "app/hooks/useGameManager";
+import { NavigationProp, RouteProp } from "../screens";
+import { View } from "@tamagui/core";
+import { Icon, Text } from "app/ds/sub-atomic";
+import { FlagComponentProps } from "app/flags-svgr/flags.types";
+import {
+  CheckContainer,
+  ColorPicker,
+  ColorSelectorContainer,
+  CompletedFlagContainer,
+  FlagContainer,
+} from "./Game.styled";
+import { FailAnimation, failAnimationDuration } from "./FailAnimation";
+import { FlagInfoBottomSheet } from "./FlagInfoBottomSheet";
+import { chunkObject } from "app/utils/objects";
+import flagsInfo from "assets/flags-info.json";
 
-type FlagComponentProps = {
-  colors: { [key: string]: string };
-  onPress: (id: string) => void;
+export type GameScreenParams = {
+  flag: Flag;
+  group: Group;
+  pack: PackId;
 };
 
-const flagInfo = flatMap(flagInfoJson).map((flag) => ({
-  ...flag,
-  country: toLower(flag.country),
-}));
-
 export const Game = () => {
-  const { params } = useRoute();
+  const {
+    completeFlag,
+    loseLife,
+    isFlagCompleted,
+    lives,
+    completedFlagsAmount,
+  } = useGameManager();
+  const navigation = useNavigation<NavigationProp<"Game">>();
+  const { params } = useRoute<RouteProp<"Game">>();
+  const { flag, group, pack } = params;
+  const countryName = toLower(kebabCase(flag.country));
 
-  const countryName = "SAINT-KITTS-AND-NEVIS".toLowerCase();
-  const country = find(flagInfo, (flag) => countryName === flag.country);
-
-  const [FlagLinesComponent, setFlagLinesComponent] = useState();
-
+  const [FlagLinesComponent, setFlagLinesComponent] =
+    useState<React.FC<FlagComponentProps>>();
   const [FlagComponent, setFlagComponent] =
     useState<React.FC<FlagComponentProps>>();
-  const [colorOptions, setColorOptions] = useState();
+
+  const colorOptions = flagsColors[getFlagId(flag)];
+  const [selectedColor, setSelectedColor] = useState<string>();
   const [currentColors, setCurrentColors] = useState<{
     [key: string]: string;
   }>({});
-  const [selectedColor, setSelectedColor] = useState<string>();
+
+  const [gameCompleted, setGameCompleted] = useState(false);
 
   const onPressPath = (id: string) => {
-    if (selectedColor) {
+    if (selectedColor && isString(id)) {
       setCurrentColors((a) => ({ ...a, [id]: selectedColor }));
+      setSelectedColor(undefined);
     }
-
-    setSelectedColor(undefined);
   };
 
   const loadFlagComponent = async () => {
@@ -55,99 +92,142 @@ export const Game = () => {
     }
   };
 
-  const loadColors = async () => {
-    try {
-      const colors = await import(
-        `../flags-svgr/${countryName}/${countryName}-colors.json`
-      ).then((r) => r.default);
-      setColorOptions(colors);
-      setCurrentColors({});
-    } catch (e) {
-      console.error(e);
-      console.error("nopee");
+  const canClearColor = size(currentColors) > 0;
+  const cleanColors = () => setCurrentColors({});
+
+  const canCheckFlag =
+    size(currentColors) >= size(colorOptions) &&
+    (isFlagCompleted(flag, group, pack) ? true : lives > 0);
+
+  const checkFlag = () => {
+    const validColors = isEqual(currentColors, colorOptions);
+    if (validColors) {
+      completeFlag(flag, group, pack);
+      setGameCompleted(true);
+      setTimeout(() => {
+        setShowBottomSheet(true);
+      }, 1600);
+    } else {
+      startLostLifeAnimation();
     }
+  };
+
+  const [showLostAnimation, setShowLostLifeAnimation] = useState(false);
+  const [showBottomSheet, setShowBottomSheet] = useState(false);
+
+  const startLostLifeAnimation = () => {
+    setShowLostLifeAnimation(true);
+    setTimeout(() => {
+      loseLife();
+    }, 300);
+
+    setTimeout(() => {
+      setShowLostLifeAnimation(false);
+    }, failAnimationDuration);
+  };
+
+  const resetGame = () => {
+    setGameCompleted(false);
+    setShowBottomSheet(false);
+    setShowLostLifeAnimation(false);
+    setCurrentColors({});
   };
 
   useEffect(() => {
     loadFlagComponent();
-    loadColors();
-  }, []);
+    resetGame();
+  }, [flag]);
+
+  const goToNextFlag = () => {
+    // TODO: actually this only works for world pack
+    if (pack !== "world") return;
+
+    const groupFlags = flagsInfo[capitalize(group.id)] as unknown as Flag[];
+
+    const currentFlagIndex = findIndex(
+      groupFlags,
+      (currentFlag: Flag) => currentFlag.country === flag.country
+    );
+
+    const nextFlag: Flag = groupFlags[currentFlagIndex + 1];
+
+    if (nextFlag && nextFlag.unblock < completedFlagsAmount) {
+      navigation.navigate("Game", { pack, group, flag: nextFlag });
+    } else {
+      navigation.goBack();
+    }
+  };
 
   if (!FlagComponent || !FlagLinesComponent || !colorOptions) return null;
 
   return (
-    <View
-      style={{
-        flex: 1,
-        justifyContent: "space-between",
-      }}
-    >
-      <View
-        style={{
-          justifyContent: "center",
-          alignContent: "center",
-          marginHorizontal: 8,
-          marginTop: 200,
-        }}
-      >
-        <View style={{ position: "absolute" }}>
-          <FlagLinesComponent onPress={onPressPath} colors={currentColors} />
+    <>
+      <View flex={1}>
+        <View flex={1}>
+          <View
+            flexDirection="row"
+            alignSelf="center"
+            gap={40}
+            opacity={gameCompleted ? 0 : 1}
+            animateOnly={["opacity"]}
+          >
+            <Icon
+              color="$onSurface"
+              name="gota"
+              disabled={!canClearColor}
+              onPress={cleanColors}
+              size={24}
+            />
+            <Icon
+              color="$onSurface"
+              name="check"
+              size={24}
+              disabled={!canCheckFlag}
+              onPress={checkFlag}
+            />
+          </View>
+          <FlagContainer>
+            <FlagLinesComponent onPress={onPressPath} colors={currentColors} />
+            <CompletedFlagContainer show={gameCompleted}>
+              <FlagComponent onPress={onPressPath} colors={currentColors} />
+            </CompletedFlagContainer>
+          </FlagContainer>
+          <Text
+            type="h2"
+            alignSelf="center"
+            opacity={gameCompleted ? 0 : 1}
+            animateOnly={["opacity"]}
+          >
+            {flag?.country}
+          </Text>
         </View>
-        {/* <View style={{ position: "absolute" }}>
-          <FlagComponent onPress={onPressPath} colors={currentColors} />
-        </View> */}
+        <ColorSelectorContainer gameCompleted={gameCompleted}>
+          {map(
+            chunkObject(colorOptions, size(colorOptions) === 4 ? 2 : 3),
+            (colorOptionsChunk) => (
+              <View flexDirection="row" gap={40}>
+                {map(colorOptionsChunk, (color: string) => (
+                  <ColorPicker
+                    onPress={() => setSelectedColor(color)}
+                    borderWidth={selectedColor === color ? 10 : 5}
+                    backgroundColor={color}
+                  />
+                ))}
+              </View>
+            )
+          )}
+        </ColorSelectorContainer>
+        <CheckContainer show={gameCompleted && !showBottomSheet}>
+          <Icon name="check" size={28} color="$onSurface" />
+        </CheckContainer>
+        <FlagInfoBottomSheet
+          visible={showBottomSheet}
+          flag={flag}
+          onPressNextFlag={goToNextFlag}
+        />
       </View>
-      <Text
-        style={{
-          alignSelf: "center",
-          fontSize: 24,
-          marginTop: 40,
-          fontFamily: "MontserratBold",
-        }}
-      >
-        {country?.country}
-      </Text>
-      <View
-        style={{
-          backgroundColor: "#FFFFFF80",
-          alignSelf: "center",
-          alignItems: "center",
-          flexDirection: "row",
-          justifyContent: "space-around",
-          height: "25%",
-          width: "100%",
-          borderTopLeftRadius: 40,
-          borderTopRightRadius: 40,
-        }}
-      >
-        {/* mapear colores */}
-        {map(colorOptions, (color: string) => (
-          <TouchableOpacity onPress={() => setSelectedColor(color)}>
-            <View
-              style={{
-                backgroundColor: "white",
-                width: 60,
-                height: 60,
-                borderRadius: 30,
-                justifyContent: "center",
-                alignItems: "center",
-                shadowColor: "#000",
-                shadowRadius: 5,
-                shadowOffset: { width: 0, height: 2 },
-              }}
-            >
-              <View
-                style={{
-                  height: 50,
-                  width: 50,
-                  backgroundColor: color,
-                  borderRadius: 25,
-                }}
-              ></View>
-            </View>
-          </TouchableOpacity>
-        ))}
-      </View>
-    </View>
+
+      <FailAnimation visible={showLostAnimation} />
+    </>
   );
 };

@@ -1,5 +1,6 @@
 import { createAnimations } from "@tamagui/animations-moti";
 import { createTokens, createTamagui } from "@tamagui/core";
+import { Platform } from "react-native";
 
 export const animations = createAnimations({
   bouncy: {
@@ -17,13 +18,15 @@ export const animations = createAnimations({
 const colors = {
   error: "#FF4C62",
   succes: "#50E3C2",
+  blue: "#2E4854",
+  white: "#FFFFFF",
 };
 
 const light = {
   onSurface: "#2E4854",
   surface: "#FFFFFF",
-  onSurface50: "#2E485480",
-  surface50: "#FFFFFF80",
+  onSurface50: Platform.OS === "ios" ? "#2E485480" : "#909496",
+  surface50: Platform.OS === "ios" ? "#FFFFFF80" : "#e9eced",
 };
 
 export type Theme = typeof light;
@@ -31,8 +34,8 @@ export type Theme = typeof light;
 const dark: Theme = {
   surface: "#2E4854",
   onSurface: "#FFFFFF",
-  surface50: "#2E485480",
-  onSurface50: "#FFFFFF80",
+  surface50: Platform.OS === "ios" ? "#2E485480" : "#909496",
+  onSurface50: Platform.OS === "ios" ? "#FFFFFF80" : "#e9eced",
 };
 
 export const themes = {
@@ -83,6 +86,7 @@ export const tokens = createTokens({
     md: 16,
   },
   zIndex: {},
+
   color: colors,
 } as const);
 

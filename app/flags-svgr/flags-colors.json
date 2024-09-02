@@ -1,0 +1,983 @@
+{
+  "democratic-republic-of-the-congo": {
+    "blue": "#456CA6",
+    "yelllow": "#F2D22B",
+    "red": "#BB242B"
+  },
+  "republic-of-the-congo": {
+    "green": "#0D8B44",
+    "yellow": "#F7DC51",
+    "red": "#C9292B"
+  },
+  "algeria": {
+    "green": "#145830",
+    "white": "white",
+    "red": "#C02537"
+  },
+  "benin": {
+    "Fill 1": "#F6CD2B",
+    "Fill 2": "#D32432",
+    "Fill 3": "#117E4E"
+  },
+  "botswana": {
+    "blue": "#71A0C9",
+    "white": "#FFFFFE",
+    "black": "#0A0B09"
+  },
+  "cameroon": {
+    "green": "#137156",
+    "red": "#BC242C",
+    "yellow": "#F6CD2B"
+  },
+  "burkina-faso": {
+    "green": "#0B9446",
+    "red": "#D93033",
+    "yellow": "#F6CD2B"
+  },
+  "angola": {
+    "red": "#BC242C",
+    "black": "#000000",
+    "yellow": "#F4D22A"
+  },
+  "burundi": {
+    "red": "#BC242C",
+    "green": "#2AA948",
+    "white": "#FFFFFE"
+  },
+  "chad": {
+    "navy": "#1E274B",
+    "yellow": "#F7C723",
+    "red": "#B32534"
+  },
+  "comoros": {
+    "yellow": "#F7C232",
+    "white": "#FFFFFE",
+    "red": "#BC242C",
+    "blue": "#426AA5",
+    "green": "#3C8640"
+  },
+  "cape-verde": {
+    "blue": "#263875",
+    "Combined Shape": "#FFFFFE",
+    "red": "#BC242C",
+    "yellow": "#F8C823"
+  },
+  "djibouti": {
+    "blue": "#6CA9D0",
+    "green": "#19A448",
+    "white": "#FFFFFE",
+    "red": "#C4242B"
+  },
+  "central-african-republic": {
+    "blue": "#283366",
+    "white": "#FFFFFE",
+    "green": "#2B8E44",
+    "yellow": "#F8CA23",
+    "red": "#C02537"
+  },
+  "eswatini": {
+    " blue": "#415796",
+    "yellow": "#FAD51F",
+    "red": "#9E2529"
+  },
+  "egypt": {
+    "black": "#0A0B09",
+    "white": "#FFFFFE",
+    "red": "#BC242C"
+  },
+  "ethiopia": {
+    "red": "#C6242B",
+    "yellow": "#F8DA21",
+    "green": "#168041",
+    "blue": "#274489"
+  },
+  "gabon": {
+    "blue": "#426AA5",
+    "yellow": "#F6CD2B",
+    "green": "#05945A"
+  },
+  "gambia": {
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "blue": "#292D6A",
+    "green": "#3A6F38"
+  },
+  "ghana": {
+    "green": "#14623C",
+    "yellow": "#F6CD2B",
+    "black": "#0A0B09",
+    "red": "#BC242C"
+  },
+  "guinea-bissau": {
+    "red": "#BC242C",
+    "yellow": "#F6CD2B",
+    "green": "#0B9446",
+    "black": "#0A0B09"
+  },
+  "guinea": {
+    "Fill 1": "#CE1126",
+    "Fill 2": "#FCD116",
+    "Fill 3": "#009460"
+  },
+  "eritrea": {
+    "red": "#D52239",
+    "blue": "#4D7BB1",
+    "green": "#19A448",
+    "yellow": "#CF292A"
+  },
+  "equatorial-guinea": {
+    "red": "#CF292A",
+    "white": "#FFFFFE",
+    "green": "#3D9244",
+    "blue": "#3167A3"
+  },
+  "kenya": {
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "green": "#1C5C31",
+    "red": "#A8262A"
+  },
+  "liberia": {
+    "red": "#AD2534",
+    "white": "#FFFFFE",
+    "blue": "#20294F"
+  },
+  "libya": {
+    "green": "#249446",
+    "black": "#0A0B09",
+    "red": "#D2232A",
+    "white": "#FFFFFE"
+  },
+  "madagascar": {
+    "Fill 1": "#FFFFFE",
+    "Fill 2": "#DC3F38",
+    "Fill 3": "#13753D"
+  },
+  "mali": {
+    "green": "#25A848",
+    "yellow": "#F6CD2B",
+    "red": "#BC242C"
+  },
+  "mauritania": {
+    "red": "#D01C1F",
+    "green": "#00A95C",
+    "yellow": "#FFD700"
+  },
+  "mauritius": {
+    "Fill 1": "#D62C3A",
+    "Fill 2": "#262754",
+    "Fill 3": "#F9D120",
+    "Fill 4": "#039B4D"
+  },
+  "morocco": {
+    "red": "#AF2B30",
+    "green": "#145830"
+  },
+  "lesotho": {
+    "green": "#0D8B44",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "blue": "#273279"
+  },
+  "namibia": {
+    "sun": "#F8CA23",
+    "green": "#0D8B44",
+    "white": "white",
+    "red": "#C02537",
+    "blue": "#273566"
+  },
+  "niger": {
+    "green": "#18A648",
+    "white": "#FFFFFE",
+    "orange": "#CE502C"
+  },
+  "nigeria": {
+    "Fill 1": "#117E4E",
+    "Fill 3": "#FFFFFE"
+  },
+  "sao-tome-and-principe": {
+    "green": "#19A448",
+    "yellow": "#F8CA23",
+    "red": "#C02537",
+    "black": "#0A0B09"
+  },
+  "malawi": {
+    "black": "#0A0B09",
+    "red": "#BC242C",
+    "green": "#339545"
+  },
+  "senegal": {
+    "green": "#107C40",
+    "yellow": "#F8EC4C",
+    "red": "#CF232A"
+  },
+  "seychelles": {
+    "red": "#C32B2C",
+    "yellow": "#F8D45A",
+    "white": "#FFFFFE",
+    "blue": "#253B6E",
+    "green": "#14713C"
+  },
+  "sierra-leone": {
+    "Fill 1": "#2AA948",
+    "Fill 2": "#FFFFFE",
+    "Fill 3": "#2B67A3"
+  },
+  "mozambique": {
+    "Fill 1": "black",
+    "Fill 2": "white",
+    "Fill 3": "#007168",
+    "Fill 5": "#FCE100",
+    "Fill 8": "#C02537"
+  },
+  "south-africa": {
+    "Fill 1": "#002395",
+    "Fill 5": "#DE3831",
+    "Combined Shape": "white",
+    "Fill 16": "black",
+    "Fill 17": "#FFB612",
+    "Fill 18": "#007A4D"
+  },
+  "somalia": {
+    "blue": "#4D7BB1",
+    "white": "#FFFFFE"
+  },
+  "south-sudan": {
+    "green": "#168041",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "red": "#C6242B",
+    "blue": "#274489",
+    "yellow": "#F8DA21"
+  },
+  "rwanda": {
+    "blue": "#2695C6",
+    "yellow": "#F4CE23",
+    "green": "#22573A"
+  },
+  "sudan": {
+    "red": "#C02537",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "green": "#186937"
+  },
+  "tanzania": {
+    "green": "#2AA948",
+    "blue": "#2498C8",
+    "black": "#0A0B09",
+    "yellow": "#F6CD2B"
+  },
+  "togo": {
+    "green": "#136148",
+    "yellow": "#F8CA23",
+    "red": "#C02537",
+    "white": "#FFFFFE"
+  },
+  "tunisia": {
+    "red": "#D2232A",
+    "white": "#FFFFFE"
+  },
+  "zambia": {
+    "green": "#228241",
+    "orange": "#E0762C",
+    "black": "#0A0B09",
+    "red": "#CA282B"
+  },
+  "uganda": {
+    "Combined Shape": "#C5242B",
+    "yellow": "#F8D91F",
+    "Fill 13": "#0A0B09"
+  },
+  "afghanistan": {
+    "green": "#169045",
+    "red": "#AC252A",
+    "black": "#0A0B09"
+  },
+  "armenia": {
+    "gold": "#25377E",
+    "blue": "#E6A22E",
+    "red": "#C6242B"
+  },
+  "kyrgyzstan": {
+    "red": "#D32432",
+    "yellow": "#FBEC29"
+  },
+  "azerbaijan": {
+    "sky": "#1B8EB1",
+    "red": "#CD2438",
+    "green": "#00A460",
+    "white": "#FFFFFE"
+  },
+  "bahrain": {
+    "white": "#FFFFFE",
+    "red": "#BC242C"
+  },
+  "bangladesh": {
+    "green": "#136148",
+    "red": "#DA2F41"
+  },
+  "china": {
+    "red": "#CB2E2B",
+    "yellow": "#FBDB1E"
+  },
+  "zimbabwe": {
+    "Combined Shape": "#328A42",
+    "Combined Shape_2": "#F9CE22",
+    "Combined Shape_3": "#CA282B",
+    "black": "#0A0B09",
+    "white": "white"
+  },
+  "bhutan": {
+    "gold": "#E5AC36",
+    "orange": "#D03C2E",
+    "white": "#FFFFFE"
+  },
+  "cyprus": {
+    "white": "#FFFFFE",
+    "green": "#2E4023",
+    "orange": "#EFA53C"
+  },
+  "east-timor": {
+    "red": "#C62A2B",
+    "yellow": "#F7C231",
+    "black": "#1A1919",
+    "white": "#FFFFFE"
+  },
+  "georgia": {
+    "white": "#FFFFFE",
+    "red": "#D9252A"
+  },
+  "brunei": {
+    "yellow": "#F3DE27",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "Fill 5": "#BD242C"
+  },
+  "cambodia": {
+    "red": "#CC242D",
+    "blue": "#25367D",
+    "white": "white"
+  },
+  "israel": {
+    "white": "white",
+    "blue": "#2A4086"
+  },
+  "japan": {
+    "white": "#FFFFFE",
+    "red": "#A92532"
+  },
+  "india": {
+    "orange": "#EC9141",
+    "white": "#FFFFFE",
+    "green": "#1E8040"
+  },
+  "jordan": {
+    "black": "#0A0B09",
+    "white": "#FFFFFE",
+    "green": "#14713C",
+    "red": "#BC242C"
+  },
+  "kuwait": {
+    "green": "#14713C",
+    "white": "#FFFFFE",
+    "red": "#BC242C",
+    "black": "#0A0B09"
+  },
+  "iraq": {
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "green": "#14713C"
+  },
+  "laos": {
+    "red": "#BC242C",
+    "blue": "#20294F",
+    "white": "#FFFFFE"
+  },
+  "indonesia": {
+    "red": "#BC242C",
+    "white": "#FFFFFE"
+  },
+  "iran": {
+    "red": "#C6242B",
+    "white": "white",
+    "green": "#249646"
+  },
+  "malaysia": {
+    "red": "#B8242A",
+    "white": "#FFFFFE",
+    "blue": "#1C1C46",
+    "yellow": "#F8C823"
+  },
+  "maldives": {
+    "red": "#C02537",
+    "green": "#13753D",
+    "white": "#FFFFFE"
+  },
+  "nepal": {
+    "blue": "#263875",
+    "red": "#C9233D",
+    "white": "#FFFFFE"
+  },
+  "north-korea": {
+    "blue": "#194789",
+    "white": "#FFFFFE",
+    "red": "#D8262F"
+  },
+  "myanmar": {
+    "yellow": "#F7C723",
+    "red": "#D62C3A",
+    "green": "#37A847",
+    "white": "white"
+  },
+  "kazakhstan": {
+    "blue": "#23A6B9",
+    "yellow": "#F6C029"
+  },
+  "lebanon": {
+    "red": "#D8262C",
+    "white": "#FFFFFE",
+    "green": "#039C4D"
+  },
+  "mongolia": {
+    "red": "#B22B32",
+    "blue": "#1A4881",
+    "yellow": "#F3CB24"
+  },
+  "palestine": {
+    "black": "black",
+    "green": "#007A3D",
+    "white": "white",
+    "red": "#CE1126"
+  },
+  "qatar": {
+    "maroon": "#791F37",
+    "white": "white"
+  },
+  "pakistan": {
+    "white": "#FFFFFE",
+    "green": "#143822"
+  },
+  "singapore": {
+    "red": "#D92D3A",
+    "white": "#FFFFFE"
+  },
+  "oman": {
+    "red": "#C8242B",
+    "white": "#FFFFFE",
+    "green": "#16783E"
+  },
+  "south-korea": {
+    "white": "white",
+    "black": "#0A0B09",
+    "blue": "#27335F",
+    "red": "#B32534"
+  },
+  "philippines": {
+    "blue": "#233A82",
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "yellow": "#F6CD2B"
+  },
+  "saudi-arabia": {
+    "green": "#186234",
+    "white": "#FFFFFE"
+  },
+  "syria": {
+    "black": "#0A0B09",
+    "white": "#FFFFFE",
+    "red": "#BC242C",
+    "green": "#14713C"
+  },
+  "tajikistan": {
+    "green": "#1C5C31",
+    "white": "#FFFFFE",
+    "red": "#B8242A",
+    "gold": "#F0BE27"
+  },
+  "turkey": {
+    "red": "#CF232A",
+    "white": "white"
+  },
+  "thailand": {
+    "red": "#D8262C",
+    "white": "#FFFFFE",
+    "blue": "#1B1736"
+  },
+  "united-arab-emirates": {
+    "red": "#BC242C",
+    "green": "#0B9446",
+    "white": "#FFFFFE",
+    "black": "#0A0B09"
+  },
+  "vietnam": {
+    "red": "#C72A2B",
+    "yellow": "#F4E92A"
+  },
+  "yemen": {
+    "white": "#FFFFFE",
+    "red": "#BC242C",
+    "black": "#1A1919"
+  },
+  "albania": {
+    "red": "#D0262A",
+    "black": "#0A0B09"
+  },
+  "turkmenistan": {
+    "Combined Shape": "#24A461",
+    "white": "#FFFFFE"
+  },
+  "belgium": {
+    "Fill 1": "#0A0B09",
+    "Fill 2": "#F6DE4A",
+    "Fill 3": "#D92D3A"
+  },
+  "uzbekistan": {
+    "red": "#BC242C",
+    "green": "#2AA948",
+    "white": "#FFFFFE",
+    "blue": "#1D8FA4"
+  },
+  "austria": {
+    "Combined Shape": "#D92D3A",
+    "Fill 4 Copy": "white"
+  },
+  "bulgaria": {
+    "Fill 4": "#C22C2B",
+    "Fill 4 Copy": "#0B8D66",
+    "Fill 4 Copy 2": "#FFFFFE"
+  },
+  "bosnia-and-herzegovina": {
+    "blue": "#283172",
+    "yellow": "#F7C723",
+    "white": "#FFFFFE"
+  },
+  "andorra": {
+    "blue": "#26337C",
+    "red": "#BE243C",
+    "yellow": "#FBDD1D"
+  },
+  "czech-republic": {
+    "red": "#C4242B",
+    "white": "#FFFFFE",
+    "blue": "#213F6A"
+  },
+  "estonia": {
+    "Fill 4": "#FFFFFE",
+    "Fill 4 Copy": "#0A0B09",
+    "Fill 4 Copy 2": "#4E85B9"
+  },
+  "belarus": {
+    "red": "#B7323E",
+    "green": "#469E53",
+    "white": "white"
+  },
+  "denmark": {
+    "red": "#B32534",
+    "white": "#FFFFFE"
+  },
+  "finland": {
+    "white": "#FFFFFE",
+    "blue": "#273566"
+  },
+  "greece": {
+    "white": "white",
+    "blue": "#215596"
+  },
+  "iceland": {
+    "blue": "#253879",
+    "white": "white",
+    "red": "#C42C2C"
+  },
+  "germany": {
+    "Fill 4": "#F8CA23",
+    "Fill 4 Copy": "#C9242A",
+    "Fill 4 Copy 2": "#0A0B09"
+  },
+  "france": {
+    "Fill 1": "#283172",
+    "Fill 1 Copy": "#D92D3A",
+    "Fill 2": "white"
+  },
+  "croatia": {
+    "red": "#D9252A",
+    "white": "#FFFFFE",
+    "blue": "#292D72"
+  },
+  "ireland": {
+    "Fill 1": "#0A9146",
+    "Fill 1 Copy": "#E5702A",
+    "Fill 2": "white"
+  },
+  "hungary": {
+    "Fill 4": "#117E4E",
+    "Fill 4 Copy": "white",
+    "Fill 4 Copy 2": "#BC242C"
+  },
+  "latvia": {
+    "Combined Shape": "#8C2F37",
+    "Fill 4 Copy": "white"
+  },
+  "italy": {
+    "Fill 1": "#0C8944",
+    "Fill 1 Copy": "#BC2C38",
+    "Fill 2": "white"
+  },
+  "lithuania": {
+    "Fill 4": "#AF2B30",
+    "Fill 4 Copy": "#136140",
+    "Fill 4 Copy 2": "#F2B22B"
+  },
+  "luxembourg": {
+    "Fill 4": "#2695C6",
+    "Fill 4 Copy": "#FFFFFE",
+    "Fill 4 Copy 2": "#D92D3A"
+  },
+  "monaco": {
+    "red": "#BC242C",
+    "white": "#FFFFFE"
+  },
+  "malta": {
+    "Fill 1": "#BD2530",
+    "Fill 2": "#FFFFFE"
+  },
+  "north-macedonia": {
+    "Combined Shape": "#D20000",
+    "Combined Shape_2": "#F8E71C"
+  },
+  "netherlands": {
+    "Combined Shape": "#9C252C",
+    "Fill 4": "#273E75",
+    "Fill 4 Copy": "white"
+  },
+  "liechtenstein": {
+    "red": "#283163",
+    "blue": "#BC242C"
+  },
+  "norway": {
+    "red": "#D93033",
+    "white": "#FFFFFE",
+    "navy": "#20294F"
+  },
+  "poland": {
+    "white": "#FFFFFE",
+    "red": "#C9233D"
+  },
+  "romania": {
+    "Fill 1": "#283163",
+    "Fill 2": "#F6CD2B",
+    "Fill 3": "#BC242C"
+  },
+  "moldova": {
+    "Fill 1": "#BA2533",
+    "Fill 3": "#F9CE22",
+    "Fill 4": "#244388"
+  },
+  "montenegro": {
+    "gold": "#C9A840",
+    "red": "#B1252A"
+  },
+  "russia": {
+    "Combined Shape": "#C22E2B",
+    "Fill 4 Copy 2": "#FFFFFE",
+    "Fill 4 Copy": "#223982"
+  },
+  "portugal": {
+    "red": "#D9252A",
+    "green": "#1D5C31"
+  },
+  "slovenia": {
+    "Fill 1": "#D8272D",
+    "Fill 3": "#1C5490",
+    "Fill 4": "#FFFFFE"
+  },
+  "sweden": {
+    "Combined Shape Copy": "#F7C723",
+    "Combined Shape": "#1A4A7E"
+  },
+  "switzerland": {
+    "red": "#D9252A",
+    "white": "#FFFFFE"
+  },
+  "ukraine": {
+    "blue": "#285495",
+    "yellow": "#F9D120"
+  },
+  "united-kingdom": {
+    "navy": "#282E60",
+    "white": "white",
+    "red": "#BD2530"
+  },
+  "slovakia": {
+    "white": "white",
+    "blue": "#1C4689",
+    "red": "#D8262D"
+  },
+  "antigua-and-barbuda": {
+    "black": "#0A0B09",
+    "blue": "#2B67A3",
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "yellow": "#F6CD2B"
+  },
+  "bahamas": {
+    "sky": "#23A2B8",
+    "yellow": "#F6DE4A",
+    "black": "#0A0B09"
+  },
+  "barbados": {
+    "navy": "#282F62",
+    "yellow": "#F7C337",
+    "black": "#0A0B09"
+  },
+  "canada": {
+    "red": "#D9252A",
+    "white": "#FFFFFE"
+  },
+  "costa-rica": {
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "blue": "#283163"
+  },
+  "cuba": {
+    "blue": "#28326F",
+    "white": "#FFFFFE",
+    "red": "#BD2530"
+  },
+  "vatican-city": {
+    "Fill 4": "#FFFFFE",
+    "Fill 5": "#FCDE1D"
+  },
+  "dominica": {
+    "Combined Shape": "#14623C",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "yellow": "#F6CD2B",
+    "Combined Shape_2": "#C12533"
+  },
+  "honduras": {
+    "Combined Shape": "#3167A3",
+    "Combined Shape_2": "#FFFFFE"
+  },
+  "grenada": {
+    "red": "#BC242C",
+    "green": "#137156",
+    "yellow": "#F6CD2B"
+  },
+  "jamaica": {
+    "black": "black",
+    "green": "#109145",
+    "yellow": "#F8CD23"
+  },
+  "guatemala": {
+    "blue": "#4A8CBD",
+    "white": "white"
+  },
+  "panama": {
+    "white": "#FFFFFE",
+    "blue": "#1A4A7E",
+    "red": "#C02537"
+  },
+  "nicaragua": {
+    "blau": "#08305D",
+    "white": "#FFFFFE"
+  },
+  "saint-kitts-and-nevis": {
+    "green": "#0B9446",
+    "red": "#BC242C",
+    "yellow": "#F6CD2B",
+    "black": "black",
+    "white": "#FFFFFE"
+  },
+  "saint-lucia": {
+    "sky": "#72C3E2",
+    "black": "#0A0B09",
+    "white": "white",
+    "yellow": "#F6CD2B"
+  },
+  "saint-vincent-and-the-grenadines": {
+    "blue": "#2B67A3",
+    "yellow": "#F6CD2B",
+    "green": "#05945A"
+  },
+  "trinidad-and-tobago": {
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "black": "#0A0B09"
+  },
+  "australia": {
+    "navy": "#282965",
+    "white": "white",
+    "red": "#D9252A"
+  },
+  "united-states": {
+    "white": "white",
+    "red": "#A02735",
+    "blue": "#37355C"
+  },
+  "haiti": {
+    "blue": "#273279",
+    "red": "#C02537"
+  },
+  "kiribati": {
+    "red": "#BC242C",
+    "yellow": "#F6CD2B",
+    "blue": "#253B6E",
+    "white": "#FFFFFE"
+  },
+  "marshall-islands": {
+    "navy": "#022145",
+    "orange": "#EC912D",
+    "white": "#FFFFFE"
+  },
+  "micronesia": {
+    "sky": "#73AACD",
+    "white": "#FFFFFE"
+  },
+  "nauru": {
+    "navy": "#283163",
+    "yellow": "#F7C232",
+    "white": "#FFFFFE"
+  },
+  "new-zealand": {
+    "navy": "#282E60",
+    "white": "white",
+    "red": "#BC242C"
+  },
+  "palau": {
+    "sky": "#50A4C4",
+    "yellow": "#FBDB1E"
+  },
+  "mexico": {
+    "white": "#FFFFFE",
+    "green": "#125F43",
+    "red": "#BC242C"
+  },
+  "samoa": {
+    "red": "#BC242C",
+    "blue": "#283163",
+    "white": "#FFFFFE"
+  },
+  "tonga": {
+    "red": "#AE252A",
+    "white": "#FFFFFE"
+  },
+  "tuvalu": {
+    "sky": "#5B8EA1",
+    "yellow": "#F8CA23",
+    "navy": "#20294F",
+    "white": "white",
+    "red": "#BC242C"
+  },
+  "fiji": {
+    "sky": "#6AB8D6",
+    "navy": "#20294F",
+    "red": "#BC242C",
+    "Fill 14": "#FFFFFE"
+  },
+  "bolivia": {
+    "Fill 1": "#15703B",
+    "Fill 3": "#F6E21C",
+    "Fill 4": "#C22E2B"
+  },
+  "papua-new-guinea": {
+    "black": "#0A0B09",
+    "red": "#BC242C",
+    "yellow": "#F6CD2B",
+    "white": "#FFFFFE"
+  },
+  "chile": {
+    "red": "#C22E2B",
+    "blue": "#223982",
+    "white": "#FFFFFE"
+  },
+  "colombia": {
+    "Fill 1": "#F6CD2B",
+    "Fill 2": "#263875",
+    "Fill 3": "#BC242C"
+  },
+  "argentina": {
+    "sky": "#71A2CB",
+    "white": "#FFFFFE"
+  },
+  "vanuatu": {
+    "red": "#D21034",
+    "green": "#009543",
+    "black": "black",
+    "yellow": "#FDCE12"
+  },
+  "guyana": {
+    "green": "#0B9446",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "yellow": "#F6CD2B",
+    "red": "#BC242C"
+  },
+  "brazil": {
+    "yellow": "#FEDF00",
+    "blue": "#002776",
+    "green": "#009B3A",
+    "white": "white"
+  },
+  "peru": {
+    "Fill 1": "#C6242B",
+    "Fill 2": "#FFFFFE"
+  },
+  "suriname": {
+    "green": "#37773E",
+    "white": "#FFFFFE",
+    "red": "#A12531",
+    "yellow": "#E4C22A"
+  },
+  "venezuela": {
+    "red": "#BD2530",
+    "blue": "#282E60",
+    "yellow": "#F8C823"
+  },
+  "paraguay": {
+    "white": "#FFFFFE",
+    "blue": "#233A82",
+    "red": "#C22E2B"
+  },
+  "uruguay": {
+    "white": "white",
+    "blue": "#233A82"
+  },
+  "sri-lanka": {
+    "yellow": "#F2B02A",
+    "orange": "#E0562A",
+    "green": "#134C3A",
+    "maroon": "#79222A"
+  },
+  "san-marino": {
+    "white": "#FFFFFE",
+    "sky": "#62AED3"
+  },
+  "spain": {
+    "red": "#B3252B",
+    "yellow": "#F6BF25"
+  },
+  "serbia": {
+    "Fill 1": "#FFFFFE",
+    "Fill 2": "#B5363C",
+    "Fill 3": "#223A62"
+  },
+  "belize": {
+    "red": "#BC242C",
+    "blue": "#253B6E"
+  },
+  "dominican-republic": {
+    "blue": "#1E294B",
+    "red": "#BC242C",
+    "Fill 7": "#FFFFFE"
+  },
+  "ecuador": {
+    "yellow": "#F9D81E",
+    "blue": "#1A4887",
+    "red": "#D6282E"
+  },
+  "el-salvador": {
+    "blue": "#274489",
+    "white": "#FFFFFE"
+  }
+}

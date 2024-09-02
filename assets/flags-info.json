@@ -1032,15 +1032,6 @@
                 "#0A0B09"
             ]
         },
-        // {
-        //     "country": "Ivory Coast",
-        //     "unblock": 56,
-        //     "colors": [
-        //         "#E6772B",
-        //         "#FFFFFE",
-        //         "#05945A"
-        //     ]
-        // },
         {
             "country": "Kenya",
             "unblock": 66,
@@ -1743,16 +1734,6 @@
                 "#FFFFFE"
             ]
         },
-        // {
-        //     "country": "Solomon Islands",
-        //     "unblock": 164,
-        //     "colors": [
-        //         "#274D90",
-        //         "#225132",
-        //         "#F6CD2B",
-        //         "#FFFFFE"
-        //     ]
-        // },
         {
             "country": "Tonga",
             "unblock": 176,

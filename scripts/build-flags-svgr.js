@@ -23,36 +23,15 @@ const {
 } = require("lodash");
 const t = require("@babel/types");
 const flagInfoJson = require("../assets/flags-info.json");
-const destionationFolder = __dirname + "/../flags-svgr/";
+const destionationFolder = __dirname + "/../app/flags-svgr/";
 const originFolder = __dirname + "/../assets/flags-svg/";
+
+const flagsColors = {};
 
 const flagInfo = flatMap(flagInfoJson).map((flag) => ({
   ...flag,
   country: toLower(flag.country),
 }));
-
-function findPaths(tree) {
-  let paths = [];
-
-  function search(obj) {
-    if (typeof obj !== "object" || obj === null) {
-      return;
-    }
-
-    if (obj.hasOwnProperty("path")) {
-      paths.push(obj["path"]);
-    }
-
-    for (let key in obj) {
-      if (obj.hasOwnProperty(key)) {
-        search(obj[key]);
-      }
-    }
-  }
-
-  search(tree);
-  return paths;
-}
 
 // Función para leer el archivo SVG
 const readSvgFile = (filePath) => {
@@ -161,7 +140,7 @@ const createSvgrColoredComponent = async (svgContent, colors) => {
     svgContent,
     {
       icon: false,
-      expandProps: false,
+      expandProps: true,
       plugins: ["@svgr/plugin-jsx", "@svgr/plugin-prettier"],
       native: true,
       // replaceAttrValues: { white: "#FFFFFF", black: "#000000" },
@@ -191,7 +170,11 @@ const createSvgrColoredComponent = async (svgContent, colors) => {
           const currentColor = colors[currentElementId];
           const fillOpacity = fillOpacityAttribute?.value?.expression?.value;
 
-          if (currentColor && currentElementId && fillOpacity === 0.5) {
+          if (
+            currentColor &&
+            currentElementId &&
+            (fillOpacity === 0.5 || fillOpacity === 1)
+          ) {
             const fillIndex = findIndex(
               element.openingElement.attributes,
               (attribute) => attribute.name.name === "fill"
@@ -304,6 +287,8 @@ const convertSvgToSvgrFlag = async ([filePathA, filePathB]) => {
       JSON.stringify(colors, null, 2)
     );
 
+    flagsColors[countryName] = colors;
+
     // process B
     const svgContentB = await readSvgFile(filePathB);
     const svgrComponentB = await createSvgrColoredComponent(
@@ -374,6 +359,11 @@ const generate = async () => {
   fs.promises.writeFile(
     destionationFolder + "/import-svg.ts",
     moduleResolverFile
+  );
+
+  fs.promises.writeFile(
+    destionationFolder + "/flags-colors.json",
+    JSON.stringify(flagsColors, null, 2)
   );
 
   console.log("Done!");

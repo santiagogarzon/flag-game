@@ -1,82 +1,51 @@
-import React, { useEffect } from "react";
-import { View } from "@tamagui/core";
+import React from "react";
+import { styled, View } from "@tamagui/core";
 import { FlatList } from "react-native-gesture-handler";
 import { screenWidth } from "../Groups/GroupTab.styled";
-import { capitalize, chunk, kebabCase, map, toLower } from "lodash";
-import { useRoute } from "@react-navigation/native";
-import { Flag, useGameManager } from "app/hooks/useGameManager";
+import { capitalize, chunk, first, map } from "lodash";
+import { useNavigation, useRoute } from "@react-navigation/native";
+import { Flag, Group, PackId, useGameManager } from "app/hooks/useGameManager";
 import { Text } from "app/ds/sub-atomic";
 import { useState } from "react";
 import { NativeScrollEvent, NativeSyntheticEvent } from "react-native";
-import { importSvgr } from "flags-svgr/import-svg";
+import { NavigationProp, RouteProp } from "../screens";
+import { FlagsPage } from "./FlagsPage";
 
-const flagsPageWidth = screenWidth;
-const flagsPageHeight = 440;
-const flagItemWidth = flagsPageWidth / 2;
-const flagItemHeight = flagsPageHeight / 3;
+export const IndicatorContainer = styled(View, {
+  backgroundColor: "$surface",
+  alignSelf: "center",
+  borderRadius: "$xl",
+  padding: 16,
+  gap: 12,
+  flexDirection: "row",
+  marginBottom: 16,
+});
 
-const FlagItem = ({ flag, index }) => {
-  const [FlagLinesComponent, setFlagLinesComponent] = useState();
-  const [FlagComponent, setFlagComponent] = useState();
+export const IndicatorDot = styled(View, {
+  width: 12,
+  height: 12,
+  borderRadius: 8,
+  animation: "lazy",
+  animateOnly: ["backgroundColor"],
+  backgroundColor: "$onSurface50",
+  variants: {
+    selected: {
+      true: {
+        backgroundColor: "$onSurface",
+      },
+    },
+  } as const,
+});
 
-  const countryFileName = `${kebabCase(toLower(flag.country))}`;
-
-  const loadFlagComponent = async () => {
-    try {
-      const Flag = await React.lazy(() => importSvgr(countryFileName));
-      setFlagComponent(() => Flag);
-
-      const FlagLines = await React.lazy(() =>
-        importSvgr(countryFileName + "-lines")
-      );
-      setFlagLinesComponent(() => FlagLines);
-    } catch (error) {
-      console.error(error);
-    }
-  };
-
-  useEffect(() => {
-    loadFlagComponent();
-  }, [flag.country]);
-  return (
-    <View
-      position="absolute"
-      width={flagItemWidth}
-      height={flagItemHeight}
-      justifyContent="center"
-      alignItems="center"
-      transform={[
-        { translateX: (index % 2) * flagItemWidth },
-        { translateY: (index % 3) * flagItemHeight },
-      ]}
-    >
-      {!!FlagComponent && <FlagComponent width={120} height={120} />}
-      {/* {importSvgr(`${kebabCase(toLower(flag.country))}-lines`)} */}
-      <Text>{flag.country}</Text>
-    </View>
-  );
-};
-
-export const FlagsPage = ({ flags = [] }: { flags: Flag[] }) => {
-  return (
-    <View
-      justifyContent="center"
-      flex={1}
-      alignItems="center"
-      width={flagsPageWidth}
-    >
-      <View width={flagsPageWidth} height={flagsPageHeight}>
-        {map(flags, (flag, index) => (
-          <FlagItem {...{ flag, index }} />
-        ))}
-      </View>
-    </View>
-  );
+export type FlagsListsParams = {
+  group: Group;
+  pack: PackId;
 };
 
 export const FlagsLists = () => {
-  const route = useRoute();
-  const { group, pack } = route.params || {};
+  const navigation = useNavigation<NavigationProp<"FlagsList">>();
+  const route = useRoute<RouteProp<"FlagsList">>();
+  const { group, pack } = route.params;
   const { getFlags } = useGameManager();
   const [currentPageIndex, setCurrentPageIndex] = useState(0);
 
@@ -89,43 +58,32 @@ export const FlagsLists = () => {
     setCurrentPageIndex(newIndex);
   };
 
+  const openFlag = (flag: Flag) => {
+    navigation.navigate("Game", { flag, group, pack });
+  };
+
   return (
     <View flex={1}>
-      <Text type="h1" alignSelf="center" textAlign="center">
+      <Text type="h1" alignSelf="center" textAlign="center" marginTop={16}>
         {capitalize(group.id)}
       </Text>
       <FlatList
-        style={{ flex: 1 }}
         data={pagedFlags}
-        renderItem={({ item: flags }) => <FlagsPage flags={flags} />}
+        keyExtractor={(a) => first(a)?.country as string}
+        renderItem={({ item: flags }) => (
+          <FlagsPage {...{ flags, pack, group }} onPress={openFlag} />
+        )}
         pagingEnabled
         horizontal
         showsHorizontalScrollIndicator={false}
         scrollEventThrottle={16}
         onScroll={onScroll}
       />
-      <View
-        backgroundColor="$surface"
-        alignSelf="center"
-        borderRadius="$xl"
-        padding={16}
-        gap={12}
-        flexDirection="row"
-        marginBottom={16}
-      >
+      <IndicatorContainer>
         {map(pagedFlags, (_, index) => (
-          <View
-            width={12}
-            height={12}
-            borderRadius={8}
-            animation="lazy"
-            animateOnly={["backgroundColor"]}
-            backgroundColor={
-              index === currentPageIndex ? "$onSurface" : "$onSurface50"
-            }
-          />
+          <IndicatorDot selected={index === currentPageIndex} />
         ))}
-      </View>
+      </IndicatorContainer>
     </View>
   );
 };

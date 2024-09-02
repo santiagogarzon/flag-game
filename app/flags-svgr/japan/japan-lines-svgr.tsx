@@ -1,0 +1,58 @@
+import * as React from "react";
+import Svg, { G, Path } from "react-native-svg";
+import type { SvgProps } from "react-native-svg";
+type FlagProps = {
+  onPress: (id: string) => void,
+  colors: {
+    [key: string]: string,
+  },
+};
+const Flag = (props: FlagProps) => {
+  return (
+    <Svg
+      width={350}
+      height={250}
+      viewBox="0 0 350 250"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      {...props}
+    >
+      <G id="flag / asia / japan / b">
+        <G id="japan b">
+          <G id="white" onPress={() => props.onPress("white")}>
+            <Path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M325 25V225H25V25H325ZM235 125C235 91.863 208.137 65 175 65C141.863 65 115 91.863 115 125C115 158.137 141.863 185 175 185C208.137 185 235 158.137 235 125Z"
+              fill={props.colors["white"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("white")}
+            />
+            <Path
+              d="M325 225V226H326V225H325ZM325 25H326V24H325V25ZM25 225H24V226H25V225ZM25 25V24H24V25H25ZM326 225V25H324V225H326ZM25 226H325V224H25V226ZM24 25V225H26V25H24ZM325 24H25V26H325V24ZM175 66C207.585 66 234 92.4153 234 125H236C236 91.3107 208.689 64 175 64V66ZM116 125C116 92.4153 142.415 66 175 66V64C141.311 64 114 91.3107 114 125H116ZM175 184C142.415 184 116 157.585 116 125H114C114 158.689 141.311 186 175 186V184ZM234 125C234 157.585 207.585 184 175 184V186C208.689 186 236 158.689 236 125H234Z"
+              fill="white"
+              onPress={() => props.onPress("white")}
+            />
+          </G>
+          <G id="red" onPress={() => props.onPress("red")}>
+            <Path
+              fillRule="evenodd"
+              clipRule="evenodd"
+              d="M175 65C208.137 65 235 91.863 235 125C235 158.137 208.137 185 175 185C141.863 185 115 158.137 115 125C115 91.863 141.863 65 175 65Z"
+              fill={props.colors["red"]}
+              fillOpacity={1}
+              onPress={() => props.onPress("red")}
+            />
+            <Path
+              d="M175 65C208.137 65 235 91.863 235 125C235 158.137 208.137 185 175 185C141.863 185 115 158.137 115 125C115 91.863 141.863 65 175 65"
+              stroke="white"
+              strokeWidth={2}
+              onPress={() => props.onPress("red")}
+            />
+          </G>
+        </G>
+      </G>
+    </Svg>
+  );
+};
+export default Flag;

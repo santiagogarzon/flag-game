@@ -4,7 +4,8 @@ import { Dimensions } from "react-native";
 export const indicatorWidth = 90;
 export const indicatorMargin = 0;
 
-export const { width: screenWidth } = Dimensions.get("screen");
+export const { width: screenWidth, height: screenHeight } =
+  Dimensions.get("screen");
 
 export const GroupTabContainer = styled(View, {
   alignItems: "center",

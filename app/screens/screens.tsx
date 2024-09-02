@@ -2,26 +2,36 @@ import {
   createNavigationContainerRef,
   DefaultTheme,
   NavigationContainer,
+  RouteProp as NavigationRouteProp,
 } from "@react-navigation/native";
 import {
   createNativeStackNavigator,
-  TransitionSpecs,
+  NativeStackNavigationProp,
 } from "@react-navigation/native-stack";
 
 import { Home } from "./Home/Home";
-import { GamePacks } from "./GamePacks/GamePacks";
-import { Groups } from "./Groups/Groups";
-import { FlagsLists } from "./FlagsList/FlagsLists";
-import { Game } from "./Game/Game";
+import { Groups, GroupsParams } from "./Groups/Groups";
+import { FlagsLists, FlagsListsParams } from "./FlagsList/FlagsLists";
+import { Game, GameScreenParams } from "./Game/Game";
 import { Header } from "app/ds/organism/Header/Header";
+import { Options } from "./Options/Options";
 
 type AppScreensParams = {
   Home: undefined;
-  GamePacks: undefined;
-  Groups: undefined;
-  FlagsList: undefined;
-  Game: undefined;
+  Groups: GroupsParams;
+  FlagsList: FlagsListsParams;
+  Game: GameScreenParams;
+  Options: undefined;
 };
+
+export type StackNavigationProps = NativeStackNavigationProp<AppScreensParams>;
+
+export type RouteProp<T extends keyof AppScreensParams> = NavigationRouteProp<
+  AppScreensParams,
+  T
+>;
+export type NavigationProp<T extends keyof AppScreensParams> =
+  NativeStackNavigationProp<AppScreensParams, T>;
 
 export const AppStack = createNativeStackNavigator<AppScreensParams>();
 export const navigationRef = createNavigationContainerRef<AppScreensParams>();
@@ -37,13 +47,16 @@ const navigatorTheme = {
 export const Screens = () => (
   <NavigationContainer ref={navigationRef} theme={navigatorTheme}>
     <AppStack.Navigator
-      screenOptions={{ header: Header, animation: "slide_from_bottom" }}
+      screenOptions={{
+        header: Header,
+        animation: "fade_from_bottom",
+      }}
     >
       <AppStack.Screen name="Home" component={Home} />
-      <AppStack.Screen name="GamePacks" component={GamePacks} />
       <AppStack.Screen name="Groups" component={Groups} />
       <AppStack.Screen name="FlagsList" component={FlagsLists} />
       <AppStack.Screen name="Game" component={Game} />
+      <AppStack.Screen name="Options" component={Options} />
     </AppStack.Navigator>
   </NavigationContainer>
 );

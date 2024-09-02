@@ -9,15 +9,15 @@ import Animated, {
   useAnimatedStyle,
   useScrollViewOffset,
 } from "react-native-reanimated";
-import { useGameManager } from "app/hooks/useGameManager";
+import { PackId, useGameManager } from "app/hooks/useGameManager";
 import {
   indicatorMargin,
   indicatorWidth,
   screenWidth,
 } from "./GroupTab.styled";
 import { GroupTab } from "./GroupTab";
-
-const IndicatorImage = styled(Image, {});
+import { useRoute } from "@react-navigation/native";
+import { RouteProp } from "../screens";
 
 export const useScrollIndicatorStyle = ({
   scrollOffset,
@@ -46,12 +46,17 @@ export const useScrollIndicatorStyle = ({
   return indicatorPositionStyle;
 };
 
+export type GroupsParams = {
+  pack: PackId;
+};
+
 export const Groups = () => {
   const { getGroups } = useGameManager();
+  const route = useRoute<RouteProp<"Groups">>();
+  const pack = route?.params.pack;
 
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
   const scrollOffset = useScrollViewOffset(scrollRef);
-  const pack = "world";
   const groups = getGroups(pack);
 
   const indicatorContainerStyle = useScrollIndicatorStyle({

@@ -1,14 +1,25 @@
-import { atom, useAtom } from "jotai";
-import { find, keys, toLower } from "lodash";
-import { useEffect } from "react";
+import { atom, useAtom, useAtomValue } from "jotai";
+import { cloneDeep, find, kebabCase, keys, min, size, toLower } from "lodash";
 import flagsInfo from "assets/flags-info.json";
+import flagsColorInfo from "app/flags-svgr/flags-colors.json";
+import { countLeafNodes } from "app/utils/objects";
+import { atomWithStorage } from "jotai/utils";
+import { storage } from "app/utils/jotai";
+import { testerModeActiveAtom } from "app/screens/Options/Options";
 
-const maxLives = 4;
+const maxLives = 5;
 const liveTimeIncrementation = 1000 * 60 * 60; // one hour
-const livesAtom = atom<number>(3);
-const lastUpdate = atom<Date>(new Date());
-const unlockedFlagsAtom = atom<string[]>();
+const livesAtom = atomWithStorage<number>("lives", maxLives, storage, {
+  getOnInit: true,
+});
+const lastLivesUpdateAtom = atomWithStorage<number>("lastUpdate", 0, storage, {
+  getOnInit: true,
+});
+const completedFlagsAtom = atomWithStorage<{
+  [packId: string]: { [groupId: string]: { [countryName: string]: boolean } };
+}>("completedFlags", {}, storage, { getOnInit: true });
 
+export type PackId = keyof typeof packs;
 export type Flag = (typeof flagsInfo.Africa)[0];
 export type Group = {
   id: string;
@@ -31,11 +42,15 @@ const worldPack: Group[] = [
 ];
 
 const packs = { world: worldPack };
-export type PackId = keyof typeof packs;
+
+export const getFlagId = (flag: Flag) =>
+  kebabCase(toLower(flag.country)) as keyof typeof flagsColorInfo;
 
 export const useGameManager = () => {
+  const testing = useAtomValue(testerModeActiveAtom);
+  const [lastLiveUpdate, setLastLivesUpdate] = useAtom(lastLivesUpdateAtom);
   const [lives, setLives] = useAtom(livesAtom);
-  const completedFlags = 12;
+  const [completedFlags, setCompletedFlags] = useAtom(completedFlagsAtom);
 
   const getGroups = (pack: PackId) => packs[pack];
 
@@ -51,9 +66,45 @@ export const useGameManager = () => {
     return [];
   };
 
-  const completeFlag = (flagId: string) => {};
+  const completedFlagsAmount = countLeafNodes(completedFlags);
 
-  const updateLifes = () => {};
+  const isFlagCompleted = (flag: Flag, group: Group, packId: PackId) => {
+    try {
+      return completedFlags[packId][group.id][flag.country] === true;
+    } catch {
+      return false;
+    }
+  };
+
+  const completeFlag = (flag: Flag, group: Group, packId: PackId) => {
+    const newCompletedFlags = cloneDeep(completedFlags);
+    if (!newCompletedFlags[packId]) {
+      newCompletedFlags[packId] = {};
+    }
+    if (!newCompletedFlags[packId][group.id]) {
+      newCompletedFlags[packId][group.id] = {};
+    }
+    newCompletedFlags[packId][group.id][flag.country] = true;
+
+    setCompletedFlags(newCompletedFlags);
+  };
+
+  const updateLifes = () => {
+    const millisDifference = Date.now() - lastLiveUpdate;
+    const livesToAdd = Math.floor(millisDifference / liveTimeIncrementation);
+
+    if (livesToAdd > 0) {
+      setLastLivesUpdate(Date.now());
+      setLives(min([lives + livesToAdd, maxLives]) as number);
+    }
+  };
+
+  const loseLife = () => {
+    if (!testing) {
+      return;
+    }
+    setLives((lives || 0) - 1);
+  };
 
   updateLifes();
 
@@ -62,7 +113,10 @@ export const useGameManager = () => {
     getGroups,
     getFlags,
     completeFlag,
-    lives,
+    lives: testing ? 5 : lives,
+    completedFlagsAmount: testing ? 300 : completedFlagsAmount,
     completedFlags,
+    loseLife,
+    isFlagCompleted,
   };
 };

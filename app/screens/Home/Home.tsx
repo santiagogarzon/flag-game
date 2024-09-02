@@ -10,6 +10,9 @@ import Animated, {
   useAnimatedStyle,
   useScrollViewOffset,
 } from "react-native-reanimated";
+import { NavigationProp } from "../screens";
+import worldFlags from "app/flags-svgr/flags-colors.json";
+import { useGameManager } from "app/hooks/useGameManager";
 
 const indicatorWidth = 56;
 const indicatorMargin = 32;
@@ -32,7 +35,8 @@ const Page = styled(View, {
 });
 
 export const Home = () => {
-  const { navigate } = useNavigation();
+  const { completedFlagsAmount } = useGameManager();
+  const { navigate } = useNavigation<NavigationProp<"Home">>();
   const scrollRef = useAnimatedRef<Animated.ScrollView>();
   const scrollOffset = useScrollViewOffset(scrollRef);
 
@@ -40,8 +44,8 @@ export const Home = () => {
     {
       icon: "world",
       title: "Flags of the World",
-      description: "21/195",
-      action: () => navigate("Groups"),
+      description: `${completedFlagsAmount}/${size(worldFlags)}`,
+      action: () => navigate("Groups", { pack: "world" }),
     },
     {
       icon: "gift",

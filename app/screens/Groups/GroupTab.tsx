@@ -6,13 +6,15 @@ import { GroupTabContainer } from "./GroupTab.styled";
 import { capitalize, size } from "lodash";
 import { Group, PackId, useGameManager } from "app/hooks/useGameManager";
 import { useNavigation } from "@react-navigation/native";
+import { countLeafNodes } from "app/utils/objects";
 
 export const GroupTab = ({ pack, group }: { pack: PackId; group: Group }) => {
   const navigation = useNavigation();
-  const { getFlags } = useGameManager();
+  const { getFlags, completedFlags } = useGameManager();
   const { id, image } = group;
   const flags = getFlags(pack, id);
-  const completed = 0;
+
+  const completed = countLeafNodes(completedFlags?.[pack]?.[group.id] || {});
   const total = size(flags);
 
   const openFlagsScreen = () => {

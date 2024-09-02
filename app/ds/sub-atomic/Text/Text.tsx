@@ -1,4 +1,7 @@
 import { styled, Text as TamaguiText } from "@tamagui/core";
+import { Platform } from "react-native";
+
+const fontWeight700 = Platform.OS === "android" ? undefined : 700;
 
 export const Text = styled(TamaguiText, {
   fontFamily: "MontserratBold",
@@ -7,27 +10,27 @@ export const Text = styled(TamaguiText, {
     type: {
       h1: {
         fontSize: 28,
-        fontWeight: 700,
+        fontWeight: fontWeight700,
         lineHeight: 34,
       },
       h2: {
         fontSize: 24,
-        fontWeight: 700,
+        fontWeight: fontWeight700,
         lineHeight: 29,
       },
       h3: {
         fontSize: 20,
-        fontWeight: 700,
+        fontWeight: fontWeight700,
         lineHeight: 24,
       },
       h4: {
         fontSize: 16,
-        fontWeight: 700,
+        fontWeight: fontWeight700,
         lineHeight: 19,
       },
       h5: {
         fontSize: 14,
-        fontWeight: 700,
+        fontWeight: fontWeight700,
         lineHeight: 17,
       },
       body1: {
@@ -43,7 +46,7 @@ export const Text = styled(TamaguiText, {
       },
       button: {
         fontSize: 20,
-        fontWeight: 700,
+        fontWeight: fontWeight700,
         lineHeight: 24,
       },
     } as const,

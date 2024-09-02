@@ -16,4 +16,7 @@ const _Icon = styled(
   }
 );
 
-export const Icon = styled(_Icon, { color: "$onSurface" });
+export const Icon = styled(_Icon, {
+  color: "$onSurface",
+  disabledStyle: { opacity: 0.5 },
+});
