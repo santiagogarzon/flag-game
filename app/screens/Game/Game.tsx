@@ -1,13 +1,11 @@
 import { useEffect, useState } from "react";
 import {
   capitalize,
-  chunk,
   findIndex,
   isEqual,
   isString,
   kebabCase,
   map,
-  noop,
   size,
   toLower,
 } from "lodash";
@@ -34,7 +32,7 @@ import {
   CompletedFlagContainer,
   FlagContainer,
 } from "./Game.styled";
-import { FailAnimation, failAnimationDuration } from "./FailAnimation";
+import { FailAnimation } from "./FailAnimation";
 import { FlagInfoBottomSheet } from "./FlagInfoBottomSheet";
 import { chunkObject } from "app/utils/objects";
 import flagsInfo from "assets/flags-info.json";
@@ -120,10 +118,6 @@ export const Game = () => {
     setTimeout(() => {
       loseLife();
     }, 300);
-
-    setTimeout(() => {
-      setShowLostLifeAnimation(false);
-    }, failAnimationDuration);
   };
 
   const resetGame = () => {
@@ -163,7 +157,7 @@ export const Game = () => {
   return (
     <>
       <View flex={1}>
-        <View flex={1}>
+        <View flex={1} justifyContent="center">
           <View
             flexDirection="row"
             alignSelf="center"
@@ -171,22 +165,34 @@ export const Game = () => {
             opacity={gameCompleted ? 0 : 1}
             animateOnly={["opacity"]}
           >
-            <Icon
-              color="$onSurface"
-              name="gota"
-              disabled={!canClearColor}
+            <View
               onPress={cleanColors}
-              size={24}
-            />
-            <Icon
-              color="$onSurface"
-              name="check"
-              size={24}
-              disabled={!canCheckFlag}
+              disabled={!canClearColor}
+              pressStyle={{ scale: 1.3 }}
+              animation="bouncy"
+            >
+              <Icon
+                color="$onSurface"
+                name="gota"
+                disabled={!canClearColor}
+                size={24}
+              />
+            </View>
+            <View
               onPress={checkFlag}
-            />
+              disabled={!canCheckFlag}
+              pressStyle={{ scale: 1.3 }}
+              animation="bouncy"
+            >
+              <Icon
+                color="$onSurface"
+                name="check"
+                size={24}
+                disabled={!canCheckFlag}
+              />
+            </View>
           </View>
-          <FlagContainer>
+          <FlagContainer showBottomSheet={showBottomSheet}>
             <FlagLinesComponent onPress={onPressPath} colors={currentColors} />
             <CompletedFlagContainer show={gameCompleted}>
               <FlagComponent onPress={onPressPath} colors={currentColors} />
@@ -217,17 +223,19 @@ export const Game = () => {
             )
           )}
         </ColorSelectorContainer>
-        <CheckContainer show={gameCompleted && !showBottomSheet}>
-          <Icon name="check" size={28} color="$onSurface" />
-        </CheckContainer>
-        <FlagInfoBottomSheet
-          visible={showBottomSheet}
-          flag={flag}
-          onPressNextFlag={goToNextFlag}
-        />
       </View>
-
-      <FailAnimation visible={showLostAnimation} />
+      <CheckContainer show={gameCompleted && !showBottomSheet}>
+        <Icon name="check" size={28} color="$onSurface" />
+      </CheckContainer>
+      <FlagInfoBottomSheet
+        visible={showBottomSheet}
+        flag={flag}
+        onPressNextFlag={goToNextFlag}
+      />
+      <FailAnimation
+        visible={showLostAnimation}
+        onAnimationFinish={() => setShowLostLifeAnimation(false)}
+      />
     </>
   );
 };

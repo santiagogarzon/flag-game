@@ -100,7 +100,7 @@ export const useGameManager = () => {
   };
 
   const loseLife = () => {
-    if (!testing) {
+    if (testing) {
       return;
     }
     setLives((lives || 0) - 1);

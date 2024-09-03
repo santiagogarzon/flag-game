@@ -1,26 +1,75 @@
 import { Portal } from "@gorhom/portal";
 
-import React, { useEffect, useState } from "react";
+import React, { useEffect } from "react";
 import { View } from "@tamagui/core";
 import { Icon } from "app/ds/sub-atomic";
-import { Circle, Defs, Mask, Rect, Svg } from "react-native-svg";
 import { screenHeight, screenWidth } from "../Groups/GroupTab.styled";
-import { motifySvg } from "moti/svg";
+
 import { useAtomValue } from "jotai";
 import { heartPositionAtom } from "app/ds/organism/Header/Header";
+import { Canvas, Circle, Mask, Rect } from "@shopify/react-native-skia";
+import Animated, {
+  Extrapolation,
+  interpolate,
+  runOnJS,
+  useAnimatedStyle,
+  useDerivedValue,
+  useSharedValue,
+  withDelay,
+  withSequence,
+  withTiming,
+} from "react-native-reanimated";
+import { StatusBar } from "react-native";
 
-const StyledCircle = motifySvg(Circle)();
+export const failAnimationDuration = 2200;
 
-export const failAnimationDuration = 1800;
-
-export const FailAnimation = ({ visible }: { visible: boolean }) => {
+export const FailAnimation = ({
+  visible,
+  onAnimationFinish,
+}: {
+  visible: boolean;
+  onAnimationFinish: () => void;
+}) => {
   const heartPosition = useAtomValue(heartPositionAtom);
-  const [displayAnimation, setDisplayAnimation] = useState(false);
+
+  const animation = useSharedValue(0);
+  const cx = heartPosition?.px + heartPosition?.width / 2;
+  const cy =
+    heartPosition?.py +
+    heartPosition.height / 2 +
+    (StatusBar.currentHeight || 0) / 2;
 
   useEffect(() => {
-    setDisplayAnimation(true);
-    setTimeout(() => setDisplayAnimation(false), 800);
+    if (visible) {
+      animation.value = withSequence(
+        withTiming(1, { duration: 600 }),
+        withDelay(
+          1000,
+          withTiming(0, { duration: 600 }, () => {
+            runOnJS(onAnimationFinish)();
+          })
+        )
+      );
+    } else {
+      animation.value = 0;
+    }
   }, [visible]);
+
+  const animatedRadius = useDerivedValue(() =>
+    interpolate(animation.value, [0, 1], [0, screenHeight * 1.2])
+  );
+
+  const heartStyle = useAnimatedStyle(() => ({
+    opacity: interpolate(
+      animation.value,
+      [0.8, 1],
+      [0, 1],
+      Extrapolation.CLAMP
+    ),
+    scale: interpolate(animation.value, [0.8, 1], [0, 1], Extrapolation.CLAMP),
+    position: "absolute",
+    alignSelf: "center",
+  }));
 
   return (
     <Portal>
@@ -36,46 +85,38 @@ export const FailAnimation = ({ visible }: { visible: boolean }) => {
           collapsable={false}
           disabled
         >
-          <Svg width={screenWidth} height={screenHeight}>
-            <Defs>
-              <Mask id="mask">
-                <StyledCircle
-                  cx={heartPosition?.px + heartPosition?.width / 2}
-                  cy={heartPosition?.py + heartPosition?.height / 2}
-                  fill="white"
-                  animate={{
-                    r: displayAnimation ? screenHeight * 1.2 : 0,
-                  }}
-                  transition={{
-                    type: "timing",
-                    duration: 300,
-                  }}
-                />
-                <Circle
-                  cx={heartPosition?.px + heartPosition?.width / 2}
-                  cy={heartPosition?.py + heartPosition?.height / 2}
-                  r={heartPosition?.width / 2 + 4}
-                  fill="black"
-                />
-              </Mask>
-            </Defs>
-            <Rect
-              width={screenWidth}
-              height={screenHeight}
-              fill="#FF4C62"
-              opacity={0.9}
-              mask="url(#mask)"
-            />
-          </Svg>
-          <View
-            position="absolute"
-            opacity={displayAnimation ? 1 : 0}
-            scale={displayAnimation ? 1 : 0.5}
-            animation="bouncy"
-            alignSelf="center"
-          >
+          <Canvas style={{ width: screenWidth, height: screenHeight }}>
+            {/* Definiendo una máscara */}
+            <Mask
+              mode="luminance"
+              mask={
+                <>
+                  {/* Círculo que cambia de tamaño con la animación */}
+                  <Circle cx={cx} cy={cy} r={animatedRadius} color="white" />
+                  {/* Círculo estático */}
+                  <Circle
+                    cx={cx}
+                    cy={cy}
+                    r={heartPosition?.width / 2}
+                    color="black"
+                  />
+                </>
+              }
+            >
+              {/* Rectángulo que se recortará usando la máscara */}
+              <Rect
+                x={0}
+                y={0}
+                width={screenWidth}
+                height={screenHeight}
+                color="#FF4C62"
+                opacity={0.9}
+              />
+            </Mask>
+          </Canvas>
+          <Animated.View style={heartStyle}>
             <Icon name="heart-broken" size={80} color="#FFFFFF" />
-          </View>
+          </Animated.View>
         </View>
       )}
     </Portal>

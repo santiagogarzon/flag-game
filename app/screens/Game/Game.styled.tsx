@@ -1,8 +1,17 @@
 import { styled, View } from "@tamagui/core";
 
 export const FlagContainer = styled(View, {
-  marginVertical: 22,
+  marginVertical: 16,
   alignSelf: "center",
+  animation: "lazy",
+  transform: [{ translateY: 0 }],
+  variants: {
+    showBottomSheet: {
+      true: {
+        transform: [{ translateY: -64 }],
+      },
+    },
+  },
 });
 
 export const ColorSelectorContainer = styled(View, {
@@ -37,8 +46,8 @@ export const ColorPicker = styled(View, {
   shadowOpacity: 0.16,
   shadowOffset: { width: 0, height: 2 },
   elevationAndroid: 5,
-  pressStyle: { scale: 1.1 },
-  animation: "lazy",
+  pressStyle: { scale: 1.2 },
+  animation: "bouncy",
 });
 
 export const CheckContainer = styled(View, {

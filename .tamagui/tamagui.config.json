@@ -821,6 +821,12 @@
           "mass": 0.9,
           "stiffness": 150
         },
+        "delayedBouncy": {
+          "damping": 9,
+          "mass": 0.9,
+          "stiffness": 150,
+          "delay": 600
+        },
         "lazy": {
           "damping": 12,
           "stiffness": 100,
@@ -1078,6 +1084,20 @@
           "name": "color-2",
           "val": "#50E3C2",
           "variable": ""
+        },
+        "blue": {
+          "isVar": true,
+          "key": "$blue",
+          "name": "color-3",
+          "val": "#2E4854",
+          "variable": ""
+        },
+        "white": {
+          "isVar": true,
+          "key": "$white",
+          "name": "color-4",
+          "val": "#FFFFFF",
+          "variable": ""
         }
       }
     },
@@ -1085,15 +1105,15 @@
       "light": {
         "onSurface": "#2E4854",
         "surface": "#FFFFFF",
-        "onSurface50": "#2E485480",
-        "surface50": "#FFFFFF80",
+        "onSurface50": "#909496",
+        "surface50": "#e9eced",
         "id": "light"
       },
       "dark": {
         "surface": "#2E4854",
         "onSurface": "#FFFFFF",
-        "surface50": "#2E485480",
-        "onSurface50": "#FFFFFF80",
+        "surface50": "#909496",
+        "onSurface50": "#e9eced",
         "id": "dark"
       }
     },
@@ -1337,6 +1357,20 @@
         "key": "$succes",
         "name": "color-2",
         "val": "#50E3C2",
+        "variable": ""
+      },
+      "$color.blue": {
+        "isVar": true,
+        "key": "$blue",
+        "name": "color-3",
+        "val": "#2E4854",
+        "variable": ""
+      },
+      "$color.white": {
+        "isVar": true,
+        "key": "$white",
+        "name": "color-4",
+        "val": "#FFFFFF",
         "variable": ""
       }
     }
