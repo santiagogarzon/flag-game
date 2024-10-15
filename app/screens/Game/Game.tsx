@@ -8,6 +8,8 @@ import {
   map,
   size,
   toLower,
+  uniq,
+  values,
 } from "lodash";
 
 import React from "react";
@@ -36,6 +38,7 @@ import { FailAnimation } from "./FailAnimation";
 import { FlagInfoBottomSheet } from "./FlagInfoBottomSheet";
 import { chunkObject } from "app/utils/objects";
 import flagsInfo from "assets/flags-info.json";
+import { useSafeAreaInsets } from "react-native-safe-area-context";
 
 export type GameScreenParams = {
   flag: Flag;
@@ -55,6 +58,7 @@ export const Game = () => {
   const { params } = useRoute<RouteProp<"Game">>();
   const { flag, group, pack } = params;
   const countryName = toLower(kebabCase(flag.country));
+  const insets = useSafeAreaInsets();
 
   const [FlagLinesComponent, setFlagLinesComponent] =
     useState<React.FC<FlagComponentProps>>();
@@ -67,8 +71,7 @@ export const Game = () => {
     [key: string]: string;
   }>({});
 
-  const [gameCompleted, setGameCompleted] = useState(false);
-
+  const gameCompleted = isFlagCompleted(flag, group, pack);
   const onPressPath = (id: string) => {
     if (selectedColor && isString(id)) {
       setCurrentColors((a) => ({ ...a, [id]: selectedColor }));
@@ -95,20 +98,26 @@ export const Game = () => {
 
   const canCheckFlag =
     size(currentColors) >= size(colorOptions) &&
-    (isFlagCompleted(flag, group, pack) ? true : lives > 0);
+    uniq(values(currentColors)).length === size(currentColors) &&
+    lives > 0 &&
+    !gameCompleted;
 
   const checkFlag = () => {
     const validColors = isEqual(currentColors, colorOptions);
     if (validColors) {
       completeFlag(flag, group, pack);
-      setGameCompleted(true);
-      setTimeout(() => {
-        setShowBottomSheet(true);
-      }, 1600);
     } else {
       startLostLifeAnimation();
     }
   };
+
+  useEffect(() => {
+    if (gameCompleted) {
+      setTimeout(() => {
+        setShowBottomSheet(true);
+      }, 1000);
+    }
+  }, [gameCompleted]);
 
   const [showLostAnimation, setShowLostLifeAnimation] = useState(false);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
@@ -121,7 +130,6 @@ export const Game = () => {
   };
 
   const resetGame = () => {
-    setGameCompleted(false);
     setShowBottomSheet(false);
     setShowLostLifeAnimation(false);
     setCurrentColors({});
@@ -207,7 +215,10 @@ export const Game = () => {
             {flag?.country}
           </Text>
         </View>
-        <ColorSelectorContainer gameCompleted={gameCompleted}>
+        <ColorSelectorContainer
+          gameCompleted={gameCompleted}
+          paddingBottom={insets.bottom + 32}
+        >
           {map(
             chunkObject(colorOptions, size(colorOptions) === 4 ? 2 : 3),
             (colorOptionsChunk) => (

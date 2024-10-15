@@ -18,6 +18,9 @@ export const ButtonContainer = styled(View, {
   pressStyle: {
     scale: 1.1,
   },
+  disabledStyle: {
+    opacity: 0.6,
+  },
   animation: "bouncy",
   variants: {
     type: {

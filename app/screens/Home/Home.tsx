@@ -13,6 +13,8 @@ import Animated, {
 import { NavigationProp } from "../screens";
 import worldFlags from "app/flags-svgr/flags-colors.json";
 import { useGameManager } from "app/hooks/useGameManager";
+import { useEffect } from "react";
+import { Progress } from "app/ds/atoms/Progress/Progress";
 
 const indicatorWidth = 56;
 const indicatorMargin = 32;
@@ -20,8 +22,11 @@ const indicatorMargin = 32;
 type HomePage = {
   icon: CustomIcon;
   title: string;
-  description: string;
+  description?: string;
   action: () => void;
+  disabled?: boolean;
+  completed?: number;
+  total?: number;
 };
 
 const { width: screenWidth } = Dimensions.get("screen");
@@ -44,20 +49,24 @@ export const Home = () => {
     {
       icon: "world",
       title: "Flags of the World",
-      description: `${completedFlagsAmount}/${size(worldFlags)}`,
+      // description: `${completedFlagsAmount}/${size(worldFlags)}`,
       action: () => navigate("Groups", { pack: "world" }),
+      completed: completedFlagsAmount,
+      total: size(worldFlags),
     },
     {
       icon: "gift",
       title: "Bonus Rounds",
       description: "More special flags to discover",
       action: noop,
+      disabled: true,
     },
     {
       icon: "diamond",
       title: "Premium Flags",
       description: "Only for the true flag masters",
       action: noop,
+      disabled: true,
     },
   ];
 
@@ -80,6 +89,14 @@ export const Home = () => {
     scrollRef.current?.scrollTo({ x: index * screenWidth, animated: true });
   };
 
+  useEffect(() => {
+    const t = setTimeout(() => {
+      scrollRef.current?.scrollTo({ x: screenWidth, animated: true });
+    }, 1000);
+
+    return () => clearTimeout(t);
+  }, []);
+
   return (
     <View flex={1}>
       <Animated.ScrollView
@@ -91,24 +108,62 @@ export const Home = () => {
         <Page>
           <Icon size={180} name="logo" />
         </Page>
-        {map(pages, ({ action, description, icon, title }, index) => (
-          <Page>
-            <View justifyContent="center" alignItems="center">
-              <Icon name={icon} size={82} />
-              <View
-                height={2}
-                backgroundColor="$surface"
-                width={128}
-                position="absolute"
-                transform={[{ translateX: screenWidth / 2 }]}
-              />
-            </View>
+        {map(
+          pages,
+          (
+            { action, description, icon, title, disabled, completed, total },
+            index
+          ) => (
+            <Page>
+              <View justifyContent="center" alignItems="center">
+                <Icon name={icon} size={82} />
+                {index !== pages.length - 1 && (
+                  <View
+                    height={2}
+                    backgroundColor="$surface"
+                    width={128}
+                    position="absolute"
+                    transform={[{ translateX: screenWidth / 2 }]}
+                  />
+                )}
+              </View>
 
-            <Text type="h2">{title}</Text>
-            <Text type={index === 0 ? "h3" : "body2"}>{description}</Text>
-            <Button text="Go" icon="arrow-right" onPress={action} />
-          </Page>
-        ))}
+              <Text type="h2">{title}</Text>
+              {description && (
+                <Text type={index === 0 ? "h3" : "body2"}>{description}</Text>
+              )}
+
+              {completed !== undefined && total !== undefined && (
+                <>
+                  <View
+                    marginTop={24}
+                    flexDirection="row"
+                    alignItems="center"
+                    gap={16}
+                  >
+                    <Icon size={20} name="flag" />
+                    <Text type="h3">
+                      {completed} / {total}
+                    </Text>
+                  </View>
+                  <Progress
+                    value={completed}
+                    max={total}
+                    marginTop={4}
+                    marginHorizontal={32}
+                  />
+                </>
+              )}
+
+              <Button
+                text={disabled ? "Coming Soon" : "Go"}
+                icon={disabled ? undefined : "arrow-right"}
+                onPress={action}
+                disabled={disabled}
+              />
+            </Page>
+          )
+        )}
       </Animated.ScrollView>
       <Animated.View
         style={[

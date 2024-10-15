@@ -14,24 +14,24 @@
     "white": "white",
     "red": "#C02537"
   },
-  "benin": {
-    "Fill 1": "#F6CD2B",
-    "Fill 2": "#D32432",
-    "Fill 3": "#117E4E"
-  },
   "botswana": {
     "blue": "#71A0C9",
     "white": "#FFFFFE",
     "black": "#0A0B09"
   },
-  "cameroon": {
-    "green": "#137156",
-    "red": "#BC242C",
-    "yellow": "#F6CD2B"
+  "benin": {
+    "Fill 1": "#F6CD2B",
+    "Fill 2": "#D32432",
+    "Fill 3": "#117E4E"
   },
   "burkina-faso": {
     "green": "#0B9446",
     "red": "#D93033",
+    "yellow": "#F6CD2B"
+  },
+  "cameroon": {
+    "green": "#137156",
+    "red": "#BC242C",
     "yellow": "#F6CD2B"
   },
   "angola": {
@@ -56,17 +56,17 @@
     "blue": "#426AA5",
     "green": "#3C8640"
   },
-  "cape-verde": {
-    "blue": "#263875",
-    "Combined Shape": "#FFFFFE",
-    "red": "#BC242C",
-    "yellow": "#F8C823"
-  },
   "djibouti": {
     "blue": "#6CA9D0",
     "green": "#19A448",
     "white": "#FFFFFE",
     "red": "#C4242B"
+  },
+  "cape-verde": {
+    "blue": "#263875",
+    "Combined Shape": "#FFFFFE",
+    "red": "#BC242C",
+    "yellow": "#F8C823"
   },
   "central-african-republic": {
     "blue": "#283366",
@@ -80,10 +80,11 @@
     "yellow": "#FAD51F",
     "red": "#9E2529"
   },
-  "egypt": {
-    "black": "#0A0B09",
-    "white": "#FFFFFE",
-    "red": "#BC242C"
+  "eritrea": {
+    "red": "#D52239",
+    "blue": "#4D7BB1",
+    "green": "#19A448",
+    "yellow": "#CF292A"
   },
   "ethiopia": {
     "red": "#C6242B",
@@ -108,22 +109,21 @@
     "black": "#0A0B09",
     "red": "#BC242C"
   },
+  "guinea": {
+    "Fill 1": "#CE1126",
+    "Fill 2": "#FCD116",
+    "Fill 3": "#009460"
+  },
   "guinea-bissau": {
     "red": "#BC242C",
     "yellow": "#F6CD2B",
     "green": "#0B9446",
     "black": "#0A0B09"
   },
-  "guinea": {
-    "Fill 1": "#CE1126",
-    "Fill 2": "#FCD116",
-    "Fill 3": "#009460"
-  },
-  "eritrea": {
-    "red": "#D52239",
-    "blue": "#4D7BB1",
-    "green": "#19A448",
-    "yellow": "#CF292A"
+  "egypt": {
+    "black": "#0A0B09",
+    "white": "#FFFFFE",
+    "red": "#BC242C"
   },
   "equatorial-guinea": {
     "red": "#CF292A",
@@ -137,11 +137,6 @@
     "green": "#1C5C31",
     "red": "#A8262A"
   },
-  "liberia": {
-    "red": "#AD2534",
-    "white": "#FFFFFE",
-    "blue": "#20294F"
-  },
   "libya": {
     "green": "#249446",
     "black": "#0A0B09",
@@ -152,6 +147,11 @@
     "Fill 1": "#FFFFFE",
     "Fill 2": "#DC3F38",
     "Fill 3": "#13753D"
+  },
+  "liberia": {
+    "red": "#AD2534",
+    "white": "#FFFFFE",
+    "blue": "#20294F"
   },
   "mali": {
     "green": "#25A848",
@@ -173,12 +173,6 @@
     "red": "#AF2B30",
     "green": "#145830"
   },
-  "lesotho": {
-    "green": "#0D8B44",
-    "white": "#FFFFFE",
-    "black": "#0A0B09",
-    "blue": "#273279"
-  },
   "namibia": {
     "sun": "#F8CA23",
     "green": "#0D8B44",
@@ -186,25 +180,31 @@
     "red": "#C02537",
     "blue": "#273566"
   },
-  "niger": {
-    "green": "#18A648",
+  "lesotho": {
+    "green": "#0D8B44",
     "white": "#FFFFFE",
-    "orange": "#CE502C"
+    "black": "#0A0B09",
+    "blue": "#273279"
+  },
+  "malawi": {
+    "black": "#0A0B09",
+    "red": "#BC242C",
+    "green": "#339545"
   },
   "nigeria": {
     "Fill 1": "#117E4E",
     "Fill 3": "#FFFFFE"
+  },
+  "niger": {
+    "green": "#18A648",
+    "white": "#FFFFFE",
+    "orange": "#CE502C"
   },
   "sao-tome-and-principe": {
     "green": "#19A448",
     "yellow": "#F8CA23",
     "red": "#C02537",
     "black": "#0A0B09"
-  },
-  "malawi": {
-    "black": "#0A0B09",
-    "red": "#BC242C",
-    "green": "#339545"
   },
   "senegal": {
     "green": "#107C40",
@@ -230,6 +230,15 @@
     "Fill 5": "#FCE100",
     "Fill 8": "#C02537"
   },
+  "somalia": {
+    "blue": "#4D7BB1",
+    "white": "#FFFFFE"
+  },
+  "rwanda": {
+    "blue": "#2695C6",
+    "yellow": "#F4CE23",
+    "green": "#22573A"
+  },
   "south-africa": {
     "Fill 1": "#002395",
     "Fill 5": "#DE3831",
@@ -238,9 +247,11 @@
     "Fill 17": "#FFB612",
     "Fill 18": "#007A4D"
   },
-  "somalia": {
-    "blue": "#4D7BB1",
-    "white": "#FFFFFE"
+  "sudan": {
+    "red": "#C02537",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "green": "#186937"
   },
   "south-sudan": {
     "green": "#168041",
@@ -249,17 +260,6 @@
     "red": "#C6242B",
     "blue": "#274489",
     "yellow": "#F8DA21"
-  },
-  "rwanda": {
-    "blue": "#2695C6",
-    "yellow": "#F4CE23",
-    "green": "#22573A"
-  },
-  "sudan": {
-    "red": "#C02537",
-    "white": "#FFFFFE",
-    "black": "#0A0B09",
-    "green": "#186937"
   },
   "tanzania": {
     "green": "#2AA948",
@@ -277,30 +277,32 @@
     "red": "#D2232A",
     "white": "#FFFFFE"
   },
+  "uganda": {
+    "Combined Shape": "#C5242B",
+    "yellow": "#F8D91F",
+    "Fill 13": "#0A0B09"
+  },
   "zambia": {
     "green": "#228241",
     "orange": "#E0762C",
     "black": "#0A0B09",
     "red": "#CA282B"
   },
-  "uganda": {
-    "Combined Shape": "#C5242B",
-    "yellow": "#F8D91F",
-    "Fill 13": "#0A0B09"
+  "zimbabwe": {
+    "Combined Shape": "#328A42",
+    "Combined Shape_2": "#F9CE22",
+    "Combined Shape_3": "#CA282B",
+    "black": "#0A0B09",
+    "white": "white"
   },
-  "afghanistan": {
-    "green": "#169045",
-    "red": "#AC252A",
-    "black": "#0A0B09"
+  "kyrgyzstan": {
+    "red": "#D32432",
+    "yellow": "#FBEC29"
   },
   "armenia": {
     "gold": "#25377E",
     "blue": "#E6A22E",
     "red": "#C6242B"
-  },
-  "kyrgyzstan": {
-    "red": "#D32432",
-    "yellow": "#FBEC29"
   },
   "azerbaijan": {
     "sky": "#1B8EB1",
@@ -312,30 +314,19 @@
     "white": "#FFFFFE",
     "red": "#BC242C"
   },
-  "bangladesh": {
-    "green": "#136148",
-    "red": "#DA2F41"
+  "afghanistan": {
+    "green": "#169045",
+    "red": "#AC252A",
+    "black": "#0A0B09"
   },
   "china": {
     "red": "#CB2E2B",
     "yellow": "#FBDB1E"
   },
-  "zimbabwe": {
-    "Combined Shape": "#328A42",
-    "Combined Shape_2": "#F9CE22",
-    "Combined Shape_3": "#CA282B",
-    "black": "#0A0B09",
-    "white": "white"
-  },
   "bhutan": {
     "gold": "#E5AC36",
     "orange": "#D03C2E",
     "white": "#FFFFFE"
-  },
-  "cyprus": {
-    "white": "#FFFFFE",
-    "green": "#2E4023",
-    "orange": "#EFA53C"
   },
   "east-timor": {
     "red": "#C62A2B",
@@ -343,33 +334,33 @@
     "black": "#1A1919",
     "white": "#FFFFFE"
   },
-  "georgia": {
-    "white": "#FFFFFE",
-    "red": "#D9252A"
-  },
   "brunei": {
     "yellow": "#F3DE27",
     "white": "#FFFFFE",
     "black": "#0A0B09",
     "Fill 5": "#BD242C"
   },
+  "georgia": {
+    "white": "#FFFFFE",
+    "red": "#D9252A"
+  },
+  "bangladesh": {
+    "green": "#136148",
+    "red": "#DA2F41"
+  },
   "cambodia": {
     "red": "#CC242D",
     "blue": "#25367D",
     "white": "white"
   },
+  "cyprus": {
+    "white": "#FFFFFE",
+    "green": "#2E4023",
+    "orange": "#EFA53C"
+  },
   "israel": {
     "white": "white",
     "blue": "#2A4086"
-  },
-  "japan": {
-    "white": "#FFFFFE",
-    "red": "#A92532"
-  },
-  "india": {
-    "orange": "#EC9141",
-    "white": "#FFFFFE",
-    "green": "#1E8040"
   },
   "jordan": {
     "black": "#0A0B09",
@@ -377,31 +368,34 @@
     "green": "#14713C",
     "red": "#BC242C"
   },
+  "india": {
+    "orange": "#EC9141",
+    "white": "#FFFFFE",
+    "green": "#1E8040"
+  },
+  "japan": {
+    "white": "#FFFFFE",
+    "red": "#A92532"
+  },
+  "iran": {
+    "red": "#C6242B",
+    "white": "white",
+    "green": "#249646"
+  },
+  "indonesia": {
+    "red": "#BC242C",
+    "white": "#FFFFFE"
+  },
   "kuwait": {
     "green": "#14713C",
     "white": "#FFFFFE",
     "red": "#BC242C",
     "black": "#0A0B09"
   },
-  "iraq": {
-    "red": "#BC242C",
-    "white": "#FFFFFE",
-    "black": "#0A0B09",
-    "green": "#14713C"
-  },
   "laos": {
     "red": "#BC242C",
     "blue": "#20294F",
     "white": "#FFFFFE"
-  },
-  "indonesia": {
-    "red": "#BC242C",
-    "white": "#FFFFFE"
-  },
-  "iran": {
-    "red": "#C6242B",
-    "white": "white",
-    "green": "#249646"
   },
   "malaysia": {
     "red": "#B8242A",
@@ -409,26 +403,27 @@
     "blue": "#1C1C46",
     "yellow": "#F8C823"
   },
+  "iraq": {
+    "red": "#BC242C",
+    "white": "#FFFFFE",
+    "black": "#0A0B09",
+    "green": "#14713C"
+  },
   "maldives": {
     "red": "#C02537",
     "green": "#13753D",
     "white": "#FFFFFE"
-  },
-  "nepal": {
-    "blue": "#263875",
-    "red": "#C9233D",
-    "white": "#FFFFFE"
-  },
-  "north-korea": {
-    "blue": "#194789",
-    "white": "#FFFFFE",
-    "red": "#D8262F"
   },
   "myanmar": {
     "yellow": "#F7C723",
     "red": "#D62C3A",
     "green": "#37A847",
     "white": "white"
+  },
+  "nepal": {
+    "blue": "#263875",
+    "red": "#C9233D",
+    "white": "#FFFFFE"
   },
   "kazakhstan": {
     "blue": "#23A6B9",
@@ -439,10 +434,14 @@
     "white": "#FFFFFE",
     "green": "#039C4D"
   },
-  "mongolia": {
-    "red": "#B22B32",
-    "blue": "#1A4881",
-    "yellow": "#F3CB24"
+  "pakistan": {
+    "white": "#FFFFFE",
+    "green": "#143822"
+  },
+  "north-korea": {
+    "blue": "#194789",
+    "white": "#FFFFFE",
+    "red": "#D8262F"
   },
   "palestine": {
     "black": "black",
@@ -454,24 +453,23 @@
     "maroon": "#791F37",
     "white": "white"
   },
-  "pakistan": {
-    "white": "#FFFFFE",
-    "green": "#143822"
-  },
-  "singapore": {
-    "red": "#D92D3A",
-    "white": "#FFFFFE"
+  "mongolia": {
+    "red": "#B22B32",
+    "blue": "#1A4881",
+    "yellow": "#F3CB24"
   },
   "oman": {
     "red": "#C8242B",
     "white": "#FFFFFE",
     "green": "#16783E"
   },
-  "south-korea": {
-    "white": "white",
-    "black": "#0A0B09",
-    "blue": "#27335F",
-    "red": "#B32534"
+  "singapore": {
+    "red": "#D92D3A",
+    "white": "#FFFFFE"
+  },
+  "saudi-arabia": {
+    "green": "#186234",
+    "white": "#FFFFFE"
   },
   "philippines": {
     "blue": "#233A82",
@@ -479,9 +477,11 @@
     "white": "#FFFFFE",
     "yellow": "#F6CD2B"
   },
-  "saudi-arabia": {
-    "green": "#186234",
-    "white": "#FFFFFE"
+  "south-korea": {
+    "white": "white",
+    "black": "#0A0B09",
+    "blue": "#27335F",
+    "red": "#B32534"
   },
   "syria": {
     "black": "#0A0B09",
@@ -489,20 +489,14 @@
     "red": "#BC242C",
     "green": "#14713C"
   },
-  "tajikistan": {
-    "green": "#1C5C31",
-    "white": "#FFFFFE",
-    "red": "#B8242A",
-    "gold": "#F0BE27"
-  },
-  "turkey": {
-    "red": "#CF232A",
-    "white": "white"
-  },
   "thailand": {
     "red": "#D8262C",
     "white": "#FFFFFE",
     "blue": "#1B1736"
+  },
+  "turkey": {
+    "red": "#CF232A",
+    "white": "white"
   },
   "united-arab-emirates": {
     "red": "#BC242C",
@@ -514,23 +508,11 @@
     "red": "#C72A2B",
     "yellow": "#F4E92A"
   },
-  "yemen": {
+  "tajikistan": {
+    "green": "#1C5C31",
     "white": "#FFFFFE",
-    "red": "#BC242C",
-    "black": "#1A1919"
-  },
-  "albania": {
-    "red": "#D0262A",
-    "black": "#0A0B09"
-  },
-  "turkmenistan": {
-    "Combined Shape": "#24A461",
-    "white": "#FFFFFE"
-  },
-  "belgium": {
-    "Fill 1": "#0A0B09",
-    "Fill 2": "#F6DE4A",
-    "Fill 3": "#D92D3A"
+    "red": "#B8242A",
+    "gold": "#F0BE27"
   },
   "uzbekistan": {
     "red": "#BC242C",
@@ -538,90 +520,103 @@
     "white": "#FFFFFE",
     "blue": "#1D8FA4"
   },
+  "yemen": {
+    "white": "#FFFFFE",
+    "red": "#BC242C",
+    "black": "#1A1919"
+  },
+  "turkmenistan": {
+    "Combined Shape": "#24A461",
+    "white": "#FFFFFE"
+  },
   "austria": {
     "Combined Shape": "#D92D3A",
     "Fill 4 Copy": "white"
-  },
-  "bulgaria": {
-    "Fill 4": "#C22C2B",
-    "Fill 4 Copy": "#0B8D66",
-    "Fill 4 Copy 2": "#FFFFFE"
   },
   "bosnia-and-herzegovina": {
     "blue": "#283172",
     "yellow": "#F7C723",
     "white": "#FFFFFE"
   },
-  "andorra": {
-    "blue": "#26337C",
-    "red": "#BE243C",
-    "yellow": "#FBDD1D"
+  "belgium": {
+    "Fill 1": "#0A0B09",
+    "Fill 2": "#F6DE4A",
+    "Fill 3": "#D92D3A"
+  },
+  "bulgaria": {
+    "Fill 4": "#C22C2B",
+    "Fill 4 Copy": "#0B8D66",
+    "Fill 4 Copy 2": "#FFFFFE"
+  },
+  "albania": {
+    "red": "#D0262A",
+    "black": "#0A0B09"
   },
   "czech-republic": {
     "red": "#C4242B",
     "white": "#FFFFFE",
     "blue": "#213F6A"
   },
+  "denmark": {
+    "red": "#B32534",
+    "white": "#FFFFFE"
+  },
   "estonia": {
     "Fill 4": "#FFFFFE",
     "Fill 4 Copy": "#0A0B09",
     "Fill 4 Copy 2": "#4E85B9"
   },
-  "belarus": {
-    "red": "#B7323E",
-    "green": "#469E53",
-    "white": "white"
-  },
-  "denmark": {
-    "red": "#B32534",
-    "white": "#FFFFFE"
-  },
   "finland": {
     "white": "#FFFFFE",
     "blue": "#273566"
-  },
-  "greece": {
-    "white": "white",
-    "blue": "#215596"
-  },
-  "iceland": {
-    "blue": "#253879",
-    "white": "white",
-    "red": "#C42C2C"
-  },
-  "germany": {
-    "Fill 4": "#F8CA23",
-    "Fill 4 Copy": "#C9242A",
-    "Fill 4 Copy 2": "#0A0B09"
   },
   "france": {
     "Fill 1": "#283172",
     "Fill 1 Copy": "#D92D3A",
     "Fill 2": "white"
   },
-  "croatia": {
-    "red": "#D9252A",
-    "white": "#FFFFFE",
-    "blue": "#292D72"
+  "germany": {
+    "Fill 4": "#F8CA23",
+    "Fill 4 Copy": "#C9242A",
+    "Fill 4 Copy 2": "#0A0B09"
   },
-  "ireland": {
-    "Fill 1": "#0A9146",
-    "Fill 1 Copy": "#E5702A",
-    "Fill 2": "white"
+  "greece": {
+    "white": "white",
+    "blue": "#215596"
+  },
+  "belarus": {
+    "red": "#B7323E",
+    "green": "#469E53",
+    "white": "white"
   },
   "hungary": {
     "Fill 4": "#117E4E",
     "Fill 4 Copy": "white",
     "Fill 4 Copy 2": "#BC242C"
   },
-  "latvia": {
-    "Combined Shape": "#8C2F37",
-    "Fill 4 Copy": "white"
+  "iceland": {
+    "blue": "#253879",
+    "white": "white",
+    "red": "#C42C2C"
+  },
+  "andorra": {
+    "blue": "#26337C",
+    "red": "#BE243C",
+    "yellow": "#FBDD1D"
+  },
+  "ireland": {
+    "Fill 1": "#0A9146",
+    "Fill 1 Copy": "#E5702A",
+    "Fill 2": "white"
   },
   "italy": {
     "Fill 1": "#0C8944",
     "Fill 1 Copy": "#BC2C38",
     "Fill 2": "white"
+  },
+  "latvia": {
+    "Combined Shape": "#8C2F37",
+    "Fill 4 Copy": "white"
   },
   "lithuania": {
     "Fill 4": "#AF2B30",
@@ -633,63 +628,73 @@
     "Fill 4 Copy": "#FFFFFE",
     "Fill 4 Copy 2": "#D92D3A"
   },
-  "monaco": {
-    "red": "#BC242C",
-    "white": "#FFFFFE"
+  "croatia": {
+    "red": "#D9252A",
+    "white": "#FFFFFE",
+    "blue": "#292D72"
   },
-  "malta": {
-    "Fill 1": "#BD2530",
-    "Fill 2": "#FFFFFE"
-  },
-  "north-macedonia": {
-    "Combined Shape": "#D20000",
-    "Combined Shape_2": "#F8E71C"
+  "liechtenstein": {
+    "red": "#283163",
+    "blue": "#BC242C"
   },
   "netherlands": {
     "Combined Shape": "#9C252C",
     "Fill 4": "#273E75",
     "Fill 4 Copy": "white"
   },
-  "liechtenstein": {
-    "red": "#283163",
-    "blue": "#BC242C"
+  "malta": {
+    "Fill 1": "#BD2530",
+    "Fill 2": "#FFFFFE"
+  },
+  "monaco": {
+    "red": "#BC242C",
+    "white": "#FFFFFE"
+  },
+  "north-macedonia": {
+    "Combined Shape": "#D20000",
+    "Combined Shape_2": "#F8E71C"
+  },
+  "poland": {
+    "white": "#FFFFFE",
+    "red": "#C9233D"
   },
   "norway": {
     "red": "#D93033",
     "white": "#FFFFFE",
     "navy": "#20294F"
   },
-  "poland": {
-    "white": "#FFFFFE",
-    "red": "#C9233D"
+  "moldova": {
+    "Fill 1": "#BA2533",
+    "Fill 3": "#F9CE22",
+    "Fill 4": "#244388"
   },
   "romania": {
     "Fill 1": "#283163",
     "Fill 2": "#F6CD2B",
     "Fill 3": "#BC242C"
   },
-  "moldova": {
-    "Fill 1": "#BA2533",
-    "Fill 3": "#F9CE22",
-    "Fill 4": "#244388"
-  },
-  "montenegro": {
-    "gold": "#C9A840",
-    "red": "#B1252A"
-  },
   "russia": {
     "Combined Shape": "#C22E2B",
     "Fill 4 Copy 2": "#FFFFFE",
     "Fill 4 Copy": "#223982"
   },
-  "portugal": {
-    "red": "#D9252A",
-    "green": "#1D5C31"
+  "montenegro": {
+    "gold": "#C9A840",
+    "red": "#B1252A"
+  },
+  "slovakia": {
+    "white": "white",
+    "blue": "#1C4689",
+    "red": "#D8262D"
   },
   "slovenia": {
     "Fill 1": "#D8272D",
     "Fill 3": "#1C5490",
     "Fill 4": "#FFFFFE"
+  },
+  "portugal": {
+    "red": "#D9252A",
+    "green": "#1D5C31"
   },
   "sweden": {
     "Combined Shape Copy": "#F7C723",
@@ -707,11 +712,6 @@
     "navy": "#282E60",
     "white": "white",
     "red": "#BD2530"
-  },
-  "slovakia": {
-    "white": "white",
-    "blue": "#1C4689",
-    "red": "#D8262D"
   },
   "antigua-and-barbuda": {
     "black": "#0A0B09",
@@ -755,14 +755,14 @@
     "yellow": "#F6CD2B",
     "Combined Shape_2": "#C12533"
   },
-  "honduras": {
-    "Combined Shape": "#3167A3",
-    "Combined Shape_2": "#FFFFFE"
-  },
   "grenada": {
     "red": "#BC242C",
     "green": "#137156",
     "yellow": "#F6CD2B"
+  },
+  "honduras": {
+    "Combined Shape": "#3167A3",
+    "Combined Shape_2": "#FFFFFE"
   },
   "jamaica": {
     "black": "black",
@@ -778,10 +778,6 @@
     "blue": "#1A4A7E",
     "red": "#C02537"
   },
-  "nicaragua": {
-    "blau": "#08305D",
-    "white": "#FFFFFE"
-  },
   "saint-kitts-and-nevis": {
     "green": "#0B9446",
     "red": "#BC242C",
@@ -794,6 +790,10 @@
     "black": "#0A0B09",
     "white": "white",
     "yellow": "#F6CD2B"
+  },
+  "haiti": {
+    "blue": "#273279",
+    "red": "#C02537"
   },
   "saint-vincent-and-the-grenadines": {
     "blue": "#2B67A3",
@@ -810,20 +810,15 @@
     "white": "white",
     "red": "#D9252A"
   },
+  "mexico": {
+    "white": "#FFFFFE",
+    "green": "#125F43",
+    "red": "#BC242C"
+  },
   "united-states": {
     "white": "white",
     "red": "#A02735",
     "blue": "#37355C"
-  },
-  "haiti": {
-    "blue": "#273279",
-    "red": "#C02537"
-  },
-  "kiribati": {
-    "red": "#BC242C",
-    "yellow": "#F6CD2B",
-    "blue": "#253B6E",
-    "white": "#FFFFFE"
   },
   "marshall-islands": {
     "navy": "#022145",
@@ -832,6 +827,10 @@
   },
   "micronesia": {
     "sky": "#73AACD",
+    "white": "#FFFFFE"
+  },
+  "nicaragua": {
+    "blau": "#08305D",
     "white": "#FFFFFE"
   },
   "nauru": {
@@ -848,10 +847,11 @@
     "sky": "#50A4C4",
     "yellow": "#FBDB1E"
   },
-  "mexico": {
-    "white": "#FFFFFE",
-    "green": "#125F43",
-    "red": "#BC242C"
+  "kiribati": {
+    "red": "#BC242C",
+    "yellow": "#F6CD2B",
+    "blue": "#253B6E",
+    "white": "#FFFFFE"
   },
   "samoa": {
     "red": "#BC242C",
@@ -869,35 +869,26 @@
     "white": "white",
     "red": "#BC242C"
   },
+  "bolivia": {
+    "Fill 1": "#15703B",
+    "Fill 3": "#F6E21C",
+    "Fill 4": "#C22E2B"
+  },
   "fiji": {
     "sky": "#6AB8D6",
     "navy": "#20294F",
     "red": "#BC242C",
     "Fill 14": "#FFFFFE"
   },
-  "bolivia": {
-    "Fill 1": "#15703B",
-    "Fill 3": "#F6E21C",
-    "Fill 4": "#C22E2B"
-  },
-  "papua-new-guinea": {
-    "black": "#0A0B09",
-    "red": "#BC242C",
-    "yellow": "#F6CD2B",
-    "white": "#FFFFFE"
-  },
   "chile": {
     "red": "#C22E2B",
     "blue": "#223982",
     "white": "#FFFFFE"
   },
-  "colombia": {
-    "Fill 1": "#F6CD2B",
-    "Fill 2": "#263875",
-    "Fill 3": "#BC242C"
-  },
-  "argentina": {
-    "sky": "#71A2CB",
+  "papua-new-guinea": {
+    "black": "#0A0B09",
+    "red": "#BC242C",
+    "yellow": "#F6CD2B",
     "white": "#FFFFFE"
   },
   "vanuatu": {
@@ -906,12 +897,21 @@
     "black": "black",
     "yellow": "#FDCE12"
   },
+  "colombia": {
+    "Fill 1": "#F6CD2B",
+    "Fill 2": "#263875",
+    "Fill 3": "#BC242C"
+  },
   "guyana": {
     "green": "#0B9446",
     "white": "#FFFFFE",
     "black": "#0A0B09",
     "yellow": "#F6CD2B",
     "red": "#BC242C"
+  },
+  "argentina": {
+    "sky": "#71A2CB",
+    "white": "#FFFFFE"
   },
   "brazil": {
     "yellow": "#FEDF00",

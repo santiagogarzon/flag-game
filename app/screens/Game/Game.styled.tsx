@@ -35,7 +35,7 @@ export const ColorSelectorContainer = styled(View, {
 });
 
 export const ColorPicker = styled(View, {
-  borderColor: "white",
+  borderColor: "#F5F5F5",
   width: 56,
   height: 56,
   borderRadius: 30,

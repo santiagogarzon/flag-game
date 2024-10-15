@@ -821,12 +821,6 @@
           "mass": 0.9,
           "stiffness": 150
         },
-        "delayedBouncy": {
-          "damping": 9,
-          "mass": 0.9,
-          "stiffness": 150,
-          "delay": 600
-        },
         "lazy": {
           "damping": 12,
           "stiffness": 100,

@@ -48,7 +48,7 @@ export const Header = ({
     ? previusIsHomeScreen
       ? "home"
       : "arrow-left"
-    : "configuration";
+    : undefined;
 
   const heartContainerRef = useRef<GetRef<typeof StatContainer>>(null);
 
@@ -76,7 +76,11 @@ export const Header = ({
 
   return (
     <Container paddingTop={insets.top + 8}>
-      <Button fab icon={backIcon} onPress={onPressBack} />
+      {backIcon ? (
+        <Button fab icon={backIcon} onPress={onPressBack} />
+      ) : (
+        <View />
+      )}
       <View
         flexDirection="row"
         gap={8}
