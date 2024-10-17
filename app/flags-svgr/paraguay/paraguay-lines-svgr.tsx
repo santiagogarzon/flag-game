@@ -1,7 +1,7 @@
 import * as React from "react";
+import { useWindowDimensions } from "react-native";
 import Svg, { G, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
-import { useWindowDimensions } from "react-native";
 type FlagProps = {
   onPress: (id: string) => void;
   colors: {
@@ -21,26 +21,26 @@ const Flag = (props: FlagProps) => {
       <G id="flag / south america / paraguay / b">
         <G id="paraguay b">
           <Path
-            id="white"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M25 215H325V155H25V215Z"
-            fill={props.colors["white"]}
-            fillOpacity={1}
-            stroke="white"
-            strokeWidth={2}
-            onPress={() => props.onPress("white")}
-          />
-          <Path
             id="blue"
             fillRule="evenodd"
             clipRule="evenodd"
-            d="M25 155H325V95H25V155Z"
+            d="M25 215H325V155H25V215Z"
             fill={props.colors["blue"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
             onPress={() => props.onPress("blue")}
+          />
+          <Path
+            id="white"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M25 155H325V95H25V155Z"
+            fill={props.colors["white"]}
+            fillOpacity={1}
+            stroke="white"
+            strokeWidth={2}
+            onPress={() => props.onPress("white")}
           />
           <Path
             id="red"

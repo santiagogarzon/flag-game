@@ -95,7 +95,7 @@ const Flag = (props: FlagProps) => {
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
-            onPress={() => props.onPress("white")}
+            // onPress={() => props.onPress("white")}
           />
           <G id="stars">
             <Path
@@ -103,7 +103,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M190.346 110.145L191.457 109.338L192.568 110.145L192.143 108.838L193.254 108.032H191.881L191.457 106.726L191.033 108.032H189.659L190.77 108.838L190.346 110.145Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -111,7 +111,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M132.648 114.876L132.144 113.321L131.638 114.876H130.003L131.326 115.837L130.82 117.392L132.144 116.432L133.466 117.392L132.96 115.837L134.283 114.876H132.648Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -119,7 +119,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M188.462 123.634L189.377 122.969L190.292 123.634L189.942 122.558L190.858 121.893H189.727L189.377 120.818L189.032 121.893H187.896L188.811 122.558L188.462 123.634Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -127,7 +127,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M142.098 134.21L141.886 133.556L141.673 134.21H140.985L141.545 134.603L141.329 135.269L141.886 134.864L142.442 135.269L142.23 134.614L142.786 134.21H142.098Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -135,7 +135,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M137.292 136.948L136.787 135.393H136.778L136.28 136.948H134.646L135.969 137.909L135.464 139.464L136.787 138.503L138.109 139.464L137.604 137.909L138.926 136.948H137.292Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -143,7 +143,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M130.778 141.777L130.357 140.482L129.936 141.777H128.574L129.676 142.578L129.255 143.874L130.357 143.073L131.459 143.874L131.038 142.578L132.141 141.777H130.778Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -151,7 +151,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M153.953 128.583L155.033 127.798L156.113 128.583L155.7 127.313L156.78 126.528H155.445L155.033 125.259L154.62 126.528H153.286L154.365 127.313L153.953 128.583Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -159,7 +159,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M146.841 144.103L147.837 143.379L148.833 144.103L148.452 142.932L149.448 142.208H148.217L147.837 141.038L147.456 142.208H146.225L147.221 142.932L146.841 144.103Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -167,7 +167,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M145.659 148.366L145.31 149.442L146.225 148.777L147.14 149.442L146.79 148.366L147.705 147.702H146.574L146.225 146.626L145.88 147.702H144.743L145.659 148.366Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -175,7 +175,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M152.651 154.4L153.974 153.438L155.296 154.4L154.791 152.844L156.113 151.883H154.479L153.974 150.33L153.468 151.883H151.834L153.156 152.844L152.651 154.4Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -183,7 +183,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M173.889 135.149L175 134.341L176.112 135.149L175.687 133.843L176.798 133.037H175.418L175 131.73L174.576 133.037H173.202L174.313 133.843L173.889 135.149Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -191,7 +191,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M168.779 139.506L169.692 138.839L170.61 139.506L170.259 138.43L171.175 137.765H170.044L169.695 136.69L169.344 137.765H168.213L169.129 138.43L168.779 139.506Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -199,7 +199,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M171.765 142.443L172.322 142.04L172.878 142.443L172.665 141.789L173.223 141.384H172.534L172.322 140.73L172.109 141.384H171.421L171.977 141.789L171.765 142.443Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -207,7 +207,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M179.957 139.739L181.068 138.931L182.179 139.739L181.754 138.432L182.866 137.626H181.492L181.068 136.32L180.65 137.626H179.27L180.381 138.432L179.957 139.739Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -215,7 +215,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M175.505 148.112L175 146.557L174.502 148.112H172.86L174.183 149.073L173.677 150.628L175 149.667L176.322 150.628L175.817 149.073L177.14 148.112H175.505Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -223,7 +223,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M175.129 165.847L174.966 165.348L174.807 165.847H174.28L174.705 166.155L174.543 166.654L174.967 166.345L175.391 166.654L175.229 166.155L175.653 165.847H175.129Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -231,7 +231,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M185.644 155.729L186.559 155.065L187.474 155.729L187.124 154.653L188.04 153.989H186.909L186.559 152.913L186.214 153.989H185.078L185.993 154.653L185.644 155.729Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -239,7 +239,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M190.269 159.751H188.896L190.007 160.558L189.582 161.864L190.693 161.057L191.805 161.864L191.38 160.558L192.491 159.751H191.118L190.693 158.445L190.269 159.751Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -247,7 +247,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M194.322 156.922L195.237 156.257L196.152 156.922L195.802 155.846L196.718 155.181H195.587L195.237 154.106L194.892 155.181H193.756L194.671 155.846L194.322 156.922Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -255,7 +255,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M200.16 155.179L201.075 154.515L201.99 155.179L201.64 154.104L202.556 153.439H201.425L201.075 152.363L200.725 153.439H199.594L200.509 154.104L200.16 155.179Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -263,7 +263,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M200.099 160.516L201.21 159.708L202.321 160.516L201.896 159.209L203.008 158.403H201.634L201.21 157.097L200.786 158.403H199.412L200.524 159.209L200.099 160.516Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -271,7 +271,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M201.679 163.886L201.335 162.81L200.99 163.886H199.853L200.769 164.551L200.419 165.627L201.335 164.962L202.25 165.627L201.9 164.551L202.815 163.886H201.679Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -279,7 +279,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M205.646 156.118L206.561 155.453L207.476 156.118L207.126 155.042L208.042 154.377H206.911L206.561 153.302L206.211 154.377H205.08L205.995 155.042L205.646 156.118Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -287,7 +287,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M209.651 153.771L210.762 152.963L211.873 153.771L211.449 152.465L212.56 151.659H211.187L210.762 150.352L210.344 151.659L208.996 151.652L208.964 151.659L210.076 152.465L209.651 153.771Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -295,7 +295,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M213.493 147.562H212.12L213.231 148.369L212.806 149.675L213.918 148.868L215.029 149.675L214.604 148.37L215.715 147.562H214.342L213.917 146.256L213.493 147.562Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -303,7 +303,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M210.455 145.21L211.777 144.249L213.1 145.21L212.595 143.655L213.917 142.694H212.283L211.777 141.141L211.272 142.694H209.638L210.96 143.655L210.455 145.21Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
             <Path
@@ -311,7 +311,7 @@ const Flag = (props: FlagProps) => {
               fillRule="evenodd"
               clipRule="evenodd"
               d="M218.213 145.228L219.128 144.563L220.043 145.228L219.693 144.153L220.609 143.488H219.478L219.128 142.412L218.783 143.488H217.647L218.562 144.153L218.213 145.228Z"
-              fill="white"
+              // fill="white"
               fillOpacity={0.5}
             />
           </G>

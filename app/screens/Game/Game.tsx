@@ -188,9 +188,9 @@ export const Game = () => {
                 color="$onSurface"
                 name="gota"
                 disabled={!canClearColor}
-                size={24}
+                size={30}
               />
-            </View>
+            </View> 
             <View
               onPress={checkFlag}
               disabled={!canCheckFlag}
@@ -200,7 +200,7 @@ export const Game = () => {
               <Icon
                 color="$onSurface"
                 name="check"
-                size={24}
+                size={30}
                 disabled={!canCheckFlag}
               />
             </View>

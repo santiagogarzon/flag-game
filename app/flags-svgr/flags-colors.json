@@ -209,7 +209,7 @@
   },
   "mozambique": {
     "black": "black",
-    "white": "white",
+    // "white": "white",
     "green": "#007168",
     "yellow": "#FCE100",
     "red": "#C02537"
@@ -893,8 +893,8 @@
   "brazil": {
     "yellow": "#FEDF00",
     "blue": "#002776",
-    "green": "#009B3A",
-    "white": "white"
+    "green": "#009B3A"
+    // "white": "white"
   },
   "argentina": {
     "sky": "#71A2CB",
@@ -908,8 +908,8 @@
   },
   "guyana": {
     "green": "#0B9446",
-    "white": "#FFFFFE",
-    "black": "#0A0B09",
+    // "white": "#FFFFFE",
+    // "black": "#0A0B09",
     "yellow": "#F6CD2B",
     "red": "#BC242C"
   },

@@ -57,7 +57,7 @@ export const FlagInfoBottomSheet = ({
         <Text color="$onSurface" type="h2" marginTop={16}>
           {capitalize(flag.country)}
         </Text>
-        <Text color="$onSurface">La Estrella Solitaria</Text>
+        {/* <Text color="$onSurface">La Estrella Solitaria</Text> */}
         <Text
           color="$onSurface"
           type="body2"
