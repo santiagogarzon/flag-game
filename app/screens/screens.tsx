@@ -49,7 +49,7 @@ export const Screens = () => (
     <AppStack.Navigator
       screenOptions={{
         header: Header,
-        animation: "fade_from_bottom",
+        animation: "slide_from_bottom",
       }}
     >
       <AppStack.Screen name="Home" component={Home} />

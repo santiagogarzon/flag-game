@@ -21,8 +21,8 @@
   },
   "angola": {
     "red": "#BC242C",
-    "black": "#000000",
-    "yellow": "#F4D22A"
+    "black": "#000000"
+    // "yellow": "#F4D22A"
   },
   "botswana": {
     "blue": "#71A0C9",
@@ -73,7 +73,7 @@
     "blue": "#263875",
     "Combined Shape": "#FFFFFE",
     "red": "#BC242C",
-    "yellow": "#F8C823"
+    // "yellow": "#F8C823"
   },
   "eritrea": {
     "red": "#D52239",
@@ -180,7 +180,7 @@
     "blue": "#273279"
   },
   "namibia": {
-    "sun": "#F8CA23",
+    // "sun": "#F8CA23",
     "green": "#0D8B44",
     "white": "white",
     "red": "#C02537",
@@ -291,8 +291,8 @@
   "azerbaijan": {
     "sky": "#1B8EB1",
     "red": "#CD2438",
-    "green": "#00A460",
-    "white": "#FFFFFE"
+    "green": "#00A460"
+    // "white": "#FFFFFE"
   },
   "zimbabwe": {
     "Combined Shape": "#328A42",
@@ -349,7 +349,7 @@
   },
   "cyprus": {
     "white": "#FFFFFE",
-    "green": "#2E4023",
+    // "green": "#2E4023",
     "orange": "#EFA53C"
   },
   "india": {
@@ -389,14 +389,14 @@
   "iraq": {
     "red": "#BC242C",
     "white": "#FFFFFE",
-    "black": "#0A0B09",
-    "green": "#14713C"
+    "black": "#0A0B09"
+    // "green": "#14713C"
   },
   "malaysia": {
     "red": "#B8242A",
     "white": "#FFFFFE",
     "blue": "#1C1C46",
-    "yellow": "#F8C823"
+    // "yellow": "#F8C823"
   },
   "laos": {
     "red": "#BC242C",
@@ -415,7 +415,7 @@
     "white": "white"
   },
   "nepal": {
-    "blue": "#263875",
+    // "blue": "#263875",
     "red": "#C9233D",
     "white": "#FFFFFE"
   },
@@ -455,8 +455,8 @@
   "philippines": {
     "blue": "#233A82",
     "red": "#BC242C",
-    "white": "#FFFFFE",
-    "yellow": "#F6CD2B"
+    "white": "#FFFFFE"
+    // "yellow": "#F6CD2B"
   },
   "singapore": {
     "red": "#D92D3A",
@@ -479,15 +479,15 @@
   },
   "south-korea": {
     "white": "white",
-    "black": "#0A0B09",
+    // "black": "#0A0B09",
     "blue": "#27335F",
     "red": "#B32534"
   },
   "tajikistan": {
     "green": "#1C5C31",
     "white": "#FFFFFE",
-    "red": "#B8242A",
-    "gold": "#F0BE27"
+    "red": "#B8242A"
+    // "gold": "#F0BE27"
   },
   "thailand": {
     "red": "#D8262C",
@@ -514,7 +514,7 @@
     "yellow": "#F4E92A"
   },
   "uzbekistan": {
-    "red": "#BC242C",
+    // "red": "#BC242C",
     "green": "#2AA948",
     "white": "#FFFFFE",
     "blue": "#1D8FA4"
@@ -840,13 +840,13 @@
   },
   "new-zealand": {
     "navy": "#282E60",
-    "white": "white",
+    // "white": "white",
     "red": "#BC242C"
   },
   "fiji": {
     "sky": "#6AB8D6",
     "navy": "#20294F",
-    "white": "#FFFFFE",
+    // "white": "#FFFFFE",
     "red": "#BC242C"
   },
   "palau": {
@@ -857,7 +857,7 @@
     "sky": "#5B8EA1",
     "yellow": "#F8CA23",
     "navy": "#20294F",
-    "white": "white",
+    // "white": "white",
     "red": "#BC242C"
   },
   "samoa": {

@@ -1,4 +1,5 @@
 import { styled, View } from "@tamagui/core";
+import { Dimensions } from "react-native";
 
 export const FlagContainer = styled(View, {
   marginVertical: 16,
@@ -93,7 +94,7 @@ export const CompletedFlagContainer = styled(View, {
     show: {
       true: {
         opacity: 1,
-        width: 600,
+        width: Dimensions.get("window").width,
       },
     },
   },

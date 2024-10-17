@@ -8,10 +8,11 @@ import Svg, {
   Stop,
 } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
+import { useWindowDimensions } from "react-native";
 const SvgComponent = (props: SvgProps) => (
   <Svg
-    width={350}
-    height={250}
+    width={useWindowDimensions().width}
+    height={useWindowDimensions().height / 3}
     viewBox="0 0 350 250"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

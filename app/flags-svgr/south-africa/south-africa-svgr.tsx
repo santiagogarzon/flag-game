@@ -2,10 +2,11 @@ import * as React from "react";
 import Svg, { G, Path, Defs } from "react-native-svg";
 /* SVGR has dropped some elements not supported by react-native-svg: filter */
 import type { SvgProps } from "react-native-svg";
+import { useWindowDimensions } from "react-native";
 const SvgComponent = (props: SvgProps) => (
   <Svg
-    width={350}
-    height={250}
+    width={useWindowDimensions().width}
+    height={useWindowDimensions().height / 3}
     viewBox="0 0 350 250"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"

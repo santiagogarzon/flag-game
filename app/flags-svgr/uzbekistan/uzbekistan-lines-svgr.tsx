@@ -1,17 +1,18 @@
 import * as React from "react";
 import Svg, { G, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
+import { useWindowDimensions } from "react-native";
 type FlagProps = {
-  onPress: (id: string) => void,
+  onPress: (id: string) => void;
   colors: {
-    [key: string]: string,
-  },
+    [key: string]: string;
+  };
 };
 const Flag = (props: FlagProps) => {
   return (
     <Svg
-      width={350}
-      height={250}
+      width={useWindowDimensions().width}
+      height={useWindowDimensions().height / 3}
       viewBox="0 0 350 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,19 +20,20 @@ const Flag = (props: FlagProps) => {
     >
       <G id="flag / asia / uzbekistan / b">
         <G id="uzbekistan b">
-          <G id="red" onPress={() => props.onPress("red")}>
+          {/* <G id="red" onPress={() => props.onPress("red")}> */}
+          <G id="red">
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 152H25V149H325V152ZM325 101H25V98H325V101Z"
               fill={props.colors["red"]}
               fillOpacity={1}
-              onPress={() => props.onPress("red")}
+              // onPress={() => props.onPress("red")}
             />
             <Path
               d="M25 152H24V153H25V152ZM325 152V153H326V152H325ZM25 149V148H24V149H25ZM325 149H326V148H325V149ZM325 101V102H326V101H325ZM25 101H24V102H25V101ZM25 98V97H24V98H25ZM325 98H326V97H325V98ZM25 153H325V151H25V153ZM24 149V152H26V149H24ZM25 150H325V148H25V150ZM326 152V149H324V152H326ZM325 100H25V102H325V100ZM24 98V101H26V98H24ZM325 97H25V99H325V97ZM326 101V98H324V101H326Z"
               fill="white"
-              onPress={() => props.onPress("red")}
+              // onPress={() => props.onPress("red")}
             />
           </G>
           <Path

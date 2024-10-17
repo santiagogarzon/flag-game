@@ -1,4 +1,4 @@
-import { useNavigation } from "@react-navigation/native";
+import { useFocusEffect, useNavigation } from "@react-navigation/native";
 import { styled, View } from "@tamagui/core";
 import { Button } from "app/ds/atoms/Button/Button";
 import { CustomIcon, Icon, Text } from "app/ds/sub-atomic";
@@ -13,7 +13,7 @@ import Animated, {
 import { NavigationProp } from "../screens";
 import worldFlags from "app/flags-svgr/flags-colors.json";
 import { useGameManager } from "app/hooks/useGameManager";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Progress } from "app/ds/atoms/Progress/Progress";
 
 const indicatorWidth = 56;
@@ -97,8 +97,14 @@ export const Home = () => {
     return () => clearTimeout(t);
   }, []);
 
+  const [hiddenState, setHiddenState] = useState(false);
+  useFocusEffect(() => {
+    setHiddenState(false);
+    return () => setHiddenState(true);
+  });
+
   return (
-    <View flex={1}>
+    <View flex={1} style={{ display: hiddenState ? "none" : "flex" }}>
       <Animated.ScrollView
         ref={scrollRef}
         pagingEnabled

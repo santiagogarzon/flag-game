@@ -16,8 +16,9 @@ import {
   screenWidth,
 } from "./GroupTab.styled";
 import { GroupTab } from "./GroupTab";
-import { useRoute } from "@react-navigation/native";
+import { useFocusEffect, useRoute } from "@react-navigation/native";
 import { RouteProp } from "../screens";
+import { useState } from "react";
 
 export const useScrollIndicatorStyle = ({
   scrollOffset,
@@ -68,9 +69,13 @@ export const Groups = () => {
   const navigateToPage = (index: number) => {
     scrollRef.current?.scrollTo({ x: index * screenWidth, animated: true });
   };
-
+  const [hiddenState, setHiddenState] = useState(false);
+  useFocusEffect(() => {
+    setHiddenState(false);
+    return () => setHiddenState(true);
+  });
   return (
-    <View flex={1}>
+    <View flex={1} style={{ display: hiddenState ? "none" : "flex" }}>
       <Animated.ScrollView
         ref={scrollRef}
         pagingEnabled

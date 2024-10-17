@@ -1,17 +1,18 @@
 import * as React from "react";
 import Svg, { G, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
+import { useWindowDimensions } from "react-native";
 type FlagProps = {
-  onPress: (id: string) => void,
+  onPress: (id: string) => void;
   colors: {
-    [key: string]: string,
-  },
+    [key: string]: string;
+  };
 };
 const Flag = (props: FlagProps) => {
   return (
     <Svg
-      width={350}
-      height={250}
+      width={useWindowDimensions().width}
+      height={useWindowDimensions().height / 3}
       viewBox="0 0 350 250"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
@@ -19,19 +20,20 @@ const Flag = (props: FlagProps) => {
     >
       <G id="flag / asia / nepal / b">
         <G id="nepal b">
-          <G id="blue" onPress={() => props.onPress("blue")}>
+          {/* <G id="blue" onPress={() => props.onPress("blue")}> */}
+          <G id="blue">
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M85 11V239H260.751L146.122 124.042H265L85 11ZM251.115 120.045H136.33L251.115 235.002H89.0044V18.2366L251.115 120.045Z"
               fill={props.colors["blue"]}
-              fillOpacity={1}
+              // fillOpacity={1}
               onPress={() => props.onPress("blue")}
             />
             <Path
               d="M85 239H84V240H85V239ZM85 11L85.5318 10.1531L84 9.19114V11H85ZM260.751 239V240H263.16L261.459 238.294L260.751 239ZM146.122 124.042V123.042H143.713L145.414 124.748L146.122 124.042ZM265 124.042V125.042H268.473L265.532 123.195L265 124.042ZM136.33 120.045V119.045H133.918L135.622 120.751L136.33 120.045ZM251.115 120.045V121.045H254.587L251.647 119.198L251.115 120.045ZM251.115 235.002V236.002H253.526L251.822 234.296L251.115 235.002ZM89.0044 235.002H88.0044V236.002H89.0044V235.002ZM89.0044 18.2366L89.5362 17.3898L88.0044 16.4277V18.2366H89.0044ZM86 239V11H84V239H86ZM260.751 238H85V240H260.751V238ZM145.414 124.748L260.043 239.706L261.459 238.294L146.83 123.336L145.414 124.748ZM265 123.042H146.122V125.042H265V123.042ZM84.4682 11.8469L264.468 124.889L265.532 123.195L85.5318 10.1531L84.4682 11.8469ZM136.33 121.045H251.115V119.045H136.33V121.045ZM251.822 234.296L137.037 119.338L135.622 120.751L250.407 235.709L251.822 234.296ZM89.0044 236.002H251.115V234.002H89.0044V236.002ZM88.0044 18.2366V235.002H90.0044V18.2366H88.0044ZM251.647 119.198L89.5362 17.3898L88.4726 19.0834L250.583 120.891L251.647 119.198Z"
               fill="white"
-              onPress={() => props.onPress("blue")}
+              // onPress={() => props.onPress("blue")}
             />
           </G>
           <G id="red" onPress={() => props.onPress("red")}>
