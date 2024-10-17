@@ -4,7 +4,7 @@ import BottomSheet, { BottomSheetScrollView } from "@gorhom/bottom-sheet";
 
 import React from "react";
 import { Flag } from "app/hooks/useGameManager";
-import { useTheme } from "@tamagui/core";
+import { useTheme, View } from "@tamagui/core";
 import { Text } from "app/ds/sub-atomic";
 import { Button } from "app/ds/atoms/Button/Button";
 import flagDescriptions from "assets/flags-descriptions.json";
@@ -67,6 +67,7 @@ export const FlagInfoBottomSheet = ({
         >
           {description}
         </Text>
+        <View height={128} />
       </BottomSheetScrollView>
       <Button
         position="absolute"

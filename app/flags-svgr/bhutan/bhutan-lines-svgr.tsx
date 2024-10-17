@@ -2,10 +2,10 @@ import * as React from "react";
 import Svg, { G, Path } from "react-native-svg";
 import type { SvgProps } from "react-native-svg";
 type FlagProps = {
-  onPress: (id: string) => void,
+  onPress: (id: string) => void;
   colors: {
-    [key: string]: string,
-  },
+    [key: string]: string;
+  };
 };
 const Flag = (props: FlagProps) => {
   return (
@@ -70,7 +70,7 @@ const Flag = (props: FlagProps) => {
               onPress={() => props.onPress("white")}
             />
           </G>
-          <G id="dragon">
+          <G id="dragon" onPress={() => props.onPress("white")}>
             <G id="strokes">
               <Path
                 id="Stroke 1"

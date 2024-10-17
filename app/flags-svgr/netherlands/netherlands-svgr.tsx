@@ -31,7 +31,7 @@ const SvgComponent = (props: SvgProps) => (
           fillRule="evenodd"
           clipRule="evenodd"
           d="M25 158.333H325V91.6666H25V158.333Z"
-          fill="white"
+          fill="#FFFFFF"
         />
       </G>
     </G>

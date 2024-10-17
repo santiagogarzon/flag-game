@@ -7,6 +7,7 @@ import {
   kebabCase,
   map,
   size,
+  startCase,
   toLower,
   uniq,
   values,
@@ -117,7 +118,7 @@ export const Game = () => {
         setShowBottomSheet(true);
       }, 1000);
     }
-  }, [gameCompleted]);
+  }, [gameCompleted, flag]);
 
   const [showLostAnimation, setShowLostLifeAnimation] = useState(false);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
@@ -144,7 +145,7 @@ export const Game = () => {
     // TODO: actually this only works for world pack
     if (pack !== "world") return;
 
-    const groupFlags = flagsInfo[capitalize(group.id)] as unknown as Flag[];
+    const groupFlags = flagsInfo[startCase(group.id)] as unknown as Flag[];
 
     const currentFlagIndex = findIndex(
       groupFlags,

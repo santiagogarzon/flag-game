@@ -31,14 +31,15 @@ const Flag = (props: FlagProps) => {
             onPress={() => props.onPress("Combined Shape")}
           />
           <Path
-            id="Fill 4 Copy 2"
+            id="Fill 4"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 91.6667H325V25H25V91.6667Z"
-            fill="#273E75"
+            fill={props.colors["Fill 4"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("Fill 4")}
           />
           <Path
             id="Fill 4 Copy"

@@ -27,34 +27,37 @@ const Flag = (props: FlagProps) => {
       <G id="flag / north america / guatemala / b">
         <G id="guatemala b">
           <Path
-            id="Fill 1"
+            id="blue"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 225H125V25H25V225Z"
-            fill="#4A8CBD"
+            fill={props.colors["blue"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("blue")}
           />
           <Path
-            id="Fill 1 Copy"
+            id="blue"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M225 225H325V25H225V225Z"
-            fill="#4A8CBD"
+            fill={props.colors["blue"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("blue")}
           />
           <Path
-            id="Fill 2"
+            id="white"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M125 225H225V25H125V225Z"
-            fill="white"
+            fill={props.colors["white"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("white")}
           />
           <G id="coa" style={{ mixBlendMode: "luminosity" }}>
             <Path

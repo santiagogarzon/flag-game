@@ -26,6 +26,7 @@ const flagInfoJson = require("../assets/flags-info.json");
 const destionationFolder = __dirname + "/../app/flags-svgr/";
 const originFolder = __dirname + "/../assets/flags-svg/";
 
+const ignoredFlags = ["bhutan"];
 const flagsColors = {};
 
 const flagInfo = flatMap(flagInfoJson).map((flag) => ({
@@ -244,6 +245,8 @@ const getCountryNameByFile = (filePathA) =>
 const convertSvgToSvgrFlag = async ([filePathA, filePathB]) => {
   try {
     const countryName = getCountryNameByFile(filePathA);
+    if (includes(ignoredFlags, countryName)) return;
+
     const countryFolder = destionationFolder + "/" + countryName + "/";
 
     const country = find(

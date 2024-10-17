@@ -31,25 +31,26 @@ const Flag = (props: FlagProps) => {
             onPress={() => props.onPress("Fill 1")}
           />
           <Path
-            id="Fill 3"
+            id="Fill 2"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M229 225H325V25H229V225Z"
+            fill={props.colors["Fill 2"]}
+            fillOpacity={1}
+            stroke="white"
+            strokeWidth={2}
+            onPress={() => props.onPress("Fill 2")}
+          />
+          <Path
+            id="Fill 3"
+            fillRule="evenodd"
+            clipRule="evenodd"
+            d="M121 225H229V25H121V225Z"
             fill={props.colors["Fill 3"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
             onPress={() => props.onPress("Fill 3")}
-          />
-          <Path
-            id="Fill 4"
-            fillRule="evenodd"
-            clipRule="evenodd"
-            d="M121 225H229V25H121V225Z"
-            fill="#BC242C"
-            fillOpacity={1}
-            stroke="white"
-            strokeWidth={2}
           />
         </G>
       </G>

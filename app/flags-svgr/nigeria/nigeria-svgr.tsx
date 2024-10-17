@@ -20,7 +20,7 @@ const SvgComponent = (props: SvgProps) => (
           fill="#117E4E"
         />
         <Path
-          id="Fill 1 Copy"
+          id="Fill 1"
           fillRule="evenodd"
           clipRule="evenodd"
           d="M225 200H325V50H225V200Z"

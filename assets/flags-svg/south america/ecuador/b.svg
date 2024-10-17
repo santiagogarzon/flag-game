@@ -1,9 +1,9 @@
 <svg width="350" height="250" viewBox="0 0 350 250" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g id="flag / south america / ecuador / b">
 <g id="ecuador b">
-<path id="Fill 1" fill-rule="evenodd" clip-rule="evenodd" d="M25 125H325V25H25V125Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="Fill 2" fill-rule="evenodd" clip-rule="evenodd" d="M25 175H325V125H25V175Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
-<path id="Fill 3" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V175H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="yellow" fill-rule="evenodd" clip-rule="evenodd" d="M25 125H325V25H25V125Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="blue" fill-rule="evenodd" clip-rule="evenodd" d="M25 175H325V125H25V175Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
+<path id="red" fill-rule="evenodd" clip-rule="evenodd" d="M25 225H325V175H25V225Z" fill="white" fill-opacity="0.5" stroke="white" stroke-width="2"/>
 <g id="coa">
 <path id="Fill 1_2" fill-rule="evenodd" clip-rule="evenodd" d="M173.74 99.2108L173.585 98.7378L173.762 98.4878H174.139L174.294 98.5608C174.294 98.5608 174.597 99.2398 174.331 99.6018C174.331 99.6018 174.22 99.2178 174.095 99.1588C174.095 99.1588 173.821 99.1218 173.74 99.2108Z" fill="#C0C0C0"/>
 <path id="Fill 6" fill-rule="evenodd" clip-rule="evenodd" d="M162.594 88.4556C162.594 88.4556 161.715 90.4846 162.187 90.6846C162.66 90.8836 163.871 90.5666 164.889 88.7356C165.908 86.9046 164.284 87.5916 164.284 87.5916L162.594 88.4556Z" fill="#2D2D2D"/>

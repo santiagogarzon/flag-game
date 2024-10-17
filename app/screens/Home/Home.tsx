@@ -117,13 +117,13 @@ export const Home = () => {
             <Page>
               <View justifyContent="center" alignItems="center">
                 <Icon name={icon} size={82} />
-                {index !== pages.length - 1 && (
+                {index !== 0 && (
                   <View
                     height={2}
                     backgroundColor="$surface"
                     width={128}
                     position="absolute"
-                    transform={[{ translateX: screenWidth / 2 }]}
+                    transform={[{ translateX: -screenWidth / 2 }]}
                   />
                 )}
               </View>

@@ -24,7 +24,7 @@ const SvgComponent = (props: SvgProps) => (
           fillRule="evenodd"
           clipRule="evenodd"
           d="M25 58.333H325V25H25V58.333ZM25 125V158.333H325V125H206.167C206.167 142.213 192.213 156.167 175 156.167C157.787 156.167 143.833 142.213 143.833 125H25Z"
-          fill="black"
+          fill="#0A0B09"
         />
         <Path
           id="yellow"

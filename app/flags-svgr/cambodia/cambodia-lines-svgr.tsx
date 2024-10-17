@@ -60,7 +60,7 @@ const Flag = (props: FlagProps) => {
             strokeWidth={2}
             onPress={() => props.onPress("white")}
           />
-          <G id="angkor wat strokes">
+          <G id="white" onPress={() => props.onPress("white")}>
             <Path
               id="Stroke 3"
               fillRule="evenodd"

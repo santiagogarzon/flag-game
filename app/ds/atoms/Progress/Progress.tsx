@@ -29,7 +29,7 @@ export const ProgressFill = styled(View, {
 
 export const Progress = View.styleable<ProgressProps>(
   ({ value, max, ...styledProps }, ref) => {
-    const percentage = `${Math.round((value / max) * 100)}%`;
+    const percentage = `${Math.round((Math.min(value, max) / max) * 100)}%`;
     return (
       <Container ref={ref} {...styledProps}>
         <Bar>
