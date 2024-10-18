@@ -324,6 +324,11 @@
     "white": "#FFFFFE",
     "black": "#0A0B09"
   },
+  "bhutan": {
+   "gold": "#E5AC36",
+   "orange": "#D03C2E",
+   "white": "#FFFFFE"
+  },
   "east-timor": {
     "red": "#C62A2B",
     "yellow": "#F7C231",
