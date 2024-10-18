@@ -9,15 +9,18 @@ import { Text } from "app/ds/sub-atomic";
 import { Button } from "app/ds/atoms/Button/Button";
 import flagDescriptions from "assets/flags-descriptions.json";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import { Dimensions } from "react-native";
 
 export const FlagInfoBottomSheet = ({
   flag,
   visible,
   onPressNextFlag,
+  onPressResetGame,
 }: {
   flag: Flag;
   visible: boolean;
   onPressNextFlag: () => void;
+  onPressResetGame: () => void;
 }) => {
   const theme = useTheme();
   const insets = useSafeAreaInsets();
@@ -34,7 +37,7 @@ export const FlagInfoBottomSheet = ({
       if (!firstRender) {
         setFirstRender(true);
       } else {
-        sheetRef.current?.snapToPosition(-1);
+        sheetRef.current?.close();
       }
     }
   }, [visible]);
@@ -49,6 +52,7 @@ export const FlagInfoBottomSheet = ({
       }}
     >
       <BottomSheetScrollView
+        style={{ marginBottom: 78 + insets.bottom }} // TODO: revisar con insets...
         contentContainerStyle={{
           alignItems: "center",
           paddingHorizontal: 24,
@@ -67,20 +71,23 @@ export const FlagInfoBottomSheet = ({
         >
           {description}
         </Text>
-        <View height={128} />
       </BottomSheetScrollView>
-      <Button
-        position="absolute"
-        left={16}
-        right={16}
+      <View
+        flexDirection="row"
         bottom={insets.bottom}
-        text="Next flag"
-        type="secondary"
-        icon="arrow-right"
-        marginVertical={16}
-        alignSelf="stretch"
-        onPress={onPressNextFlag}
-      />
+        margin={16}
+        width={Dimensions.get("screen").width - 32}
+      >
+        <Button type="secondary" icon="reset" onPress={onPressResetGame} fab />
+        <Button
+          text="Next flag"
+          type="secondary"
+          icon="arrow-right"
+          onPress={onPressNextFlag}
+          flex={1}
+          marginLeft={8}
+        />
+      </View>
     </BottomSheet>
   );
 };

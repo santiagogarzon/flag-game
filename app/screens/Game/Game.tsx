@@ -67,12 +67,12 @@ export const Game = () => {
     useState<React.FC<FlagComponentProps>>();
 
   const colorOptions = flagsColors[getFlagId(flag)];
+  const [gameCompleted, setGameCompleted] = useState(false);
   const [selectedColor, setSelectedColor] = useState<string>();
   const [currentColors, setCurrentColors] = useState<{
     [key: string]: string;
   }>({});
 
-  const gameCompleted = isFlagCompleted(flag, group, pack);
   const onPressPath = (id: string) => {
     if (selectedColor && isString(id)) {
       setCurrentColors((a) => ({ ...a, [id]: selectedColor }));
@@ -107,18 +107,14 @@ export const Game = () => {
     const validColors = isEqual(currentColors, colorOptions);
     if (validColors) {
       completeFlag(flag, group, pack);
+      setGameCompleted(true);
+      setTimeout(() => {
+        setShowBottomSheet(true);
+      }, 1000);
     } else {
       startLostLifeAnimation();
     }
   };
-
-  useEffect(() => {
-    if (gameCompleted) {
-      setTimeout(() => {
-        setShowBottomSheet(true);
-      }, 1000);
-    }
-  }, [gameCompleted, flag]);
 
   const [showLostAnimation, setShowLostLifeAnimation] = useState(false);
   const [showBottomSheet, setShowBottomSheet] = useState(false);
@@ -130,7 +126,15 @@ export const Game = () => {
     }, 300);
   };
 
-  const resetGame = () => {
+  const resetGame = (forceToPlay?: boolean) => {
+    const flagCompleted = isFlagCompleted(flag, group, pack);
+    const showCompletedGame = forceToPlay ? false : flagCompleted;
+    setGameCompleted(showCompletedGame);
+    if (showCompletedGame) {
+      setTimeout(() => {
+        setShowBottomSheet(true);
+      }, 1000);
+    }
     setShowBottomSheet(false);
     setShowLostLifeAnimation(false);
     setCurrentColors({});
@@ -190,7 +194,7 @@ export const Game = () => {
                 disabled={!canClearColor}
                 size={30}
               />
-            </View> 
+            </View>
             <View
               onPress={checkFlag}
               disabled={!canCheckFlag}
@@ -247,6 +251,7 @@ export const Game = () => {
         visible={showBottomSheet}
         flag={flag}
         onPressNextFlag={goToNextFlag}
+        onPressResetGame={() => resetGame(true)}
       />
       <FailAnimation
         visible={showLostAnimation}

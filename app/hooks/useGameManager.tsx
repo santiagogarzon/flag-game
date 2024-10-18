@@ -3,9 +3,10 @@ import { cloneDeep, find, kebabCase, keys, min, size, toLower } from "lodash";
 import flagsInfo from "assets/flags-info.json";
 import flagsColorInfo from "app/flags-svgr/flags-colors.json";
 import { countLeafNodes } from "app/utils/objects";
-import { atomWithStorage } from "jotai/utils";
+import { atomWithStorage, RESET } from "jotai/utils";
 import { storage } from "app/utils/jotai";
 import { testerModeActiveAtom } from "app/screens/Options/Options";
+import { useEffect } from "react";
 
 const maxLives = 5;
 const liveTimeIncrementation = 1000 * 60 * 60; // one hour
@@ -47,7 +48,7 @@ export const getFlagId = (flag: Flag) =>
   kebabCase(toLower(flag.country)) as keyof typeof flagsColorInfo;
 
 export const useGameManager = () => {
-  const testing = true; // useAtomValue(testerModeActiveAtom);
+  const testing = false; // useAtomValue(testerModeActiveAtom);
   const [lastLiveUpdate, setLastLivesUpdate] = useAtom(lastLivesUpdateAtom);
   const [lives, setLives] = useAtom(livesAtom);
   const [completedFlags, setCompletedFlags] = useAtom(completedFlagsAtom);
