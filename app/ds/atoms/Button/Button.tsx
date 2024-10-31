@@ -28,6 +28,11 @@ export const ButtonContainer = styled(View, {
         backgroundColor: "$surface",
       },
       primaryOutlined: {
+        backgroundColor: "$surface",
+        borderWidth: 1,
+        borderColor: "$onSurface",
+      },
+      primaryOutlined2: {
         backgroundColor: "$surface50",
         borderWidth: 2,
         borderColor: "$surface",
@@ -50,10 +55,11 @@ export const ButtonContainer = styled(View, {
 });
 
 export type ButtonProps = {
-  type?: "primary" | "secondary" | "primaryOutlined";
+  type?: "primary" | "secondary" | "primaryOutlined" | "primaryOutlined2";
   fab?: boolean;
   text?: string;
   icon?: CustomIcon;
+  textColor?: string;
 };
 
 export const Button = View.styleable<ButtonProps>(

@@ -24,6 +24,7 @@ import {
   PackId,
   useGameManager,
 } from "app/hooks/useGameManager";
+import { FadeInDown, FadeInUp } from "react-native-reanimated";
 import { NavigationProp, RouteProp } from "../screens";
 import { View } from "@tamagui/core";
 import { Icon, Text } from "app/ds/sub-atomic";
@@ -40,6 +41,7 @@ import { FlagInfoBottomSheet } from "./FlagInfoBottomSheet";
 import { chunkObject } from "app/utils/objects";
 import flagsInfo from "assets/flags-info.json";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
+import Animated from "react-native-reanimated";
 
 export type GameScreenParams = {
   flag: Flag;
@@ -175,46 +177,61 @@ export const Game = () => {
     <>
       <View flex={1}>
         <View flex={1} justifyContent="center">
-          <View
-            flexDirection="row"
-            alignSelf="center"
-            gap={40}
-            opacity={gameCompleted ? 0 : 1}
-            animateOnly={["opacity"]}
+          <Animated.View
+            entering={FadeInUp.delay(1000).withInitialValues({
+              transform: [{ translateY: -420 }],
+            })}
           >
             <View
-              onPress={cleanColors}
-              disabled={!canClearColor}
-              pressStyle={{ scale: 1.3 }}
-              animation="bouncy"
+              flexDirection="row"
+              alignSelf="center"
+              gap={40}
+              opacity={gameCompleted ? 0 : 1}
+              animateOnly={["opacity"]}
             >
-              <Icon
-                color="$onSurface"
-                name="gota"
+              <View
+                onPress={cleanColors}
                 disabled={!canClearColor}
-                size={30}
-              />
-            </View>
-            <View
-              onPress={checkFlag}
-              disabled={!canCheckFlag}
-              pressStyle={{ scale: 1.3 }}
-              animation="bouncy"
-            >
-              <Icon
-                color="$onSurface"
-                name="check"
-                size={30}
+                pressStyle={{ scale: 1.3 }}
+                animation="bouncy"
+              >
+                <Icon
+                  color="$onSurface"
+                  name="gota"
+                  disabled={!canClearColor}
+                  size={30}
+                />
+              </View>
+              <View
+                onPress={checkFlag}
                 disabled={!canCheckFlag}
-              />
+                pressStyle={{ scale: 1.3 }}
+                animation="bouncy"
+              >
+                <Icon
+                  color="$onSurface"
+                  name="check"
+                  size={30}
+                  disabled={!canCheckFlag}
+                />
+              </View>
             </View>
-          </View>
-          <FlagContainer showBottomSheet={showBottomSheet}>
-            <FlagLinesComponent onPress={onPressPath} colors={currentColors} />
-            <CompletedFlagContainer show={gameCompleted}>
-              <FlagComponent onPress={onPressPath} colors={currentColors} />
-            </CompletedFlagContainer>
-          </FlagContainer>
+          </Animated.View>
+          <Animated.View
+            entering={FadeInDown.delay(300).withInitialValues({
+              transform: [{ translateY: 420 }],
+            })}
+          >
+            <FlagContainer showBottomSheet={showBottomSheet}>
+              <FlagLinesComponent
+                onPress={onPressPath}
+                colors={currentColors}
+              />
+              <CompletedFlagContainer show={gameCompleted}>
+                <FlagComponent onPress={onPressPath} colors={currentColors} />
+              </CompletedFlagContainer>
+            </FlagContainer>
+          </Animated.View>
           <Text
             type="h2"
             alignSelf="center"
@@ -224,25 +241,31 @@ export const Game = () => {
             {flag?.country}
           </Text>
         </View>
-        <ColorSelectorContainer
-          gameCompleted={gameCompleted}
-          paddingBottom={insets.bottom + 32}
+        <Animated.View
+          entering={FadeInDown.delay(1000).withInitialValues({
+            transform: [{ translateY: 420 }],
+          })}
         >
-          {map(
-            chunkObject(colorOptions, size(colorOptions) === 4 ? 2 : 3),
-            (colorOptionsChunk) => (
-              <View flexDirection="row" gap={40}>
-                {map(colorOptionsChunk, (color: string) => (
-                  <ColorPicker
-                    onPress={() => setSelectedColor(color)}
-                    borderWidth={selectedColor === color ? 10 : 5}
-                    backgroundColor={color}
-                  />
-                ))}
-              </View>
-            )
-          )}
-        </ColorSelectorContainer>
+          <ColorSelectorContainer
+            gameCompleted={gameCompleted}
+            paddingBottom={insets.bottom + 32}
+          >
+            {map(
+              chunkObject(colorOptions, size(colorOptions) === 4 ? 2 : 3),
+              (colorOptionsChunk) => (
+                <View flexDirection="row" gap={40}>
+                  {map(colorOptionsChunk, (color: string) => (
+                    <ColorPicker
+                      onPress={() => setSelectedColor(color)}
+                      borderWidth={selectedColor === color ? 10 : 5}
+                      backgroundColor={color}
+                    />
+                  ))}
+                </View>
+              )
+            )}
+          </ColorSelectorContainer>
+        </Animated.View>
       </View>
       <CheckContainer show={gameCompleted && !showBottomSheet}>
         <Icon name="check" size={28} color="$onSurface" />

@@ -152,12 +152,12 @@ export const Home = () => {
                       {completed} / {total}
                     </Text>
                   </View>
-                  <Progress
+                  {/* <Progress
                     value={completed}
                     max={total}
                     marginTop={4}
                     marginHorizontal={32}
-                  />
+                  /> */}
                 </>
               )}
 
@@ -188,7 +188,7 @@ export const Home = () => {
         {map(pages, ({ icon }, index) => (
           <Button
             fab
-            type="primaryOutlined"
+            type="primaryOutlined2"
             marginRight={indicatorMargin}
             icon={icon}
             onPress={() => navigateToPage(index + 1)}

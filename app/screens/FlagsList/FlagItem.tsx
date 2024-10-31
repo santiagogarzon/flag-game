@@ -16,7 +16,8 @@ import { useColorScheme } from "react-native";
 import { importSvgr } from "app/flags-svgr/import-svg";
 import { NavigationProp } from "../screens";
 import flagsColors from "../../flags-svgr/flags-colors.json";
-import LockIllustration from "assets/svg/illustrations/lock.svg";
+import LockIllustration from "assets/svg/illustrations/lock.tsx";
+import Animated from "react-native-reanimated";
 
 export const flagsPageWidth = screenWidth;
 export const flagsPageHeight = 440;
@@ -99,8 +100,11 @@ export const FlagItem = ({
               alignItems="center"
               justifyContent="center"
             >
-              <LockIllustration />
-              <Text position="absolute" color="white" type="h5">
+              <LockIllustration
+                color={theme === "dark" ? "white" : "black"}
+                backgroundColor={theme === "dark" ? "#cbcccc" : "#ececed"}
+              />
+              <Text position="absolute" color={"white"} type="h5">
                 {flag.unblock}
               </Text>
             </View>

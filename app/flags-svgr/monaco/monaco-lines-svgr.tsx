@@ -20,12 +20,12 @@ const Flag = (props: FlagProps) => {
     >
       <G id="flag / europe / monaco / b">
         <G id="monaco b">
-          <G id="blue">
+          <G id="white" onPress={() => props.onPress("white")}>
             <Path
               fillRule="evenodd"
               clipRule="evenodd"
               d="M325 5V125H25V5H325Z"
-              fill="#BC242C"
+              fill={props.colors["white"]}
               fillOpacity={1}
             />
             <Path
@@ -34,14 +34,15 @@ const Flag = (props: FlagProps) => {
             />
           </G>
           <Path
-            id="yellow"
+            id="red"
             fillRule="evenodd"
             clipRule="evenodd"
             d="M25 245H325V125H25V245Z"
-            fill="#FFFFFE"
+            fill={props.colors["red"]}
             fillOpacity={1}
             stroke="white"
             strokeWidth={2}
+            onPress={() => props.onPress("red")}
           />
         </G>
       </G>

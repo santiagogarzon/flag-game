@@ -43,51 +43,61 @@ export const FlagInfoBottomSheet = ({
   }, [visible]);
 
   return (
-    <BottomSheet
-      ref={sheetRef}
-      index={-1}
-      snapPoints={[240, "100%"]}
-      backgroundStyle={{
-        backgroundColor: theme.surface.val,
-      }}
-    >
-      <BottomSheetScrollView
-        style={{ marginBottom: 78 + insets.bottom }} // TODO: revisar con insets...
-        contentContainerStyle={{
-          alignItems: "center",
-          paddingHorizontal: 24,
+    <>
+      <BottomSheet
+        ref={sheetRef}
+        index={-1}
+        snapPoints={[240, "100%"]}
+        backgroundStyle={{
+          backgroundColor: theme.surface.val,
         }}
       >
-        <Text color="$onSurface" type="h2" marginTop={16}>
-          {capitalize(flag.country)}
-        </Text>
-        {/* <Text color="$onSurface">La Estrella Solitaria</Text> */}
-        <Text
-          color="$onSurface"
-          type="body2"
-          marginTop={32}
-          textAlign="center"
-          flex={1}
+        <BottomSheetScrollView
+          contentContainerStyle={{
+            alignItems: "center",
+            paddingHorizontal: 24,
+          }}
         >
-          {description}
-        </Text>
-      </BottomSheetScrollView>
-      <View
-        flexDirection="row"
-        bottom={insets.bottom}
-        margin={16}
-        width={Dimensions.get("screen").width - 32}
-      >
-        <Button type="secondary" icon="reset" onPress={onPressResetGame} fab />
-        <Button
-          text="Next flag"
-          type="secondary"
-          icon="arrow-right"
-          onPress={onPressNextFlag}
-          flex={1}
-          marginLeft={8}
-        />
-      </View>
-    </BottomSheet>
+          <Text color="$onSurface" type="h2" marginTop={16}>
+            {capitalize(flag.country)}
+          </Text>
+          {/* <Text color="$onSurface">La Estrella Solitaria</Text> */}
+          <Text
+            color="$onSurface"
+            type="body2"
+            marginTop={32}
+            textAlign="center"
+            flex={1}
+          >
+            {description}
+          </Text>
+        </BottomSheetScrollView>
+      </BottomSheet>
+      {visible && (
+        <View
+          flexDirection="row"
+          bottom={insets.bottom}
+          margin={16}
+          position="absolute"
+          zIndex={9999999999}
+          width={Dimensions.get("screen").width - 32}
+        >
+          <Button
+            type="primaryOutlined"
+            icon="reset"
+            onPress={onPressResetGame}
+            fab
+          />
+          <Button
+            text="Next flag"
+            type="secondary"
+            icon="arrow-right"
+            onPress={onPressNextFlag}
+            flex={1}
+            marginLeft={8}
+          />
+        </View>
+      )}
+    </>
   );
 };
