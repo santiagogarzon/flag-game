@@ -50,6 +50,7 @@ export const FlagInfoBottomSheet = ({
         snapPoints={[240, "100%"]}
         backgroundStyle={{
           backgroundColor: theme.surface.val,
+          borderRadius: 32,
         }}
       >
         <BottomSheetScrollView

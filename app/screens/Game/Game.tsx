@@ -178,9 +178,11 @@ export const Game = () => {
       <View flex={1}>
         <View flex={1} justifyContent="center">
           <Animated.View
-            entering={FadeInUp.delay(1000).withInitialValues({
-              transform: [{ translateY: -420 }],
-            })}
+            entering={FadeInUp.duration(1000)
+              .delay(1000)
+              .withInitialValues({
+                transform: [{ translateY: -420 }],
+              })}
           >
             <View
               flexDirection="row"
@@ -218,9 +220,11 @@ export const Game = () => {
             </View>
           </Animated.View>
           <Animated.View
-            entering={FadeInDown.delay(300).withInitialValues({
-              transform: [{ translateY: 420 }],
-            })}
+            entering={FadeInDown.delay(300)
+              .duration(800)
+              .withInitialValues({
+                transform: [{ translateY: 420 }],
+              })}
           >
             <FlagContainer showBottomSheet={showBottomSheet}>
               <FlagLinesComponent
@@ -231,20 +235,22 @@ export const Game = () => {
                 <FlagComponent onPress={onPressPath} colors={currentColors} />
               </CompletedFlagContainer>
             </FlagContainer>
+            <Text
+              type="h2"
+              alignSelf="center"
+              opacity={gameCompleted ? 0 : 1}
+              animateOnly={["opacity"]}
+            >
+              {flag?.country}
+            </Text>
           </Animated.View>
-          <Text
-            type="h2"
-            alignSelf="center"
-            opacity={gameCompleted ? 0 : 1}
-            animateOnly={["opacity"]}
-          >
-            {flag?.country}
-          </Text>
         </View>
         <Animated.View
-          entering={FadeInDown.delay(1000).withInitialValues({
-            transform: [{ translateY: 420 }],
-          })}
+          entering={FadeInDown.delay(1000)
+            .duration(1000)
+            .withInitialValues({
+              transform: [{ translateY: 420 }],
+            })}
         >
           <ColorSelectorContainer
             gameCompleted={gameCompleted}
