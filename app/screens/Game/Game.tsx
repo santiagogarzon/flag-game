@@ -220,7 +220,7 @@ export const Game = () => {
             </View>
           </Animated.View>
           <Animated.View
-            entering={FadeInDown.delay(300)
+            entering={FadeInDown.delay(0)
               .duration(800)
               .withInitialValues({
                 transform: [{ translateY: 420 }],
