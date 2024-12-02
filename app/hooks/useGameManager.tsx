@@ -48,7 +48,7 @@ export const getFlagId = (flag: Flag) =>
   kebabCase(toLower(flag.country)) as keyof typeof flagsColorInfo;
 
 export const useGameManager = () => {
-  const testing = false; // useAtomValue(testerModeActiveAtom);
+  const testing = true; // useAtomValue(testerModeActiveAtom);
   const [lastLiveUpdate, setLastLivesUpdate] = useAtom(lastLivesUpdateAtom);
   const [lives, setLives] = useAtom(livesAtom);
   const [completedFlags, setCompletedFlags] = useAtom(completedFlagsAtom);
