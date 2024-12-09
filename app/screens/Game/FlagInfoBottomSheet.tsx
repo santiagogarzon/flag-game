@@ -47,7 +47,7 @@ export const FlagInfoBottomSheet = ({
       <BottomSheet
         ref={sheetRef}
         index={-1}
-        snapPoints={[240, "100%"]}
+        snapPoints={[240, "85%"]}
         backgroundStyle={{
           backgroundColor: theme.surface.val,
           borderRadius: 32,

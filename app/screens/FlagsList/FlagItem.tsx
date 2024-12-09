@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo } from "react";
+import React, { Suspense, useEffect, useMemo } from "react";
 import { View } from "@tamagui/core";
 import { screenWidth } from "../Groups/GroupTab.styled";
 import { mapValues, noop } from "lodash";
@@ -12,7 +12,7 @@ import {
 } from "app/hooks/useGameManager";
 import { Text } from "app/ds/sub-atomic";
 import { useState } from "react";
-import { useColorScheme } from "react-native";
+import { useColorScheme, ActivityIndicator } from "react-native";
 import { importSvgr } from "app/flags-svgr/import-svg";
 import { NavigationProp } from "../screens";
 import flagsColors from "../../flags-svgr/flags-colors.json";
@@ -88,12 +88,14 @@ export const FlagItem = ({
           alignItems="center"
           justifyContent="center"
         >
-          <FlagComponent
-            width={140}
-            height={100}
-            colors={transparentFlagColors}
-            onPress={noop}
-          />
+          <Suspense fallback={<ActivityIndicator />}>
+            <FlagComponent
+              width={140}
+              height={100}
+              colors={transparentFlagColors}
+              onPress={noop}
+            />
+          </Suspense>
           {locked && (
             <View
               position="absolute"

@@ -184,7 +184,9 @@
               "zIndex": true,
               "zoom": true,
               "scaleZ": true,
-              "shadowOpacity": true
+              "shadowOpacity": true,
+              "boxShadow": true,
+              "filter": true
             }
           }
         },
@@ -389,6 +391,8 @@
               "zoom": true,
               "scaleZ": true,
               "shadowOpacity": true,
+              "boxShadow": true,
+              "filter": true,
               "fontFamily": true,
               "fontSize": true,
               "fontStyle": true,
@@ -587,7 +591,9 @@
               "zIndex": true,
               "zoom": true,
               "scaleZ": true,
-              "shadowOpacity": true
+              "shadowOpacity": true,
+              "boxShadow": true,
+              "filter": true
             }
           }
         },
@@ -773,7 +779,9 @@
               "zIndex": true,
               "zoom": true,
               "scaleZ": true,
-              "shadowOpacity": true
+              "shadowOpacity": true,
+              "boxShadow": true,
+              "filter": true
             },
             "defaultProps": {
               "tag": "span",

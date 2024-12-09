@@ -79,8 +79,12 @@ export const FlagsLists = () => {
       <FlatList
         data={pagedFlags}
         keyExtractor={(a) => first(a)?.country as string}
-        renderItem={({ item: flags }) => (
-          <FlagsPage {...{ flags, pack, group }} onPress={openFlag} />
+        renderItem={({ item: flags, index }) => (
+          <FlagsPage
+            {...{ flags, pack, group }}
+            onPress={openFlag}
+            key={`flag-${index}`}
+          />
         )}
         pagingEnabled
         horizontal
@@ -90,7 +94,10 @@ export const FlagsLists = () => {
       />
       <IndicatorContainer>
         {map(pagedFlags, (_, index) => (
-          <IndicatorDot selected={index === currentPageIndex} />
+          <IndicatorDot
+            selected={index === currentPageIndex}
+            key={`indicator-dot-${index}`}
+          />
         ))}
       </IndicatorContainer>
     </View>

@@ -120,7 +120,7 @@ export const Home = () => {
             { action, description, icon, title, disabled, completed, total },
             index
           ) => (
-            <Page>
+            <Page key={`home-${index}`}>
               <View justifyContent="center" alignItems="center">
                 <Icon name={icon} size={82} />
                 {index !== 0 && (
@@ -180,6 +180,7 @@ export const Home = () => {
           },
           indicatorPositionStyle,
         ]}
+        key={`indicator`}
       >
         <View onPress={() => navigateToPage(0)}>
           <Icon size={56} name="logo-fly" marginRight={indicatorMargin} />
@@ -192,6 +193,7 @@ export const Home = () => {
             marginRight={indicatorMargin}
             icon={icon}
             onPress={() => navigateToPage(index + 1)}
+            key={`indicator-${index}`}
           />
         ))}
       </Animated.View>

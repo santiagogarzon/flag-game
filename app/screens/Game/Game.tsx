@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import {
   capitalize,
   findIndex,
@@ -226,15 +226,17 @@ export const Game = () => {
                 transform: [{ translateY: 420 }],
               })}
           >
-            <FlagContainer showBottomSheet={showBottomSheet}>
-              <FlagLinesComponent
-                onPress={onPressPath}
-                colors={currentColors}
-              />
-              <CompletedFlagContainer show={gameCompleted}>
-                <FlagComponent onPress={onPressPath} colors={currentColors} />
-              </CompletedFlagContainer>
-            </FlagContainer>
+            <Suspense fallback={null}>
+              <FlagContainer showBottomSheet={showBottomSheet}>
+                <FlagLinesComponent
+                  onPress={onPressPath}
+                  colors={currentColors}
+                />
+                <CompletedFlagContainer show={gameCompleted}>
+                  <FlagComponent onPress={onPressPath} colors={currentColors} />
+                </CompletedFlagContainer>
+              </FlagContainer>
+            </Suspense>
             <Text
               type="h2"
               alignSelf="center"
@@ -265,6 +267,7 @@ export const Game = () => {
                       onPress={() => setSelectedColor(color)}
                       borderWidth={selectedColor === color ? 10 : 5}
                       backgroundColor={color}
+                      key={color}
                     />
                   ))}
                 </View>

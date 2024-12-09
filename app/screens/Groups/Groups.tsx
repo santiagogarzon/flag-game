@@ -75,7 +75,11 @@ export const Groups = () => {
     return () => setHiddenState(true);
   });
   return (
-    <View flex={1} style={{ display: hiddenState ? "none" : "flex" }}>
+    <View
+      flex={1}
+      style={{ display: hiddenState ? "none" : "flex" }}
+      key={pack}
+    >
       <Animated.ScrollView
         ref={scrollRef}
         pagingEnabled
@@ -83,7 +87,7 @@ export const Groups = () => {
         showsHorizontalScrollIndicator={false}
       >
         {map(groups, (group, index) => (
-          <View flex={1} justifyContent="center">
+          <View flex={1} justifyContent="center" key={`group-tab-${index}`}>
             <GroupTab group={group} pack={pack} />
           </View>
         ))}
@@ -104,6 +108,7 @@ export const Groups = () => {
             pressStyle={{ scale: 1.1 }}
             onPress={() => navigateToPage(index)}
             animation="bouncy"
+            key={`indicator-group-${index}`}
           >
             <Image
               source={image as ImageSourcePropType}
