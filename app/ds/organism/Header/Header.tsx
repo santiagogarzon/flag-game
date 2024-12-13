@@ -1,4 +1,4 @@
-import { NativeStackHeaderProps } from "@react-navigation/native-stack";
+import { StackHeaderProps } from "@react-navigation/stack";
 import { GetRef, styled, View, ViewProps } from "@tamagui/core";
 import { Button } from "app/ds/atoms/Button/Button";
 import { Icon, Text } from "app/ds/sub-atomic";
@@ -32,11 +32,7 @@ export const heartPositionAtom = atom({
   py: 0,
 });
 
-export const Header = ({
-  navigation,
-  options,
-  back,
-}: NativeStackHeaderProps) => {
+export const Header = ({ navigation, options, back }: StackHeaderProps) => {
   const { canGoBack, goBack } = navigation;
 
   const insets = useSafeAreaInsets();

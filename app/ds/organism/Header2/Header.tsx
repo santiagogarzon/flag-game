@@ -1,6 +1,4 @@
-import { NativeStackHeaderProps } from "@react-navigation/native-stack";
 import { GetRef, styled, View, ViewProps } from "@tamagui/core";
-import { Button } from "app/ds/atoms/Button/Button";
 import { Icon, Text } from "app/ds/sub-atomic";
 import { useGameManager } from "app/hooks/useGameManager";
 import { atom, useAtom } from "jotai";
@@ -8,6 +6,7 @@ import { useEffect, useRef, useState } from "react";
 import { useSafeAreaInsets } from "react-native-safe-area-context";
 import { View as RNView } from "react-native";
 import Animated, { FadeInDown, FadeInUp } from "react-native-reanimated";
+import { StackHeaderProps } from "@react-navigation/stack";
 
 const Container = styled(Animated.View, {
   flexDirection: "row",
@@ -31,7 +30,7 @@ export const heartPositionAtom = atom({
   py: 0,
 });
 
-export const Header = ({ navigation }: NativeStackHeaderProps) => {
+export const Header = ({ navigation }: StackHeaderProps) => {
   const route = navigation.getState().routes[navigation.getState().index];
   navigation.isFocused();
   const insets = useSafeAreaInsets();
@@ -48,11 +47,11 @@ export const Header = ({ navigation }: NativeStackHeaderProps) => {
     });
   };
 
-  useEffect(() => {
-    setTimeout(() => {
-      calculateHeart();
-    }, 1000);
-  }, []);
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     calculateHeart();
+  //   }, 1000);
+  // }, []);
 
   return (
     <>
